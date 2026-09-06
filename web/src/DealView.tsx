@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ContactPanel } from "./ContactPanel";
 import { loadDeal } from "./data";
-import { StakeholderGraph } from "./StakeholderGraph";
+import { sellerColors, StakeholderGraph } from "./StakeholderGraph";
 import type { DealBundle } from "./types";
 
 export function DealView({ slug }: { slug: string }) {
@@ -66,7 +66,12 @@ export function DealView({ slug }: { slug: string }) {
               selected={selected}
               onSelect={(id) => { setSelected(id); setHighlightEvent(null); }} />
             <div className="legend">
-              <span><Line w={3} /> active thread</span>
+              {[...sellerColors(snap.nodes)].map(([id, color]) => {
+                const n = snap.nodes.find((x) => x.id === id);
+                return n && n.events > 0 ? (
+                  <span key={id}><Line w={3} color={color} /> {n.name.split(" ")[0]}'s threads</span>
+                ) : null;
+              })}
               <span><Line w={1.5} faded /> going stale</span>
               <span><Dashed /> never engaged / ghost</span>
               {showSentiment && <>
@@ -130,8 +135,8 @@ function fmtDate(iso: string): string {
     { month: "short", day: "numeric", year: "numeric" });
 }
 
-const Line = ({ w, faded }: { w: number; faded?: boolean }) => (
-  <svg width="22" height="8"><line x1="0" y1="4" x2="22" y2="4" stroke="#94a3b8"
+const Line = ({ w, faded, color }: { w: number; faded?: boolean; color?: string }) => (
+  <svg width="22" height="8"><line x1="0" y1="4" x2="22" y2="4" stroke={color ?? "#94a3b8"}
     strokeWidth={w} strokeOpacity={faded ? 0.35 : 1} /></svg>
 );
 const Dashed = () => (

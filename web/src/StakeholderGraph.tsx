@@ -20,7 +20,8 @@ export function layout(nodes: GraphNode[]): Map<string, Pos> {
   for (const [lane] of LANES) {
     const sellers = nodes.filter((n) => n.side === "seller" && n.lane === lane).sort((a, b) => b.events - a.events);
     sellers.forEach((n, i) => {
-      pos.set(n.id, { x: 130, y: laneY(lane) + (LANE_H * (i + 1)) / (sellers.length + 1) });
+      const frac = sellers.length === 1 ? 0.5 : 0.22 + (0.58 * i) / (sellers.length - 1);
+      pos.set(n.id, { x: i % 2 ? 205 : 105, y: laneY(lane) + LANE_H * frac });
     });
     const buyers = nodes.filter((n) => n.side === "buyer" && !n.ghost && n.lane === lane).sort((a, b) => a.id.localeCompare(b.id));
     buyers.forEach((n, i) => {
@@ -37,6 +38,13 @@ export function layout(nodes: GraphNode[]): Map<string, Pos> {
   return pos;
 }
 
+export const EDGE_PALETTE = ["#3b82f6", "#14b8a6", "#8b5cf6", "#f59e0b"];
+
+export function sellerColors(nodes: GraphNode[]): Map<string, string> {
+  const sellers = nodes.filter((n) => n.side === "seller").sort((a, b) => a.id.localeCompare(b.id));
+  return new Map(sellers.map((n, i) => [n.id, EDGE_PALETTE[i % EDGE_PALETTE.length]]));
+}
+
 export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, selected, onSelect }: {
   nodes: GraphNode[];
   edges: GraphEdge[];
@@ -46,6 +54,15 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
   onSelect: (id: string | null) => void;
 }) {
   const pos = layout(nodes);
+  const edgeColor = sellerColors(nodes);
+  const connected = new Set<string>();
+  if (selected) {
+    connected.add(selected);
+    for (const e of edges) {
+      if (e.a === selected) connected.add(e.b);
+      if (e.b === selected) connected.add(e.a);
+    }
+  }
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto", display: "block" }}>
@@ -62,11 +79,14 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
       {edges.map((e) => {
         const a = pos.get(e.a), b = pos.get(e.b);
         if (!a || !b) return null;
+        const color = edgeColor.get(e.a) ?? edgeColor.get(e.b) ?? "#94a3b8";
+        const touching = !selected || e.a === selected || e.b === selected;
+        const base = Math.max(0.2, 1 - e.days_stale / 30);
         return (
           <line key={`${e.a}-${e.b}`} x1={a.x} y1={a.y} x2={b.x} y2={b.y}
-            stroke="#94a3b8"
+            stroke={color}
             strokeWidth={Math.min(1 + e.weight / 3, 6)}
-            strokeOpacity={Math.max(0.18, 1 - e.days_stale / 30)} />
+            strokeOpacity={touching ? base * 0.75 : 0.05} />
         );
       })}
 
@@ -80,8 +100,10 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
           : showSentiment ? SENTIMENT_COLOR[n.sentiment] : ENGAGED;
         const stroke = n.ghost ? "#d97706" : engaged ? "none" : "#d97706";
         const r = n.ghost ? 15 : Math.min(16 + n.events, 26);
+        const dimmed = selected !== null && !connected.has(n.id);
         return (
-          <g key={n.id} style={{ cursor: "pointer" }} onClick={() => onSelect(n.id === selected ? null : n.id)}>
+          <g key={n.id} style={{ cursor: "pointer" }} opacity={dimmed ? 0.25 : 1}
+            onClick={() => onSelect(n.id === selected ? null : n.id)}>
             {selected === n.id && <circle cx={p.x} cy={p.y} r={r + 5} fill="none" stroke="#2f6fb3" strokeWidth={2} />}
             <circle cx={p.x} cy={p.y} r={r} fill={fill}
               stroke={stroke} strokeWidth={1.4}

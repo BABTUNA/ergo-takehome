@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { SENTIMENT_COLOR } from "./StakeholderGraph";
+import { SENTIMENT_COLOR, sellerColors } from "./StakeholderGraph";
 import type { DealBundle, Event, GraphNode } from "./types";
 
 const CHANNEL_LABEL: Record<string, string> = {
@@ -40,6 +40,20 @@ export function ContactPanel({ bundle, node, cutoff, highlightEvent, onClose }: 
     }
   }
   const insight = bundle.insights.people[node.id];
+  const lastSnap = bundle.graph.snapshots[bundle.graph.snapshots.length - 1];
+  const nameById = new Map(lastSnap.nodes.map((n) => [n.id, n.name.split(" ")[0]]));
+  const repColor = sellerColors(lastSnap.nodes);
+  const chip = (pid: string) => {
+    const color = repColor.get(pid);
+    return (
+      <span key={pid} style={{
+        fontSize: 10.5, fontWeight: 600, padding: "1px 7px", borderRadius: 999,
+        background: color ? `${color}18` : "#f1f5f9",
+        color: color ?? "#64748b",
+        border: `1px solid ${color ? `${color}55` : "#e2e8f0"}`,
+      }}>{nameById.get(pid) ?? pid}</span>
+    );
+  };
 
   useEffect(() => {
     if (highlightEvent && listRef.current) {
@@ -100,10 +114,13 @@ export function ContactPanel({ bundle, node, cutoff, highlightEvent, onClose }: 
           <div key={e.id} data-ev={e.id} className={`tev${highlightEvent === e.id ? " hilite" : ""}`}>
             <span className="ico">{CHANNEL_LABEL[e.channel] ?? e.channel}</span>
             <div className="body">
-              <div className="when">
-                {new Date(e.ts).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
-                {e.channel === "gmail" && e.content.from === node.id && " · sent"}
-                {e.channel === "gmail" && e.content.from !== node.id && !isGhost && " · received"}
+              <div className="when" style={{ display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap" }}>
+                <span>
+                  {new Date(e.ts).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                  {e.channel === "gmail" && e.content.from === node.id && " · sent"}
+                  {e.channel === "gmail" && e.content.from !== node.id && !isGhost && " · received"}
+                </span>
+                {e.participants.map(chip)}
               </div>
               <div className="snippet">{snippet(e).slice(0, 180)}</div>
               <div className="tags">
