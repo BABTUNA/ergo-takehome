@@ -29,56 +29,6 @@ are computed in plain code, not prompted.
    └─ write insights.json                                       [extract.py]
 </pre>
 
-## Files
-
-### pipeline/llm.py
-
-The API boundary. One function makes every model call; a disk cache in `data/cache/`
-makes reruns free and lets the committed cache serve the demo with no key at all.
-
-| Function | Does |
-|---|---|
-| `complete(model, prompt, schema)` | calls the Claude API asking for JSON matching `schema`, parses and returns it; retries once on malformed JSON. Cache hit = return cached JSON, no API call; miss = call, write `data/cache/<key>.json` |
-| `cache_key(model, prompt)` | sha256 of model + prompt + `PROMPT_VERSION`; a prompt edit invalidates exactly the calls it affects |
-
-### pipeline/prompts.py
-
-Every prompt and output schema in one reviewable place, plus `PROMPT_VERSION` (bump it
-to force re-extraction after a prompt edit).
-
-| Item | Does |
-|---|---|
-| `EVENT_PROMPT` + `EVENT_SCHEMA` | pass 1: one event in -> `signals[]` (tag, who, quote), `commitments[]` (by, to, what, due), `mentions[]` (name, by, context), `tone[]` (who, label). Empty arrays over invented content |
-| `PERSON_PROMPT` + `PERSON_SCHEMA` | pass 2: one person's ordered history + stats in -> role, seniority, sentiment, each with a one-line rationale and supporting event ids |
-
-### pipeline/extract.py
-
-The orchestrator. Runs both passes, does the code-side derivations, writes one
-insights.json per deal.
-
-| Function | Does |
-|---|---|
-| `extract_deal(slug)` | full pipeline for one deal (see trace); skips `stage_change` events in pass 1 |
-| `extract_event(event, people)` | builds the pass-1 prompt (event content + participant roster) and returns its parsed JSON |
-| `resolve_mentions(mentions, registry)` | `match_name` each mention: known person = dropped, named no-match = named ghost (Priya), nameless label = unnamed ghost ("security team"); dedupes with counts + event ids |
-| `match_fulfillment(commitments, events, pass1)` | per commitment, HAIKU yes/no over the committer's later events; unfulfilled + past due = `broken`, not yet due = `open` |
-| `engagement_stats(events)` | code only: per-person event counts, last touch, trailing 14d vs prior 14d -> momentum `rising/flat/cooling`, `quiet_days` |
-| `rollup_person(person, history)` | builds the pass-2 prompt from the person's signals, tones, commitments, stats; returns role/seniority/sentiment with rationales |
-| `write_insights(slug, ...)` | merges rollups + signals + commitments + ghosts + stats into insights.json |
-| `main()` | runs `extract_deal` for every processed deal, prints per-deal summary |
-
-### scripts/eval_extraction.py
-
-The free-ground-truth check: asserts the flagship claims against what the stories
-scripted. Run after any prompt change; exit 1 on failure = extraction regression.
-
-| Deal | Asserted |
-|---|---|
-| globex | Rhea = wary / economic_buyer / exec; ROI commitment `broken`; Priya = named ghost (2 mentions); security team = unnamed ghost |
-| initech | Sarah momentum = cooling; Gwen (zero events) has no rollup |
-| umbra | Elena, Malik, Tara all sentiment positive |
-| acme | no broken commitments, no ghosts |
-
 ## Examples
 
 ### `complete(HAIKU, EVENT_PROMPT, schema)` - pass 1, one call per event
@@ -149,6 +99,56 @@ Out:
 
 Four sections: judged people (with stats), raw signals (the receipts), commitment
 verdicts, ghosts. The graph layer reads nothing else.
+
+## Files
+
+### pipeline/llm.py
+
+The API boundary. One function makes every model call; a disk cache in `data/cache/`
+makes reruns free and lets the committed cache serve the demo with no key at all.
+
+| Function | Does |
+|---|---|
+| `complete(model, prompt, schema)` | calls the Claude API asking for JSON matching `schema`, parses and returns it; retries once on malformed JSON. Cache hit = return cached JSON, no API call; miss = call, write `data/cache/<key>.json` |
+| `cache_key(model, prompt)` | sha256 of model + prompt + `PROMPT_VERSION`; a prompt edit invalidates exactly the calls it affects |
+
+### pipeline/prompts.py
+
+Every prompt and output schema in one reviewable place, plus `PROMPT_VERSION` (bump it
+to force re-extraction after a prompt edit).
+
+| Item | Does |
+|---|---|
+| `EVENT_PROMPT` + `EVENT_SCHEMA` | pass 1: one event in -> `signals[]` (tag, who, quote), `commitments[]` (by, to, what, due), `mentions[]` (name, by, context), `tone[]` (who, label). Empty arrays over invented content |
+| `PERSON_PROMPT` + `PERSON_SCHEMA` | pass 2: one person's ordered history + stats in -> role, seniority, sentiment, each with a one-line rationale and supporting event ids |
+
+### pipeline/extract.py
+
+The orchestrator. Runs both passes, does the code-side derivations, writes one
+insights.json per deal.
+
+| Function | Does |
+|---|---|
+| `extract_deal(slug)` | full pipeline for one deal (see trace); skips `stage_change` events in pass 1 |
+| `extract_event(event, people)` | builds the pass-1 prompt (event content + participant roster) and returns its parsed JSON |
+| `resolve_mentions(mentions, registry)` | `match_name` each mention: known person = dropped, named no-match = named ghost (Priya), nameless label = unnamed ghost ("security team"); dedupes with counts + event ids |
+| `match_fulfillment(commitments, events, pass1)` | per commitment, HAIKU yes/no over the committer's later events; unfulfilled + past due = `broken`, not yet due = `open` |
+| `engagement_stats(events)` | code only: per-person event counts, last touch, trailing 14d vs prior 14d -> momentum `rising/flat/cooling`, `quiet_days` |
+| `rollup_person(person, history)` | builds the pass-2 prompt from the person's signals, tones, commitments, stats; returns role/seniority/sentiment with rationales |
+| `write_insights(slug, ...)` | merges rollups + signals + commitments + ghosts + stats into insights.json |
+| `main()` | runs `extract_deal` for every processed deal, prints per-deal summary |
+
+### scripts/eval_extraction.py
+
+The free-ground-truth check: asserts the flagship claims against what the stories
+scripted. Run after any prompt change; exit 1 on failure = extraction regression.
+
+| Deal | Asserted |
+|---|---|
+| globex | Rhea = wary / economic_buyer / exec; ROI commitment `broken`; Priya = named ghost (2 mentions); security team = unnamed ghost |
+| initech | Sarah momentum = cooling; Gwen (zero events) has no rollup |
+| umbra | Elena, Malik, Tara all sentiment positive |
+| acme | no broken commitments, no ghosts |
 
 ## Decisions
 

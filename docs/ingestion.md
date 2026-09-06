@@ -30,6 +30,32 @@ Ingestion never reads `stories.yaml`. It only sees what a real system would see:
 records and observed conversations. Titles exist only where the CRM has them; the CFO
 title of a person missing from CRM (Rhea) is *unknown* here and inferred by extraction.
 
+## Data example
+
+One Gmail message in:
+
+```json
+{"from": "rhea@globex.com", "to": ["jordan@harborview.io"], "date": "2026-03-20T14:02:00Z",
+ "body": "I need the ROI breakdown..."}
+```
+
+One normalized Event out (in `events.json`):
+
+```json
+{"id": "ev_012", "channel": "gmail", "type": "message", "ts": "2026-03-20T14:02:00Z",
+ "participants": ["p_rhea", "p_jordan"], "direction": "inbound",
+ "thread_key": "th_4471", "content": {"subject": "ROI breakdown", "from": "p_rhea", "body": "..."}}
+```
+
+And the matching entry in `people.json` (Rhea is provisional: seen in conversations,
+absent from the CRM, so no title):
+
+```json
+{"id": "p_rhea", "name": "Rhea Kim", "email": "rhea@globex.com", "title": "",
+ "side": "buyer", "in_crm": false, "provisional": true,
+ "aliases": {"zoom": ["Rhea Kim"]}}
+```
+
 ## Files
 
 ### pipeline/models.py
@@ -60,25 +86,10 @@ The channel boundary. One connector per source; `fetch()` is the production swap
 (reads a committed JSON file here, would be an OAuth'd API pull or webhook feed in a real
 deployment), `normalize()` is identical either way.
 
-Each `normalize` converts its channel's raw JSON into the common Event record. Example,
-one Gmail message in:
-
-```json
-{"from": "rhea@globex.com", "to": ["jordan@harborview.io"], "date": "2026-03-20T14:02:00Z",
- "body": "I need the ROI breakdown..."}
-```
-
-one Event out:
-
-```json
-{"id": "ev_012", "channel": "gmail", "type": "message", "ts": "2026-03-20T14:02:00Z",
- "participants": ["p_rhea", "p_jordan"], "direction": "inbound",
- "thread_key": "th_4471", "content": {"subject": "ROI breakdown", "from": "p_rhea", "body": "..."}}
-```
-
-The conversion is always the same three moves: pick the timestamp field, swap raw
-emails/names for canonical person ids (via `Registry.resolve`), and keep the channel's
-payload under `content`. Per connector:
+Each `normalize` converts its channel's raw JSON into the common Event record (see the
+example above). The conversion is always the same three moves: pick the timestamp field,
+swap raw emails/names for canonical person ids (via `Registry.resolve`), and keep the
+channel's payload under `content`. Per connector:
 
 | Function | Raw in -> Events out |
 |---|---|
