@@ -43,15 +43,15 @@ export function ContactPanel({ bundle, node, cutoff, highlightEvent, onClose }: 
   const lastSnap = bundle.graph.snapshots[bundle.graph.snapshots.length - 1];
   const nameById = new Map(lastSnap.nodes.map((n) => [n.id, n.name.split(" ")[0]]));
   const repColor = sellerColors(lastSnap.nodes);
-  const chip = (pid: string) => {
-    const color = repColor.get(pid);
+  const chip = (pid: string, isSender: boolean) => {
+    const color = repColor.get(pid) ?? "#64748b";
     return (
       <span key={pid} style={{
         fontSize: 10.5, fontWeight: 600, padding: "1px 7px", borderRadius: 999,
-        background: color ? `${color}18` : "#f1f5f9",
-        color: color ?? "#64748b",
-        border: `1px solid ${color ? `${color}55` : "#e2e8f0"}`,
-      }}>{nameById.get(pid) ?? pid}</span>
+        background: isSender ? color : repColor.has(pid) ? `${color}18` : "#f1f5f9",
+        color: isSender ? "#fff" : repColor.has(pid) ? color : "#64748b",
+        border: `1px solid ${isSender ? color : repColor.has(pid) ? `${color}55` : "#e2e8f0"}`,
+      }}>{isSender ? `${nameById.get(pid) ?? pid} ✎` : nameById.get(pid) ?? pid}</span>
     );
   };
 
@@ -120,7 +120,8 @@ export function ContactPanel({ bundle, node, cutoff, highlightEvent, onClose }: 
                   {e.channel === "gmail" && e.content.from === node.id && " · sent"}
                   {e.channel === "gmail" && e.content.from !== node.id && !isGhost && " · received"}
                 </span>
-                {e.participants.map(chip)}
+                {e.participants.map((pid, i) =>
+                  chip(pid, e.type !== "meeting" && i === 0))}
               </div>
               <div className="snippet">{snippet(e).slice(0, 180)}</div>
               <div className="tags">
