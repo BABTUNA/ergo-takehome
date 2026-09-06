@@ -1,0 +1,13 @@
+{
+  "role": "economic_buyer",
+  "role_rationale": "Focused on total cost, seat pricing, and ties purchase to company-wide vendor renewal cycle timing.",
+  "seniority": "exec",
+  "seniority_rationale": "Controls/drives the renewal planning cycle and budget-level cost analysis across seats.",
+  "sentiment": "wary",
+  "sentiment_rationale": "Started direct and engaged but repeated unmet commitments on ROI breakdown have left key info requests unresolved, cooling momentum.",
+  "evidence": [
+    "ev_011",
+    "ev_022",
+    "ev_033"
+  ]
+}

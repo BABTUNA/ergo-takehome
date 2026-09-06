@@ -1,0 +1,15 @@
+{
+  "role": "economic_buyer",
+  "role_rationale": "COO driving scale decision, requests exec-to-exec commercial alignment and calls deal board-visible",
+  "seniority": "exec",
+  "seniority_rationale": "COO title with company-wide vendor decision authority",
+  "sentiment": "positive",
+  "sentiment_rationale": "consistent buying signals escalating to board-level commitment and rollout urgency",
+  "evidence": [
+    "ev_002",
+    "ev_004",
+    "ev_006",
+    "ev_018",
+    "ev_022"
+  ]
+}

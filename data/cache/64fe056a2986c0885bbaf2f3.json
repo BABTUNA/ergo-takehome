@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_sam",
+      "quote": "A schema export from your order system and read creds for a staging copy of the warehouse db. Template for both incoming."
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "neutral"
+    }
+  ]
+}

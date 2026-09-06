@@ -1,0 +1,13 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving next steps, demos, and proposal delivery for Acme deal.",
+  "seniority": "team",
+  "seniority_rationale": "Handles execution tasks like demos, docs, and proposals rather than exec-level decisions.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/collaborative tone with steady commitments kept and momentum toward proposal delivery.",
+  "evidence": [
+    "ev_022",
+    "ev_023",
+    "ev_035"
+  ]
+}

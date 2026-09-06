@@ -1,0 +1,12 @@
+{
+  "role": "seller",
+  "role_rationale": "Ava is on the seller side, making commitments on proposal delivery to the buyer (Marcus)",
+  "seniority": "team",
+  "seniority_rationale": "No title given and behavior shows execution-level task ownership (drafting proposal) rather than final authority",
+  "sentiment": "positive",
+  "sentiment_rationale": "Collaborative tone and buying signal from exec sync indicate positive momentum",
+  "evidence": [
+    "ev_028",
+    "ev_029"
+  ]
+}

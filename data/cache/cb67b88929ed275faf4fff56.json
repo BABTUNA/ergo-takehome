@@ -1,0 +1,12 @@
+{
+  "role": "economic_buyer",
+  "role_rationale": "CTO directing next steps, setting deadlines for procurement/legal, and controlling evaluation direction",
+  "seniority": "exec",
+  "seniority_rationale": "Title is CTO, C-suite",
+  "sentiment": "positive",
+  "sentiment_rationale": "Buying signals and expansion talk increasing over time despite pricing and reliability concerns",
+  "evidence": [
+    "ev_009",
+    "ev_028"
+  ]
+}

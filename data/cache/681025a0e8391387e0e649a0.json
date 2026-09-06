@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "want to start with those two field mapping issues before our deep dive next week?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Leo",
+      "by": "p_sam",
+      "context": "being asked to address field mapping issues before a scheduled deep dive meeting"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "collaborative"
+    }
+  ]
+}

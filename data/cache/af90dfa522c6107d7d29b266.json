@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "pricing_concern",
+      "who": "p_sbloom",
+      "quote": "Two pricing questions"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "That puts you at the number attached. Hope that clears the threshold."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_sbloom",
+      "what": "waive half the onboarding fee for self-serve training",
+      "due": ""
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

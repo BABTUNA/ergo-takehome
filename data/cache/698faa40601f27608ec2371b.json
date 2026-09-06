@@ -1,0 +1,14 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving demos, pricing, and follow-ups throughout the deal",
+  "seniority": "team",
+  "seniority_rationale": "Handles day-to-day scheduling, sandbox setup, and follow-through rather than final decision-making, consistent with a working-level rep",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/professional tone with proactive next steps despite some broken commitments on seasonality/ROI deliverables",
+  "evidence": [
+    "ev_009",
+    "ev_020",
+    "ev_026",
+    "ev_035"
+  ]
+}

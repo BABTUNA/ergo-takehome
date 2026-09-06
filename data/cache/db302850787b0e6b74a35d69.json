@@ -1,0 +1,61 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "I floated this upstairs and got a cautious green light to evaluate properly"
+    },
+    {
+      "tag": "stakeholder_requirement",
+      "who": "p_odiaz",
+      "quote": "If she's not bought in early, nothing gets signed at this size"
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_odiaz",
+      "quote": "She will not care about the field mapper. She'll care what it costs and what it saves"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "build the demo around the cost story as much as the tech",
+      "due": null
+    },
+    {
+      "by": "p_odiaz",
+      "to": "p_jordan",
+      "what": "get it scheduled on our side",
+      "due": "Second week of March"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "prep for Rhea specifically",
+      "due": null
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Nina",
+      "by": "p_odiaz",
+      "context": "business analysis side, to be included in full demo"
+    },
+    {
+      "name": "Rhea",
+      "by": "p_odiaz",
+      "context": "CFO, must be bought in early for deal to be signed at this size"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "pragmatic"
+    },
+    {
+      "who": "p_jordan",
+      "label": "collaborative"
+    }
+  ]
+}

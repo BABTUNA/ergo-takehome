@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "For the architecture review let me coordinate on my side and come back with names and times - likely early next week."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "come back with names and times for the architecture review",
+      "due": "likely early next week"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

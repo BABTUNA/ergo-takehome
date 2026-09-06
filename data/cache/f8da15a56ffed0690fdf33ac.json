@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "You described the Monday spreadsheet ritual"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "30 minutes this week to see if it's a fit?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "If Monday normalization goes away, that's two heads worth of time back. I want to see this properly."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_lnakamura",
+      "quote": "Can we get API docs before a demo? I'd rather come with real questions."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "Let's do a full demo next week. I'll bring Marcus, our CTO. He'll want to see it before we go anywhere serious."
+    },
+    {
+      "tag": "technical_concern",
+      "who": "p_lnakamura",
+      "quote": "From my side the question is integration. We're on a mix of SAP and a homegrown WMS at the Toledo plant. What does connecting that look like?"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_lnakamura",
+      "what": "Sending API docs and SAP connector spec",
+      "due": "today"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "Coordinate demo times over email",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "SE who would scope REST ingestion API integration with the buyer's team for the homegrown WMS system"
+    },
+    {
+      "name": "Marcus",
+      "by": "p_dwhitfield",
+      "context": "CTO who will attend the full demo next week and needs to see the solution before going serious"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "collaborative"
+    },
+    {
+      "who": "p_dwhitfield",
+      "label": "pragmatic"
+    },
+    {
+      "who": "p_lnakamura",
+      "label": "technical"
+    }
+  ]
+}

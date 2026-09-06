@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "hope the review is going well"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Happy to do a session with Gwen or whoever is weighing in, sometimes a live walkthrough moves things faster than a deck"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Gwen",
+      "by": "p_jordan",
+      "context": "potential participant in a live walkthrough session to review the deal"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "helpful"
+    }
+  ]
+}

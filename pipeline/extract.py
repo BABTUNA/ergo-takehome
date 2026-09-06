@@ -4,6 +4,7 @@ Run: python3 -m pipeline.extract
 """
 
 import json
+import re
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -70,7 +71,10 @@ def resolve_mentions(all_mentions, registry, deal):
     ghosts = {}
     for event_id, mention in all_mentions:
         name = (mention.get("name") or "").strip()
+        context = (mention.get("context") or "").lower()
         if name.lower() in PRONOUNS or name.lower() in company_words:
+            continue
+        if "refer" in context or "recommend" in context:
             continue
         if name and (registry.match_name(name) or sellers.match_name(name)):
             continue
@@ -117,7 +121,8 @@ def match_fulfillment(commitments, events, people_by_id):
         else:
             due = llm.complete(llm.HAIKU, prompts.DUE_PROMPT.format(
                 origin_ts=origin_ts[:10], due=c["due"])).get("due_date")
-            status = "broken" if due and due < TODAY.date().isoformat() else "open"
+            grace = (TODAY - timedelta(days=2)).date().isoformat()
+            status = "broken" if due and due < grace else "open"
         results.append({**c, "origin_event": event_id, "status": status})
     return results
 
@@ -168,7 +173,8 @@ def extract_deal(slug):
     pass1 = [extract_event(e, people_by_id) for e in conversation]
 
     all_mentions = [(r["event_id"], m) for r in pass1 for m in r["mentions"]]
-    all_commitments = [(r["event_id"], c) for r in pass1 for c in r["commitments"]]
+    all_commitments = [(r["event_id"], c) for r in pass1 for c in r["commitments"]
+                       if not re.search(r"invit|schedul|calendar", c.get("what", ""), re.I)]
     ghosts = resolve_mentions(all_mentions, registry, deal)
     commitments = match_fulfillment(all_commitments, events, people_by_id)
     stats = engagement_stats(conversation)

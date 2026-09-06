@@ -1,0 +1,33 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_evasquez",
+      "quote": "an eleven-clinic commitment at this number is board-visible for us"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "it would help to get our executive teams aligned directly"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_evasquez",
+      "quote": "is there someone on your leadership side who'd be my counterpart for the commercial conversation?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "executive teams",
+      "by": "p_evasquez",
+      "context": "buyer and seller leadership alignment needed for commercial discussion before contract negotiation"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_evasquez",
+      "label": "strategic"
+    }
+  ]
+}

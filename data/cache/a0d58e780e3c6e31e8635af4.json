@@ -1,0 +1,53 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_evasquez",
+      "quote": "We're scaling from four clinics to eleven this year. Our intake and referral coordination breaks a little more with each new site. I need it fixed before the fall openings."
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "Every clinic has its own intake spreadsheet and referrals get lost between them weekly."
+    },
+    {
+      "tag": "risk",
+      "who": "p_evasquez",
+      "quote": "What I care about is timeline and whether this survives contact with healthcare data rules."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "Set up a full demo with Malik, our engineering director. If he's comfortable, we pilot."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_evasquez",
+      "what": "HIPAA-compliant with a signed BAA, and eleven sites is a six-week rollout. Both go in writing.",
+      "due": null
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Malik",
+      "by": "p_evasquez",
+      "context": "engineering director who needs to be comfortable with the solution before pilot proceeds"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    },
+    {
+      "who": "p_evasquez",
+      "label": "pragmatic"
+    },
+    {
+      "who": "p_tsingh",
+      "label": "direct"
+    }
+  ]
+}

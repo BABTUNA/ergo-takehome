@@ -1,0 +1,1593 @@
+{
+  "deal": {
+    "id": "opp_015",
+    "name": "Umbra Health - Multi-clinic Coordination",
+    "account": "Umbra Health",
+    "amount": 150000,
+    "stage": "Proposal",
+    "close_date": "2026-05-15",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-18"
+  },
+  "snapshots": [
+    {
+      "t": "2026-02-16",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        }
+      ],
+      "edges": [],
+      "flags": [],
+      "rollup": {
+        "thread_score": 0,
+        "engaged_buyers": 0,
+        "highest_lane": "none",
+        "open_flags": 0,
+        "top_severity": "none"
+      }
+    },
+    {
+      "t": "2026-02-23",
+      "nodes": [
+        {
+          "id": "p_evasquez",
+          "name": "Elena Vasquez",
+          "title": "COO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 4,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_evasquez",
+          "b": "p_jordan",
+          "weight": 2,
+          "days_stale": 4
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "100% of buyer contact runs through Elena Vasquez",
+          "evidence": [],
+          "suggested_move": "Ask Elena Vasquez to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Elena Vasquez (COO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Elena Vasquez before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 1,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-02",
+      "nodes": [
+        {
+          "id": "p_evasquez",
+          "name": "Elena Vasquez",
+          "title": "COO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 3,
+          "quiet_days": 5,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 3,
+          "quiet_days": 5,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_tsingh",
+          "name": "Tara Singh",
+          "title": "Operations Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 1,
+          "quiet_days": 5,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_evasquez",
+          "b": "p_jordan",
+          "weight": 3,
+          "days_stale": 5
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_tsingh",
+          "weight": 1,
+          "days_stale": 5
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_tsingh",
+          "weight": 1,
+          "days_stale": 5
+        }
+      ],
+      "flags": [
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Elena Vasquez (COO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Elena Vasquez before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 2.0,
+        "engaged_buyers": 2,
+        "highest_lane": "exec",
+        "open_flags": 1,
+        "top_severity": "low"
+      }
+    },
+    {
+      "t": "2026-03-09",
+      "nodes": [
+        {
+          "id": "p_evasquez",
+          "name": "Elena Vasquez",
+          "title": "COO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 4,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 4,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_tsingh",
+          "name": "Tara Singh",
+          "title": "Operations Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mjones",
+          "name": "Malik Jones",
+          "title": "Director of Engineering",
+          "side": "buyer",
+          "lane": "director",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 1,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_evasquez",
+          "b": "p_jordan",
+          "weight": 4,
+          "days_stale": 2
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_tsingh",
+          "weight": 2,
+          "days_stale": 2
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_tsingh",
+          "weight": 2,
+          "days_stale": 2
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mjones",
+          "weight": 1,
+          "days_stale": 2
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_mjones",
+          "weight": 1,
+          "days_stale": 2
+        },
+        {
+          "a": "p_mjones",
+          "b": "p_tsingh",
+          "weight": 1,
+          "days_stale": 2
+        }
+      ],
+      "flags": [
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Elena Vasquez (COO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Elena Vasquez before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "med"
+      }
+    },
+    {
+      "t": "2026-03-16",
+      "nodes": [
+        {
+          "id": "p_evasquez",
+          "name": "Elena Vasquez",
+          "title": "COO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 6,
+          "quiet_days": 5,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 9,
+          "quiet_days": 1,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_tsingh",
+          "name": "Tara Singh",
+          "title": "Operations Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 4,
+          "quiet_days": 9,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mjones",
+          "name": "Malik Jones",
+          "title": "Director of Engineering",
+          "side": "buyer",
+          "lane": "director",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 4,
+          "quiet_days": 0,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "engineer",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_010"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_evasquez",
+          "b": "p_jordan",
+          "weight": 6,
+          "days_stale": 5
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mjones",
+          "weight": 4,
+          "days_stale": 0
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_tsingh",
+          "weight": 3,
+          "days_stale": 6
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_tsingh",
+          "weight": 3,
+          "days_stale": 5
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_mjones",
+          "weight": 1,
+          "days_stale": 9
+        },
+        {
+          "a": "p_mjones",
+          "b": "p_tsingh",
+          "weight": 1,
+          "days_stale": 9
+        }
+      ],
+      "flags": [
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Elena Vasquez (COO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Elena Vasquez before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "med"
+      }
+    },
+    {
+      "t": "2026-03-23",
+      "nodes": [
+        {
+          "id": "p_evasquez",
+          "name": "Elena Vasquez",
+          "title": "COO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 6,
+          "quiet_days": 12,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 10,
+          "quiet_days": 1,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_tsingh",
+          "name": "Tara Singh",
+          "title": "Operations Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 5,
+          "quiet_days": 1,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mjones",
+          "name": "Malik Jones",
+          "title": "Director of Engineering",
+          "side": "buyer",
+          "lane": "director",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 4,
+          "quiet_days": 7,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "engineer",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_010"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "Riverside clinic coordinators",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_013"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_evasquez",
+          "b": "p_jordan",
+          "weight": 6,
+          "days_stale": 12
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_tsingh",
+          "weight": 4,
+          "days_stale": 1
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mjones",
+          "weight": 4,
+          "days_stale": 7
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_tsingh",
+          "weight": 3,
+          "days_stale": 12
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_mjones",
+          "weight": 1,
+          "days_stale": 16
+        },
+        {
+          "a": "p_mjones",
+          "b": "p_tsingh",
+          "weight": 1,
+          "days_stale": 16
+        }
+      ],
+      "flags": [
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Elena Vasquez (COO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Elena Vasquez before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "med"
+      }
+    },
+    {
+      "t": "2026-03-30",
+      "nodes": [
+        {
+          "id": "p_evasquez",
+          "name": "Elena Vasquez",
+          "title": "COO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 7,
+          "quiet_days": 1,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 12,
+          "quiet_days": 1,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_tsingh",
+          "name": "Tara Singh",
+          "title": "Operations Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 7,
+          "quiet_days": 1,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mjones",
+          "name": "Malik Jones",
+          "title": "Director of Engineering",
+          "side": "buyer",
+          "lane": "director",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 6,
+          "quiet_days": 1,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "engineer",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_010"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "Riverside clinic coordinators",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_013"
+          ]
+        },
+        {
+          "id": "ghost_2",
+          "name": "coordinators",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_018",
+            "ev_026"
+          ]
+        },
+        {
+          "id": "ghost_3",
+          "name": "Malik's team",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_018"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_evasquez",
+          "b": "p_jordan",
+          "weight": 7,
+          "days_stale": 1
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_tsingh",
+          "weight": 6,
+          "days_stale": 1
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mjones",
+          "weight": 6,
+          "days_stale": 1
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_tsingh",
+          "weight": 4,
+          "days_stale": 1
+        },
+        {
+          "a": "p_mjones",
+          "b": "p_tsingh",
+          "weight": 3,
+          "days_stale": 1
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_mjones",
+          "weight": 2,
+          "days_stale": 1
+        }
+      ],
+      "flags": [
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Elena Vasquez (COO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Elena Vasquez before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "med"
+      }
+    },
+    {
+      "t": "2026-04-06",
+      "nodes": [
+        {
+          "id": "p_evasquez",
+          "name": "Elena Vasquez",
+          "title": "COO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 9,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 15,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_tsingh",
+          "name": "Tara Singh",
+          "title": "Operations Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 8,
+          "quiet_days": 6,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mjones",
+          "name": "Malik Jones",
+          "title": "Director of Engineering",
+          "side": "buyer",
+          "lane": "director",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 8,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "engineer",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_010"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "Riverside clinic coordinators",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_013"
+          ]
+        },
+        {
+          "id": "ghost_2",
+          "name": "coordinators",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_018",
+            "ev_026"
+          ]
+        },
+        {
+          "id": "ghost_3",
+          "name": "Malik's team",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_018"
+          ]
+        },
+        {
+          "id": "ghost_4",
+          "name": "security team",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_020"
+          ]
+        },
+        {
+          "id": "ghost_5",
+          "name": "executive teams",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_022"
+          ]
+        },
+        {
+          "id": "ghost_6",
+          "name": "data layer people",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_024"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_evasquez",
+          "b": "p_jordan",
+          "weight": 9,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mjones",
+          "weight": 8,
+          "days_stale": 2
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_tsingh",
+          "weight": 7,
+          "days_stale": 6
+        },
+        {
+          "a": "p_mjones",
+          "b": "p_tsingh",
+          "weight": 5,
+          "days_stale": 6
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_tsingh",
+          "weight": 4,
+          "days_stale": 8
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_mjones",
+          "weight": 2,
+          "days_stale": 8
+        }
+      ],
+      "flags": [
+        {
+          "id": "ghost_stakeholder",
+          "severity": "med",
+          "summary": "security team mentioned 1x but never engaged",
+          "evidence": [
+            "ev_020"
+          ],
+          "suggested_move": "Ask your champion to bring security team into the next session"
+        },
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Elena Vasquez (COO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Elena Vasquez before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 3,
+        "top_severity": "med"
+      }
+    },
+    {
+      "t": "2026-04-07",
+      "nodes": [
+        {
+          "id": "p_evasquez",
+          "name": "Elena Vasquez",
+          "title": "COO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 9,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 15,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_tsingh",
+          "name": "Tara Singh",
+          "title": "Operations Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 9,
+          "quiet_days": 0,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mjones",
+          "name": "Malik Jones",
+          "title": "Director of Engineering",
+          "side": "buyer",
+          "lane": "director",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 8,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "engineer",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_010"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "Riverside clinic coordinators",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_013"
+          ]
+        },
+        {
+          "id": "ghost_2",
+          "name": "coordinators",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 2,
+          "mention_events": [
+            "ev_018",
+            "ev_026"
+          ]
+        },
+        {
+          "id": "ghost_3",
+          "name": "Malik's team",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_018"
+          ]
+        },
+        {
+          "id": "ghost_4",
+          "name": "security team",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_020"
+          ]
+        },
+        {
+          "id": "ghost_5",
+          "name": "executive teams",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_022"
+          ]
+        },
+        {
+          "id": "ghost_6",
+          "name": "data layer people",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_024"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_evasquez",
+          "b": "p_jordan",
+          "weight": 9,
+          "days_stale": 4
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mjones",
+          "weight": 8,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_tsingh",
+          "weight": 7,
+          "days_stale": 3
+        },
+        {
+          "a": "p_mjones",
+          "b": "p_tsingh",
+          "weight": 5,
+          "days_stale": 3
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_tsingh",
+          "weight": 4,
+          "days_stale": 9
+        },
+        {
+          "a": "p_evasquez",
+          "b": "p_mjones",
+          "weight": 2,
+          "days_stale": 9
+        }
+      ],
+      "flags": [
+        {
+          "id": "ghost_stakeholder",
+          "severity": "med",
+          "summary": "security team mentioned 1x but never engaged",
+          "evidence": [
+            "ev_020"
+          ],
+          "suggested_move": "Ask your champion to bring security team into the next session"
+        },
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Elena Vasquez (COO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Elena Vasquez before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 3,
+        "top_severity": "med"
+      }
+    }
+  ]
+}

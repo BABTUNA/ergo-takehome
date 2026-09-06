@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Happy to connect our legal with yours directly if anything in the MSA needs discussion"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "legal",
+      "by": "p_jordan",
+      "context": "Offering to connect seller's legal team with buyer's legal team for MSA discussion"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

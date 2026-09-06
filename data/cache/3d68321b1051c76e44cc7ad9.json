@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "caught 3 mismatches our manual process missed. showed my team, they're sold"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "my team",
+      "by": "p_odiaz",
+      "context": "Team members shown the exception flow results and are convinced of the solution's value"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "positive"
+    }
+  ]
+}

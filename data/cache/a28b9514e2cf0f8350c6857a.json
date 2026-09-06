@@ -1,0 +1,13 @@
+{
+  "role": "champion",
+  "role_rationale": "Engineering Lead actively testing, providing exports, and pushing final positive verdict to move deal forward",
+  "seniority": "team",
+  "seniority_rationale": "Title is Engineering Lead, hands-on technical work rather than budget authority",
+  "sentiment": "positive",
+  "sentiment_rationale": "Progressed from technical concerns/risks to enthusiastic validation and final approval to ship",
+  "evidence": [
+    "ev_025",
+    "ev_032",
+    "ev_016"
+  ]
+}

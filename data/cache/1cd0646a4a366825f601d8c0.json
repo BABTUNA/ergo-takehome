@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "Sandbox on track for Monday"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Toledo",
+      "by": "p_lnakamura",
+      "context": "Toledo's work described as genuinely creative, handled by the mapper"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_lnakamura",
+      "label": "positive"
+    }
+  ]
+}

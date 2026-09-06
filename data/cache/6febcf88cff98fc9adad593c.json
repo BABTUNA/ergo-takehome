@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "Anything you'd like to see adjusted as you head into renewal planning?"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_rhea",
+      "quote": "as you head into renewal planning"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

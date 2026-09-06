@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "objection",
+      "who": "p_odiaz",
+      "quote": "data residency and the API rate limits probably"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "come prepared"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "she",
+      "by": "p_odiaz",
+      "context": "referring to someone who is thorough and will likely raise concerns about data residency and API rate limits"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "cautious"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "pricing_shared",
+      "who": "p_jordan",
+      "quote": "attaching our enterprise pricing one-pager as a first look"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Happy to talk through it live if useful"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "finalize the fuller model",
+      "due": null
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

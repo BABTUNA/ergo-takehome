@@ -1,0 +1,33 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_ifarah",
+      "quote": "Marcus asked me to start our vendor pass early"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_ifarah",
+      "quote": "Please send: W-9, insurance certs, your standard MSA, and SOC 2 report"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_ifarah",
+      "quote": "Standard review is two weeks"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Marcus",
+      "by": "p_ifarah",
+      "context": "Asked p_ifarah to start vendor pass early"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_ifarah",
+      "label": "direct"
+    }
+  ]
+}

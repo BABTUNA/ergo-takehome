@@ -1,0 +1,30 @@
+{
+  "signals": [
+    {
+      "tag": "risk_resolved",
+      "who": "p_jordan",
+      "quote": "that was a queue backup on our side during a deploy window. Fixed"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "flag your account for the off-peak deploy group going forward",
+      "due": null
+    }
+  ],
+  "mentions": [
+    {
+      "name": "our team",
+      "by": "p_jordan",
+      "context": "checked with team about queue backup issue"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "helpful"
+    }
+  ]
+}

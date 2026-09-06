@@ -1,0 +1,17 @@
+{
+  "signals": [],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Sarah",
+      "by": "p_jordan",
+      "context": "Confirming that a channel is live as previously discussed with Sarah, noting it's faster than email for quick communication"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

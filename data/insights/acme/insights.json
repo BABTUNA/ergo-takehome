@@ -12,13 +12,12 @@
   "people": {
     "p_jordan": {
       "role": "seller",
-      "role_rationale": "Seller-side rep driving next steps, commitments, and proposal delivery for Acme deal.",
+      "role_rationale": "Seller-side rep driving next steps, demos, and proposal delivery for Acme deal.",
       "seniority": "team",
-      "seniority_rationale": "No title given; behavior shows execution-level coordination (scheduling, docs, proposal) not final authority.",
+      "seniority_rationale": "Handles execution tasks like demos, docs, and proposals rather than exec-level decisions.",
       "sentiment": "positive",
-      "sentiment_rationale": "Consistently positive/proactive tone throughout, maintaining momentum with concrete commitments through early April.",
+      "sentiment_rationale": "Consistently positive/collaborative tone with steady commitments kept and momentum toward proposal delivery.",
       "evidence": [
-        "ev_001",
         "ev_022",
         "ev_023",
         "ev_035"
@@ -32,16 +31,16 @@
     },
     "p_dwhitfield": {
       "role": "champion",
-      "role_rationale": "Drives internal process, coordinates technical team, and pushes deal forward with buying signals and urgency",
+      "role_rationale": "Drives process internally, coordinates stakeholders, and pushes deal forward enthusiastically",
       "seniority": "director",
-      "seniority_rationale": "Title states Director of Operations, consistent with coordinating role rather than final sign-off authority (which sits with CTO Marcus)",
+      "seniority_rationale": "Title is Director of Operations, defers final sign-off to CTO Marcus",
       "sentiment": "positive",
-      "sentiment_rationale": "Tone progresses from pragmatic to enthusiastic/positive with clear buying signals and urgency around quarter-end approval",
+      "sentiment_rationale": "Consistently enthusiastic and rising momentum, culminating in excited proposal request",
       "evidence": [
         "ev_004",
-        "ev_010",
         "ev_033",
-        "ev_034"
+        "ev_034",
+        "ev_035"
       ],
       "stats": {
         "events": 8,
@@ -52,15 +51,15 @@
     },
     "p_lnakamura": {
       "role": "champion",
-      "role_rationale": "Actively tested product against real data, drove internal validation, and delivered final eng sign-off ('ship it')",
+      "role_rationale": "Engineering Lead actively testing, providing exports, and pushing final positive verdict to move deal forward",
       "seniority": "team",
       "seniority_rationale": "Title is Engineering Lead, hands-on technical work rather than budget authority",
       "sentiment": "positive",
-      "sentiment_rationale": "Trend moves from analytical/cautionary early on to enthusiastic and fully positive by deal end",
+      "sentiment_rationale": "Progressed from technical concerns/risks to enthusiastic validation and final approval to ship",
       "evidence": [
         "ev_025",
-        "ev_024",
-        "ev_032"
+        "ev_032",
+        "ev_016"
       ],
       "stats": {
         "events": 11,
@@ -71,11 +70,11 @@
     },
     "p_mwebb": {
       "role": "economic_buyer",
-      "role_rationale": "CTO directing next steps, pushing procurement/legal, and setting pricing structure expectations shows budget/decision control.",
+      "role_rationale": "CTO directing next steps, setting deadlines for procurement/legal, and controlling evaluation direction",
       "seniority": "exec",
-      "seniority_rationale": "CTO title, C-suite equals exec.",
+      "seniority_rationale": "Title is CTO, C-suite",
       "sentiment": "positive",
-      "sentiment_rationale": "Consistent buying signals, expansion talk, and proactive procurement push show rising, engaged interest despite pragmatic concerns.",
+      "sentiment_rationale": "Buying signals and expansion talk increasing over time despite pricing and reliability concerns",
       "evidence": [
         "ev_009",
         "ev_028"
@@ -89,12 +88,13 @@
     },
     "p_sam": {
       "role": "seller",
-      "role_rationale": "Seller-side rep driving technical delivery and next steps on the deal.",
+      "role_rationale": "Seller-side rep driving technical discussions and commitments toward closing the deal.",
       "seniority": "team",
-      "seniority_rationale": "Handles hands-on technical execution (sandbox, exports, BOM mapping) rather than final sign-off or budget authority.",
+      "seniority_rationale": "No title given; behavior shows hands-on execution (sandbox setup, technical specs) typical of an individual contributor, not final sign-off authority.",
       "sentiment": "positive",
-      "sentiment_rationale": "Consistently positive/confident tone with kept commitments and enthusiastic praise of results.",
+      "sentiment_rationale": "Consistent collaborative-to-enthusiastic tone with kept commitments and positive milestones like the sandbox success.",
       "evidence": [
+        "ev_011",
         "ev_013",
         "ev_016",
         "ev_017",
@@ -109,11 +109,11 @@
     },
     "p_ifarah": {
       "role": "evaluator",
-      "role_rationale": "Procurement Manager conducting vendor review process, gathering docs and setting timelines rather than making final call",
+      "role_rationale": "Procurement Manager running vendor due diligence process (documents, MSA, SOC 2) rather than championing or owning budget.",
       "seniority": "team",
-      "seniority_rationale": "Title indicates manager-level; references Marcus for direction, suggesting she is not the final decision-maker",
+      "seniority_rationale": "Title is Procurement Manager, a functional/team-level role handling operational vendor review, not final sign-off.",
       "sentiment": "positive",
-      "sentiment_rationale": "Moved from procedural request to affirming package looks complete and readiness to proceed",
+      "sentiment_rationale": "Moved from standard document requests to 'package looks complete' and readiness for proposal, showing increasing positivity.",
       "evidence": [
         "ev_021",
         "ev_031"
@@ -127,11 +127,11 @@
     },
     "p_ava": {
       "role": "seller",
-      "role_rationale": "Seller-side participant making proposal commitments to the buyer.",
+      "role_rationale": "Ava is on the seller side, making commitments on proposal delivery to the buyer (Marcus)",
       "seniority": "team",
-      "seniority_rationale": "No title given and no evidence of exec-level authority; handling proposal execution tasks suggests team-level role.",
+      "seniority_rationale": "No title given and behavior shows execution-level task ownership (drafting proposal) rather than final authority",
       "sentiment": "positive",
-      "sentiment_rationale": "Collaborative tone with clear next steps and committed deliverables shows positive momentum.",
+      "sentiment_rationale": "Collaborative tone and buying signal from exec sync indicate positive momentum",
       "evidence": [
         "ev_028",
         "ev_029"
@@ -159,8 +159,8 @@
     },
     {
       "tag": "buying_signal",
-      "who": "p_jordan",
-      "quote": "Adding Leo Nakamura, our eng lead - anything ops adopts, he has to live with",
+      "who": "p_dwhitfield",
+      "quote": "Worth a look. Adding Leo Nakamura, our eng lead - anything ops adopts, he has to live with.",
       "event_id": "ev_003"
     },
     {
@@ -188,6 +188,12 @@
       "event_id": "ev_004"
     },
     {
+      "tag": "technical_concern",
+      "who": "p_lnakamura",
+      "quote": "From my side the question is integration. We're on a mix of SAP and a homegrown WMS at the Toledo plant. What does connecting that look like?",
+      "event_id": "ev_004"
+    },
+    {
       "tag": "next_step_set",
       "who": "p_jordan",
       "quote": "whenever Marcus has 40 minutes, we'll run the full demo",
@@ -212,27 +218,33 @@
       "event_id": "ev_007"
     },
     {
-      "tag": "objection",
-      "who": "p_mwebb",
-      "quote": "What's the story when a source schema changes without warning? Because that happens here monthly.",
-      "event_id": "ev_009"
-    },
-    {
-      "tag": "risk",
-      "who": "p_lnakamura",
-      "quote": "I tested the API docs against our WMS payloads last night. Two field types won't map cleanly, I'll send details.",
-      "event_id": "ev_009"
-    },
-    {
       "tag": "buying_signal",
       "who": "p_mwebb",
       "quote": "Alright. I'm interested.",
       "event_id": "ev_009"
     },
     {
+      "tag": "objection",
+      "who": "p_mwebb",
+      "quote": "I don't want a six-month professional services engagement.",
+      "event_id": "ev_009"
+    },
+    {
       "tag": "info_request",
       "who": "p_mwebb",
-      "quote": "What's a realistic rollout timeline for three plants? I don't want a six-month professional services engagement.",
+      "quote": "What's the story when a source schema changes without warning? Because that happens here monthly.",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mwebb",
+      "quote": "What's a realistic rollout timeline for three plants?",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "risk",
+      "who": "p_lnakamura",
+      "quote": "Two field types won't map cleanly, I'll send details.",
       "event_id": "ev_009"
     },
     {
@@ -244,7 +256,7 @@
     {
       "tag": "next_step_set",
       "who": "p_dwhitfield",
-      "quote": "As promised, one channel instead of forty email threads. Leo, Sam - it's all yours for the technical stuff.",
+      "quote": "Leo, Sam - it's all yours for the technical stuff.",
       "event_id": "ev_010"
     },
     {
@@ -272,7 +284,7 @@
       "event_id": "ev_012"
     },
     {
-      "tag": "technical_capability",
+      "tag": "technical_requirement",
       "who": "p_sam",
       "quote": "10k requests/min sustained, bursts to 50k. Toledo's bursts won't touch that.",
       "event_id": "ev_013"
@@ -326,7 +338,7 @@
       "event_id": "ev_018"
     },
     {
-      "tag": "info_request",
+      "tag": "info_provided",
       "who": "p_lnakamura",
       "quote": "exports from all three plants are in your secure upload",
       "event_id": "ev_019"
@@ -392,7 +404,7 @@
       "event_id": "ev_026"
     },
     {
-      "tag": "process_concern",
+      "tag": "process_observation",
       "who": "p_dwhitfield",
       "quote": "watching this thread with joy. this is the monday ritual dying in real time",
       "event_id": "ev_027"
@@ -425,6 +437,12 @@
       "tag": "next_step_set",
       "who": "p_ava",
       "quote": "proposal by mid-April with both pricing paths",
+      "event_id": "ev_029"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_ava",
+      "quote": "Great exec sync with Marcus today",
       "event_id": "ev_029"
     },
     {
@@ -486,6 +504,12 @@
       "who": "p_jordan",
       "quote": "You'll have it by the 13th.",
       "event_id": "ev_035"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "Thanks for keeping this moving so cleanly, Dana.",
+      "event_id": "ev_035"
     }
   ],
   "commitments": [
@@ -503,13 +527,13 @@
       "what": "Coordinate demo times over email",
       "due": "",
       "origin_event": "ev_004",
-      "status": "open"
+      "status": "kept"
     },
     {
       "by": "p_jordan",
       "to": "p_lnakamura",
       "what": "API docs and SAP connector spec included",
-      "due": "",
+      "due": null,
       "origin_event": "ev_005",
       "status": "open"
     },
@@ -522,9 +546,9 @@
       "status": "kept"
     },
     {
-      "by": "p_jordan",
-      "to": "p_lnakamura",
-      "what": "Sam will scope the field type mapping issues in a technical session",
+      "by": "p_lnakamura",
+      "to": "p_jordan",
+      "what": "Send details on two field types that won't map cleanly",
       "due": "",
       "origin_event": "ev_009",
       "status": "kept"
@@ -572,73 +596,25 @@
     {
       "by": "p_lnakamura",
       "to": null,
-      "what": "exports",
+      "what": "exports to you",
       "due": "end of next week",
       "origin_event": "ev_018",
       "status": "kept"
     },
     {
-      "by": "p_lnakamura",
-      "to": "p_sam",
-      "what": "Sandbox delivery",
-      "due": "Monday",
-      "origin_event": "ev_020",
-      "status": "kept"
-    },
-    {
-      "by": "p_jordan",
-      "to": "p_ifarah",
-      "what": "send W-9, insurance certs, standard MSA, and SOC 2 report",
-      "due": "Standard review is two weeks",
-      "origin_event": "ev_021",
-      "status": "kept"
-    },
-    {
-      "by": "p_jordan",
-      "to": "p_ifarah, p_dwhitfield",
-      "what": "connect our legal with yours directly if anything in the MSA needs discussion",
-      "due": "",
-      "origin_event": "ev_022",
-      "status": "open"
-    },
-    {
       "by": "p_ava",
       "to": "p_mwebb",
-      "what": "Structure pricing as a five-site ramp with the discount locked now",
-      "due": "",
-      "origin_event": "ev_028",
-      "status": "open"
-    },
-    {
-      "by": "p_jordan",
-      "to": "p_mwebb",
-      "what": "Model both paths in the proposal",
-      "due": "",
-      "origin_event": "ev_028",
-      "status": "kept"
-    },
-    {
-      "by": "p_ava",
-      "to": "p_mwebb",
-      "what": "Deliver proposal",
+      "what": "You'll have it [the proposal]",
       "due": "mid-April",
       "origin_event": "ev_028",
       "status": "open"
     },
     {
       "by": "p_ava",
-      "to": "p_ava",
+      "to": null,
       "what": "proposal with both pricing paths",
       "due": "mid-April",
       "origin_event": "ev_029",
-      "status": "open"
-    },
-    {
-      "by": "p_ifarah",
-      "to": "p_jordan",
-      "what": "be ready to proceed",
-      "due": "when the proposal lands",
-      "origin_event": "ev_031",
       "status": "open"
     },
     {
@@ -652,13 +628,29 @@
     {
       "by": "p_jordan",
       "to": "p_dwhitfield",
-      "what": "Proposal delivery",
+      "what": "deliver proposal",
       "due": "the 13th",
       "origin_event": "ev_035",
       "status": "open"
     }
   ],
   "ghosts": [
+    {
+      "name": "toledo",
+      "label": "toledo",
+      "named": false,
+      "count": 3,
+      "events": [
+        "ev_012",
+        "ev_013",
+        "ev_020"
+      ],
+      "contexts": [
+        "system that syncs in bursts, relevant to their nested BOM structure implementation",
+        "Performance comparison - Toledo's bursts won't reach the 50k threshold",
+        "Toledo's work described as genuinely creative, handled by the mapper"
+      ]
+    },
     {
       "name": "legal",
       "label": "legal",
@@ -669,8 +661,8 @@
         "ev_031"
       ],
       "contexts": [
-        "seller's legal team available to connect with buyer's legal team regarding MSA discussion",
-        "legal team providing standard redlines on the MSA"
+        "Offering to connect seller's legal team with buyer's legal team for MSA discussion",
+        "Legal team providing standard redlines on the MSA"
       ]
     }
   ]

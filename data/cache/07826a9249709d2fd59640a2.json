@@ -1,0 +1,33 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_mjones",
+      "quote": "security questionnaire sent to your email just now"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_mjones",
+      "quote": "also need to schedule that live architecture review, my team wants 90 minutes with your data layer people"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "who should I coordinate with?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "data layer people",
+      "by": "p_mjones",
+      "context": "team members needed for 90-minute live architecture review"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_mjones",
+      "label": "neutral"
+    }
+  ]
+}

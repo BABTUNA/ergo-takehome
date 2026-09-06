@@ -1,0 +1,12 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Asks detailed technical/reporting questions typical of someone assessing product fit",
+  "seniority": "team",
+  "seniority_rationale": "Title of Business Analyst indicates individual contributor level",
+  "sentiment": "neutral",
+  "sentiment_rationale": "Consistent neutral tone with information-gathering questions, no clear positive or negative signals",
+  "evidence": [
+    "ev_011",
+    "ev_037"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "fulfills": true,
+  "why": "Person identified nested BOM structure as one of two field types that won't map cleanly, fulfilling the promised delivery of details on problematic field types"
+}

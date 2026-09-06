@@ -1,0 +1,95 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_rhea",
+      "quote": "Good, because that's the part I'm here for."
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_rhea",
+      "quote": "What does this look like at 500 seats? I need total cost, not list price. Implementation, support tier, the real number."
+    },
+    {
+      "tag": "timeline_constraint",
+      "who": "p_rhea",
+      "quote": "We start renewal planning for our other vendors in April and this either fits in that cycle or waits a year."
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_rhea",
+      "quote": "What's your pricing model when seats fluctuate? We're seasonal. I don't want to pay January rates for July headcount."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_npark",
+      "quote": "Does the audit trail export? We report on reconciliation exceptions quarterly."
+    },
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "Priya's team will want to see the SSO flow before we sign anything. She runs engineering and she's strict about auth."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "I'd like to get a sandbox going with our real schemas next."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "put together a full ROI breakdown, real cost against the hours you're losing",
+      "due": "this week"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "run a session with Priya's team to show the SSO flow",
+      "due": "whenever"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "make sure the breakdown models your seasonality",
+      "due": ""
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "have Sam set up a sandbox with real schemas",
+      "due": "this week"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Priya",
+      "by": "p_odiaz",
+      "context": "runs engineering and will need to review SSO flow before signing"
+    },
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "will set up sandbox environment"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "professional"
+    },
+    {
+      "who": "p_rhea",
+      "label": "direct"
+    },
+    {
+      "who": "p_odiaz",
+      "label": "pragmatic"
+    },
+    {
+      "who": "p_npark",
+      "label": "neutral"
+    }
+  ]
+}

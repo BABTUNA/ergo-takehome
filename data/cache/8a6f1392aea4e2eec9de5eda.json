@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "agreement",
+      "who": "p_jordan",
+      "quote": "Completely agree"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "I'll set up an intro this coming week"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_evasquez",
+      "what": "set up an intro",
+      "due": "this coming week"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Ava Chen",
+      "by": "p_jordan",
+      "context": "VP of Sales who would be counterpart for the buyer"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Running exception flow on historical data does not fulfill the promise of having real flows running in production early next week"
+}

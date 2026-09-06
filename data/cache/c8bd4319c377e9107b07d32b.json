@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "proposal request just went to jordan by email"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "excited over here"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "jordan",
+      "by": "p_dwhitfield",
+      "context": "proposal request was sent to jordan by email"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_dwhitfield",
+      "label": "enthusiastic"
+    }
+  ]
+}

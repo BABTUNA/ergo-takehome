@@ -1,0 +1,14 @@
+{
+  "role": "champion",
+  "role_rationale": "Drives process internally, coordinates stakeholders, and pushes deal forward enthusiastically",
+  "seniority": "director",
+  "seniority_rationale": "Title is Director of Operations, defers final sign-off to CTO Marcus",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently enthusiastic and rising momentum, culminating in excited proposal request",
+  "evidence": [
+    "ev_004",
+    "ev_033",
+    "ev_034",
+    "ev_035"
+  ]
+}

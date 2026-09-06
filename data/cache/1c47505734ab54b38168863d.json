@@ -1,0 +1,18 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Driving technical/security review, asking detailed integration and compliance questions, gatekeeping formal sign-off process.",
+  "seniority": "director",
+  "seniority_rationale": "Title is Director of Engineering, consistent with managing technical evaluation rather than company-wide budget.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Started cautious but progressed through satisfied answers, positive buying signals, and active next-step scheduling.",
+  "evidence": [
+    "ev_006",
+    "ev_010",
+    "ev_011",
+    "ev_012",
+    "ev_017",
+    "ev_018",
+    "ev_021",
+    "ev_024"
+  ]
+}

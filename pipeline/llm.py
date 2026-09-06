@@ -62,7 +62,7 @@ def _call(model, prompt):
     if model == HAIKU:
         kwargs["temperature"] = 0  # newer models reject the param
     resp = _get_client().messages.create(**kwargs)
-    return resp.content[0].text
+    return "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
 
 
 def complete(model, prompt, required_keys=()):

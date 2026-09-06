@@ -12,13 +12,12 @@
   "people": {
     "p_jordan": {
       "role": "seller",
-      "role_rationale": "Jordan Lee is on the seller side, managing demos, pricing, and follow-ups for Globex.",
+      "role_rationale": "Seller-side rep driving demos, pricing, and technical sessions for Globex.",
       "seniority": "team",
-      "seniority_rationale": "No title given; behavior shows execution-level work (scheduling, sending one-pagers, coordinating sandbox) rather than final authority.",
+      "seniority_rationale": "Handles operational tasks like sandbox setup and scheduling rather than budget or sign-off authority.",
       "sentiment": "neutral",
-      "sentiment_rationale": "Tone has drifted from consistently positive early on to neutral/professional recently, with several broken commitments signaling flat momentum.",
+      "sentiment_rationale": "Tone stays mostly professional/neutral with several broken commitments (seasonality, ROI, sandbox) offsetting earlier positive momentum.",
       "evidence": [
-        "ev_009",
         "ev_025",
         "ev_033",
         "ev_035"
@@ -32,16 +31,18 @@
     },
     "p_odiaz": {
       "role": "champion",
-      "role_rationale": "Drives evaluation internally, rallies stakeholders, pushes for decision, and advocates the tool to his team.",
+      "role_rationale": "Actively drives internal buy-in, coordinates stakeholders, pushes for decision, and advocates internally for the deal",
       "seniority": "director",
-      "seniority_rationale": "Title is Director of IT, and he defers budget/sign-off decisions above 50K to finance and Rhea.",
+      "seniority_rationale": "Title states Director of IT; defers budget sign-off above $50K to others, indicating non-exec level",
       "sentiment": "positive",
-      "sentiment_rationale": "Consistently enthusiastic and urgent tone with growing internal buy-in and no unresolved negativity.",
+      "sentiment_rationale": "Consistent buying signals and urgency escalating over time, culminating in strong endorsement and push to close this month",
       "evidence": [
+        "ev_003",
+        "ev_007",
+        "ev_024",
         "ev_027",
         "ev_034",
-        "ev_037",
-        "ev_007"
+        "ev_037"
       ],
       "stats": {
         "events": 17,
@@ -52,15 +53,15 @@
     },
     "p_rhea": {
       "role": "economic_buyer",
-      "role_rationale": "Focused on total cost across 500 seats, seasonality pricing, and controls the renewal cycle timing",
+      "role_rationale": "Focused on total cost, seat pricing, and ties purchase to company-wide vendor renewal cycle timing.",
       "seniority": "exec",
-      "seniority_rationale": "Drives vendor renewal planning cycle and demands full cost accountability, indicating budget authority",
+      "seniority_rationale": "Controls/drives the renewal planning cycle and budget-level cost analysis across seats.",
       "sentiment": "wary",
-      "sentiment_rationale": "Initial buying interest turning urgent and pressuring as promised ROI breakdown remains undelivered (broken commitments)",
+      "sentiment_rationale": "Started direct and engaged but repeated unmet commitments on ROI breakdown have left key info requests unresolved, cooling momentum.",
       "evidence": [
         "ev_011",
         "ev_022",
-        "ev_023"
+        "ev_033"
       ],
       "stats": {
         "events": 2,
@@ -71,11 +72,11 @@
     },
     "p_npark": {
       "role": "evaluator",
-      "role_rationale": "Asking technical/functional questions about export formats and audit trail, typical of someone assessing fit",
+      "role_rationale": "Asks detailed technical/reporting questions typical of someone assessing product fit",
       "seniority": "team",
-      "seniority_rationale": "Title of Business Analyst indicates individual contributor level, not final decision authority",
+      "seniority_rationale": "Title of Business Analyst indicates individual contributor level",
       "sentiment": "neutral",
-      "sentiment_rationale": "Consistent neutral tone across both interactions, focused on functional requirements rather than expressing enthusiasm or concern",
+      "sentiment_rationale": "Consistent neutral tone with information-gathering questions, no clear positive or negative signals",
       "evidence": [
         "ev_011",
         "ev_037"
@@ -89,16 +90,14 @@
     },
     "p_sam": {
       "role": "seller",
-      "role_rationale": "Seller-side technical contact handling implementation details, docs, and commitments for Globex.",
+      "role_rationale": "Seller-side technical contact handling implementation details and requests, not a buyer-side stakeholder.",
       "seniority": "team",
-      "seniority_rationale": "Handles technical execution and support tasks (schema exports, docs, questionnaires) rather than strategic sign-off.",
-      "sentiment": "positive",
-      "sentiment_rationale": "Engaged and encouraging tone throughout, with positive reinforcement on buyer's technical findings despite one broken commitment.",
+      "seniority_rationale": "Handles hands-on technical tasks (schema exports, docs, creds) typical of an implementation/engineering role, not final sign-off.",
+      "sentiment": "wary",
+      "sentiment_rationale": "Positive engagement mid-deal but a broken commitment on delivery timeline introduces risk despite rising momentum.",
       "evidence": [
-        "ev_014",
         "ev_021",
         "ev_028",
-        "ev_032",
         "ev_037"
       ],
       "stats": {
@@ -147,12 +146,6 @@
       "event_id": "ev_003"
     },
     {
-      "tag": "info_request",
-      "who": "p_odiaz",
-      "quote": "What does implementation look like?",
-      "event_id": "ev_003"
-    },
-    {
       "tag": "next_step_set",
       "who": "p_odiaz",
       "quote": "Send me something I can forward internally. I'll set up a proper demo with a couple more people.",
@@ -165,9 +158,15 @@
       "event_id": "ev_004"
     },
     {
-      "tag": "info_request",
+      "tag": "next_step_set",
       "who": "p_jordan",
       "quote": "Let me know who you'd like in the demo",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "the one-pager you can forward internally",
       "event_id": "ev_004"
     },
     {
@@ -231,18 +230,6 @@
       "event_id": "ev_011"
     },
     {
-      "tag": "business_case_validation",
-      "who": "p_odiaz",
-      "quote": "For context, this is the fifteen hours a week I keep complaining about.",
-      "event_id": "ev_011"
-    },
-    {
-      "tag": "info_request",
-      "who": "p_npark",
-      "quote": "Does the audit trail export? We report on reconciliation exceptions quarterly.",
-      "event_id": "ev_011"
-    },
-    {
       "tag": "pricing_concern",
       "who": "p_rhea",
       "quote": "What does this look like at 500 seats? I need total cost, not list price. Implementation, support tier, the real number.",
@@ -255,15 +242,21 @@
       "event_id": "ev_011"
     },
     {
-      "tag": "risk",
-      "who": "p_odiaz",
-      "quote": "Priya's team will want to see the SSO flow before we sign anything. She runs engineering and she's strict about auth.",
-      "event_id": "ev_011"
-    },
-    {
       "tag": "pricing_concern",
       "who": "p_rhea",
       "quote": "What's your pricing model when seats fluctuate? We're seasonal. I don't want to pay January rates for July headcount.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_npark",
+      "quote": "Does the audit trail export? We report on reconciliation exceptions quarterly.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "Priya's team will want to see the SSO flow before we sign anything. She runs engineering and she's strict about auth.",
       "event_id": "ev_011"
     },
     {
@@ -271,6 +264,12 @@
       "who": "p_odiaz",
       "quote": "I'd like to get a sandbox going with our real schemas next.",
       "event_id": "ev_011"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Figured this beats email for the sandbox work",
+      "event_id": "ev_012"
     },
     {
       "tag": "buying_signal",
@@ -328,8 +327,8 @@
     },
     {
       "tag": "buying_signal",
-      "who": "p_odiaz",
-      "quote": "Attached the tier structure",
+      "who": "p_jordan",
+      "quote": "Happy to walk Nina through the build-vs-buy math too, we have a calculator for exactly that",
       "event_id": "ev_020"
     },
     {
@@ -393,15 +392,15 @@
       "event_id": "ev_025"
     },
     {
-      "tag": "info_request",
+      "tag": "pricing_shared",
       "who": "p_jordan",
-      "quote": "Happy to talk through it live if useful",
+      "quote": "attaching our enterprise pricing one-pager as a first look",
       "event_id": "ev_026"
     },
     {
       "tag": "next_step_set",
       "who": "p_jordan",
-      "quote": "attaching our enterprise pricing one-pager as a first look while we finalize the fuller model",
+      "quote": "Happy to talk through it live if useful",
       "event_id": "ev_026"
     },
     {
@@ -417,21 +416,21 @@
       "event_id": "ev_028"
     },
     {
-      "tag": "risk",
+      "tag": "process_requirement",
       "who": "p_odiaz",
       "quote": "before anything gets signed, our security team has to review the vendor package",
-      "event_id": "ev_029"
-    },
-    {
-      "tag": "next_step_set",
-      "who": "p_odiaz",
-      "quote": "I'll send their questionnaire once the sandbox evaluation wraps",
       "event_id": "ev_029"
     },
     {
       "tag": "risk",
       "who": "p_odiaz",
       "quote": "Usually takes them two to three weeks, so let's not let it be the long pole",
+      "event_id": "ev_029"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "I'll send their questionnaire once the sandbox evaluation wraps",
       "event_id": "ev_029"
     },
     {
@@ -461,17 +460,17 @@
     {
       "tag": "info_request",
       "who": "p_jordan",
-      "quote": "wanted to make sure the pricing one-pager landed",
+      "quote": "Anything you'd like to see adjusted as you head into renewal planning?",
       "event_id": "ev_033"
     },
     {
       "tag": "buying_signal",
-      "who": "p_jordan",
+      "who": "p_rhea",
       "quote": "as you head into renewal planning",
       "event_id": "ev_033"
     },
     {
-      "tag": "buying_signal",
+      "tag": "next_step_set",
       "who": "p_odiaz",
       "quote": "pushing internally to get a decision this month",
       "event_id": "ev_034"
@@ -535,34 +534,18 @@
     {
       "by": "p_jordan",
       "to": "p_odiaz",
-      "what": "Send an invite for 9am pacific",
-      "due": "Thursday",
-      "origin_event": "ev_002",
-      "status": "broken"
-    },
-    {
-      "by": "p_jordan",
-      "to": "p_odiaz",
       "what": "Send a recap",
       "due": "today",
       "origin_event": "ev_003",
       "status": "kept"
     },
     {
-      "by": "p_jordan",
-      "to": "p_odiaz",
-      "what": "Get the demo on the calendar",
+      "by": "p_odiaz",
+      "to": "p_jordan",
+      "what": "Set up a proper demo with a couple more people",
       "due": "",
       "origin_event": "ev_003",
       "status": "kept"
-    },
-    {
-      "by": "p_jordan",
-      "to": "p_odiaz",
-      "what": "recap from today attached, plus the one-pager you can forward internally",
-      "due": null,
-      "origin_event": "ev_004",
-      "status": "open"
     },
     {
       "by": "p_odiaz",
@@ -581,25 +564,17 @@
       "status": "kept"
     },
     {
-      "by": "p_odiaz",
-      "to": "p_jordan",
-      "what": "get it scheduled on our side",
-      "due": "Second week of March",
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "prep for Rhea specifically",
+      "due": null,
       "origin_event": "ev_007",
       "status": "kept"
     },
     {
       "by": "p_jordan",
-      "to": "p_odiaz",
-      "what": "Send demo session invite",
-      "due": "shortly",
-      "origin_event": "ev_010",
-      "status": "kept"
-    },
-    {
-      "by": "p_jordan",
       "to": "p_rhea",
-      "what": "Put together a full ROI breakdown, real cost against the hours you're losing",
+      "what": "put together a full ROI breakdown, real cost against the hours you're losing",
       "due": "this week",
       "origin_event": "ev_011",
       "status": "broken"
@@ -607,15 +582,15 @@
     {
       "by": "p_jordan",
       "to": "p_odiaz",
-      "what": "Run a session with Priya's team on the SSO flow",
-      "due": "",
+      "what": "run a session with Priya's team to show the SSO flow",
+      "due": "whenever",
       "origin_event": "ev_011",
       "status": "open"
     },
     {
       "by": "p_jordan",
       "to": "p_rhea",
-      "what": "Make sure the breakdown models your seasonality",
+      "what": "make sure the breakdown models your seasonality",
       "due": "",
       "origin_event": "ev_011",
       "status": "open"
@@ -623,7 +598,7 @@
     {
       "by": "p_jordan",
       "to": "p_odiaz",
-      "what": "Have Sam set up a sandbox with real schemas",
+      "what": "have Sam set up a sandbox with real schemas",
       "due": "this week",
       "origin_event": "ev_011",
       "status": "broken"
@@ -632,7 +607,7 @@
       "by": "p_odiaz",
       "to": null,
       "what": "staging creds coming after our infra guy rotates them",
-      "due": "",
+      "due": null,
       "origin_event": "ev_016",
       "status": "open"
     },
@@ -655,24 +630,16 @@
     {
       "by": "p_jordan",
       "to": "p_rhea",
-      "what": "provide full ROI breakdown with seasonality model",
+      "what": "provide the full breakdown of the seasonality model",
       "due": "this week",
       "origin_event": "ev_023",
       "status": "broken"
     },
     {
       "by": "p_jordan",
-      "to": null,
-      "what": "sent her a first-look one-pager",
-      "due": null,
-      "origin_event": "ev_025",
-      "status": "kept"
-    },
-    {
-      "by": "p_jordan",
       "to": "p_rhea",
       "what": "finalize the fuller model",
-      "due": "",
+      "due": null,
       "origin_event": "ev_026",
       "status": "open"
     },
@@ -680,31 +647,15 @@
       "by": "p_odiaz",
       "to": "p_jordan",
       "what": "send their questionnaire once the sandbox evaluation wraps",
-      "due": "after sandbox evaluation completes",
+      "due": "after sandbox evaluation completion",
       "origin_event": "ev_029",
-      "status": "open"
-    },
-    {
-      "by": "p_sam",
-      "to": null,
-      "what": "Sent SAML + OIDC guides plus the SCIM provisioning doc.",
-      "due": null,
-      "origin_event": "ev_032",
       "status": "open"
     },
     {
       "by": "p_odiaz",
       "to": "p_sam",
-      "what": "Send security questionnaire",
+      "what": "send the security questionnaire",
       "due": "this week",
-      "origin_event": "ev_037",
-      "status": "open"
-    },
-    {
-      "by": "p_sam",
-      "to": "p_odiaz",
-      "what": "Provide compliance docs",
-      "due": "",
       "origin_event": "ev_037",
       "status": "open"
     }
@@ -723,6 +674,18 @@
       ]
     },
     {
+      "name": "solutions engineers",
+      "label": "solutions engineers",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_003"
+      ],
+      "contexts": [
+        "One of their solutions engineers would be paired with the buyer's team during implementation"
+      ]
+    },
+    {
       "name": "Priya",
       "label": "Priya",
       "named": true,
@@ -732,7 +695,7 @@
         "ev_034"
       ],
       "contexts": [
-        "Runs engineering and will need to review SSO flow before signing; strict about auth",
+        "runs engineering and will need to review SSO flow before signing",
         "wants a technical review with her team first"
       ]
     },
@@ -745,7 +708,7 @@
         "ev_016"
       ],
       "contexts": [
-        "responsible for rotating staging credentials"
+        "responsible for rotating credentials before staging creds can be provided"
       ]
     },
     {
@@ -773,15 +736,15 @@
       ]
     },
     {
-      "name": "compliance",
-      "label": "compliance",
+      "name": "team",
+      "label": "team",
       "named": false,
       "count": 1,
       "events": [
         "ev_037"
       ],
       "contexts": [
-        "Compliance docs are ready to go"
+        "Omar's team needs the sandbox functionality"
       ]
     }
   ]

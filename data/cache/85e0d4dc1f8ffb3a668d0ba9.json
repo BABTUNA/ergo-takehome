@@ -1,0 +1,15 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving technical discussions and commitments toward closing the deal.",
+  "seniority": "team",
+  "seniority_rationale": "No title given; behavior shows hands-on execution (sandbox setup, technical specs) typical of an individual contributor, not final sign-off authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistent collaborative-to-enthusiastic tone with kept commitments and positive milestones like the sandbox success.",
+  "evidence": [
+    "ev_011",
+    "ev_013",
+    "ev_016",
+    "ev_017",
+    "ev_026"
+  ]
+}

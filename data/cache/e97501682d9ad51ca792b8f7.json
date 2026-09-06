@@ -1,0 +1,14 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving proposal, sending pricing, demos, and onboarding commitments to Initech.",
+  "seniority": "team",
+  "seniority_rationale": "No title given and behavior shows hands-on execution (scheduling, follow-ups) rather than final authority, suggesting individual contributor.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/helpful tone throughout, proactively pushing next steps despite some unanswered follow-ups from buyer side.",
+  "evidence": [
+    "ev_010",
+    "ev_015",
+    "ev_020",
+    "ev_021"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "sent her a first-look one-pager in the meantime"
+    },
+    {
+      "tag": "risk",
+      "who": "p_jordan",
+      "quote": "the seasonality modeling took longer than planned"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "her",
+      "by": "p_jordan",
+      "context": "recipient of the first-look one-pager sent by Jordan"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

@@ -11,12 +11,12 @@
   },
   "people": {
     "p_thale": {
-      "role": "evaluator",
-      "role_rationale": "Coordinating an intro call on behalf of Sarah Bloom, acting as a scheduling/evaluating contact rather than decision-maker",
+      "role": "neutral",
+      "role_rationale": "Only facilitated an intro call on behalf of Sarah Bloom, no evaluative or decision-making activity shown",
       "seniority": "team",
-      "seniority_rationale": "Acts in a supporting/coordinating capacity for another named stakeholder, no indication of budget authority",
+      "seniority_rationale": "Acts as a scheduling/coordination point person, no indication of budget authority or exec deference",
       "sentiment": "neutral",
-      "sentiment_rationale": "Single interaction shows willingness to engage but a broken commitment (invite not sent) tempers positivity",
+      "sentiment_rationale": "Single neutral-toned interaction with a kept commitment, no strong signal either way",
       "evidence": [
         "ev_002"
       ],
@@ -29,13 +29,12 @@
     },
     "p_jordan": {
       "role": "seller",
-      "role_rationale": "Seller-side rep driving pricing, demos, and follow-ups for Initech deal.",
+      "role_rationale": "Seller-side rep managing the deal, making commitments and pushing next steps for Initech.",
       "seniority": "team",
-      "seniority_rationale": "Handles hands-on tasks like sending pricing and scheduling demos rather than exec-level decisions.",
+      "seniority_rationale": "No title given and behavior shows a hands-on rep executing tasks (demos, pricing, follow-ups) rather than exec-level authority.",
       "sentiment": "positive",
-      "sentiment_rationale": "Consistently helpful, proactive, and positive tone despite some broken commitments and slow internal review.",
+      "sentiment_rationale": "Consistently positive/helpful tone with proactive follow-ups, though slight tension emerging as internal review is delayed.",
       "evidence": [
-        "ev_007",
         "ev_010",
         "ev_015",
         "ev_020",
@@ -50,18 +49,17 @@
     },
     "p_sbloom": {
       "role": "champion",
-      "role_rationale": "Driving internal case, presenting to leadership, pushing deal forward with buying signals throughout",
+      "role_rationale": "Sarah is driving internal advocacy, building the business case, and presenting to stakeholders to push the deal through.",
       "seniority": "director",
-      "seniority_rationale": "Title is Director of Operations",
+      "seniority_rationale": "Title confirms Director of Operations, consistent with someone building a case rather than sole sign-off authority.",
       "sentiment": "positive",
-      "sentiment_rationale": "Consistently enthusiastic and engaged though cooling slightly with a broken update commitment and quiet period near end",
+      "sentiment_rationale": "Consistently enthusiastic and engaged with buying signals throughout, though recent quiet period and broken callback commitment show slight cooling.",
       "evidence": [
-        "ev_004",
         "ev_006",
         "ev_009",
-        "ev_014",
         "ev_017",
-        "ev_019"
+        "ev_019",
+        "ev_020"
       ],
       "stats": {
         "events": 9,
@@ -81,7 +79,7 @@
     {
       "tag": "next_step_set",
       "who": "p_thale",
-      "quote": "She's free Friday 8am pacific. Sending an invite unless I hear otherwise.",
+      "quote": "She's free Friday 8am pacific",
       "event_id": "ev_002"
     },
     {
@@ -91,21 +89,15 @@
       "event_id": "ev_004"
     },
     {
-      "tag": "buying_signal",
+      "tag": "objection",
       "who": "p_sbloom",
       "quote": "I've evaluated two other tools and both wanted us to rebuild everything their way.",
       "event_id": "ev_004"
     },
     {
-      "tag": "buying_signal",
-      "who": "p_sbloom",
-      "quote": "Get me a proper demo and I'll take it from there.",
-      "event_id": "ev_004"
-    },
-    {
       "tag": "next_step_set",
       "who": "p_sbloom",
-      "quote": "Realistically it starts and ends with me making the case internally.",
+      "quote": "Get me a proper demo and I'll take it from there.",
       "event_id": "ev_004"
     },
     {
@@ -133,13 +125,13 @@
       "event_id": "ev_006"
     },
     {
-      "tag": "next_step_set",
-      "who": "p_jordan",
+      "tag": "buying_signal",
+      "who": "p_sbloom",
       "quote": "pricing attached as promised, structured for your 400-person setup with the phased rollout we discussed",
       "event_id": "ev_007"
     },
     {
-      "tag": "buying_signal",
+      "tag": "next_step_set",
       "who": "p_jordan",
       "quote": "Also included a one-page internal pitch doc in case it helps you socialize it",
       "event_id": "ev_007"
@@ -159,17 +151,11 @@
     {
       "tag": "pricing_concern",
       "who": "p_sbloom",
-      "quote": "Trying to get the number under a threshold I know will fly",
-      "event_id": "ev_009"
-    },
-    {
-      "tag": "info_request",
-      "who": "p_sbloom",
       "quote": "does the per-seat price drop at 300+ seats",
       "event_id": "ev_009"
     },
     {
-      "tag": "info_request",
+      "tag": "pricing_concern",
       "who": "p_sbloom",
       "quote": "is the onboarding fee negotiable if we self-serve the training",
       "event_id": "ev_009"
@@ -177,7 +163,13 @@
     {
       "tag": "buying_signal",
       "who": "p_sbloom",
-      "quote": "as I build the case",
+      "quote": "Trying to get the number under a threshold I know will fly",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_sbloom",
+      "quote": "two questions as I build the case",
       "event_id": "ev_009"
     },
     {
@@ -219,7 +211,7 @@
     {
       "tag": "next_step_set",
       "who": "p_sbloom",
-      "quote": "that's going in the internal doc",
+      "quote": "perfect, that's going in the internal doc",
       "event_id": "ev_016"
     },
     {
@@ -231,19 +223,25 @@
     {
       "tag": "next_step_set",
       "who": "p_sbloom",
-      "quote": "circling back after our internal review wraps",
+      "quote": "internal review is underway, circling back after our internal review wraps",
+      "event_id": "ev_019"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "Should know more in a week or so",
       "event_id": "ev_019"
     },
     {
       "tag": "buying_signal",
-      "who": "p_jordan",
-      "quote": "sometimes a live walkthrough moves things faster than a deck",
+      "who": "p_sbloom",
+      "quote": "hope the review is going well",
       "event_id": "ev_020"
     },
     {
       "tag": "next_step_set",
       "who": "p_jordan",
-      "quote": "Happy to do a session with Gwen or whoever is weighing in",
+      "quote": "Happy to do a session with Gwen or whoever is weighing in, sometimes a live walkthrough moves things faster than a deck",
       "event_id": "ev_020"
     },
     {
@@ -261,17 +259,9 @@
   ],
   "commitments": [
     {
-      "by": "p_thale",
-      "to": "p_jordan",
-      "what": "Sending an invite",
-      "due": "Friday 8am pacific",
-      "origin_event": "ev_002",
-      "status": "broken"
-    },
-    {
-      "by": "p_thale",
-      "to": "p_jordan",
-      "what": "Attend Harborview intro for Sarah Bloom",
+      "by": "p_jordan",
+      "to": "p_thale",
+      "what": "Harborview intro for Sarah Bloom",
       "due": "Friday 8am",
       "origin_event": "ev_003",
       "status": "kept"
@@ -279,16 +269,8 @@
     {
       "by": "p_jordan",
       "to": "p_sbloom",
-      "what": "Schedule a demo",
+      "what": "Send demo times",
       "due": "early March",
-      "origin_event": "ev_004",
-      "status": "kept"
-    },
-    {
-      "by": "p_jordan",
-      "to": "p_sbloom",
-      "what": "Send times for the demo",
-      "due": "",
       "origin_event": "ev_004",
       "status": "kept"
     },
@@ -309,14 +291,6 @@
       "status": "kept"
     },
     {
-      "by": "p_jordan",
-      "to": "p_sbloom",
-      "what": "pricing attached",
-      "due": "as promised",
-      "origin_event": "ev_007",
-      "status": "kept"
-    },
-    {
       "by": "p_sbloom",
       "to": "p_jordan",
       "what": "report back once I've made the rounds",
@@ -327,7 +301,7 @@
     {
       "by": "p_jordan",
       "to": "p_sbloom",
-      "what": "300+ takes it down 12%, and we can waive half the onboarding fee for self-serve training",
+      "what": "waive half the onboarding fee for self-serve training",
       "due": "",
       "origin_event": "ev_010",
       "status": "open"
@@ -335,23 +309,7 @@
     {
       "by": "p_jordan",
       "to": null,
-      "what": "Kickoff within a week of signature",
-      "due": "within a week of signature",
-      "origin_event": "ev_015",
-      "status": "broken"
-    },
-    {
-      "by": "p_jordan",
-      "to": null,
-      "what": "first workflows live",
-      "due": "two weeks",
-      "origin_event": "ev_015",
-      "status": "broken"
-    },
-    {
-      "by": "p_jordan",
-      "to": "p_jordan",
-      "what": "be at desk to answer questions during meeting",
+      "what": "available at desk to answer questions during meeting",
       "due": "during meeting",
       "origin_event": "ev_018",
       "status": "open"
@@ -359,8 +317,8 @@
     {
       "by": "p_sbloom",
       "to": "p_jordan",
-      "what": "provide update after internal review completes",
-      "due": "in a week or so",
+      "what": "circling back after internal review wraps",
+      "due": "a week or so",
       "origin_event": "ev_019",
       "status": "broken"
     }
@@ -375,7 +333,7 @@
         "ev_003"
       ],
       "contexts": [
-        "Person being thanked in closing"
+        "person being thanked, likely p_thale or related to scheduling"
       ]
     },
     {
@@ -387,7 +345,7 @@
         "ev_004"
       ],
       "contexts": [
-        "Mentioned as having informed Jordan about ops workflow pain"
+        "Mentioned as having communicated ops workflow pain to Jordan"
       ]
     }
   ]

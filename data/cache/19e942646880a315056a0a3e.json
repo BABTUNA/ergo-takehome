@@ -1,0 +1,12 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Procurement Manager running vendor due diligence process (documents, MSA, SOC 2) rather than championing or owning budget.",
+  "seniority": "team",
+  "seniority_rationale": "Title is Procurement Manager, a functional/team-level role handling operational vendor review, not final sign-off.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Moved from standard document requests to 'package looks complete' and readiness for proposal, showing increasing positivity.",
+  "evidence": [
+    "ev_021",
+    "ev_031"
+  ]
+}

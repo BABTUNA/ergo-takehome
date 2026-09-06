@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "perfect, that's going in the internal doc"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sbloom",
+      "label": "positive"
+    }
+  ]
+}

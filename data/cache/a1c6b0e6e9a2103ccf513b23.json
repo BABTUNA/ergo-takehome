@@ -1,0 +1,13 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving demos, pricing, and technical sessions for Globex.",
+  "seniority": "team",
+  "seniority_rationale": "Handles operational tasks like sandbox setup and scheduling rather than budget or sign-off authority.",
+  "sentiment": "neutral",
+  "sentiment_rationale": "Tone stays mostly professional/neutral with several broken commitments (seasonality, ROI, sandbox) offsetting earlier positive momentum.",
+  "evidence": [
+    "ev_025",
+    "ev_033",
+    "ev_035"
+  ]
+}

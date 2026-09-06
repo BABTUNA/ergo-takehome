@@ -1,0 +1,1742 @@
+{
+  "deal": {
+    "id": "opp_004",
+    "name": "Acme Industrial - Multi-plant Inventory Sync",
+    "account": "Acme Industrial",
+    "amount": 80000,
+    "stage": "Proposal",
+    "close_date": "2026-04-24",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-12"
+  },
+  "snapshots": [
+    {
+      "t": "2026-02-16",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 4,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 1,
+          "quiet_days": null,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 2,
+          "days_stale": 3
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 1,
+          "days_stale": 3
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "100% of buyer contact runs through Dana Whitfield",
+          "evidence": [],
+          "suggested_move": "Ask Dana Whitfield to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 2,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-02-23",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 6,
+          "quiet_days": 6,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 6,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 5,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 5,
+          "days_stale": 3
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 4,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_lnakamura",
+          "weight": 3,
+          "days_stale": 3
+        }
+      ],
+      "flags": [
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        },
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 2,
+        "top_severity": "med"
+      }
+    },
+    {
+      "t": "2026-03-02",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 7,
+          "quiet_days": 4,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 7,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 6,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mwebb",
+          "name": "Marcus Webb",
+          "title": "CTO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 1,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 6,
+          "days_stale": 4
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 5,
+          "days_stale": 4
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_lnakamura",
+          "weight": 4,
+          "days_stale": 4
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 4
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 4
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 4
+        }
+      ],
+      "flags": [
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Marcus Webb (CTO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Marcus Webb before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "med"
+      }
+    },
+    {
+      "t": "2026-03-09",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 7,
+          "quiet_days": 11,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 8,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 7,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mwebb",
+          "name": "Marcus Webb",
+          "title": "CTO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 1,
+          "quiet_days": 11,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 4,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "toledo",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 2,
+          "mention_events": [
+            "ev_012",
+            "ev_013",
+            "ev_020"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 6,
+          "days_stale": 11
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 6,
+          "days_stale": 4
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_lnakamura",
+          "weight": 4,
+          "days_stale": 11
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 11
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 11
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 11
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 4
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 4
+        }
+      ],
+      "flags": [
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Marcus Webb (CTO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Marcus Webb before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 1,
+        "top_severity": "low"
+      }
+    },
+    {
+      "t": "2026-03-16",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 7,
+          "quiet_days": 18,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 8,
+          "quiet_days": 11,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 10,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mwebb",
+          "name": "Marcus Webb",
+          "title": "CTO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 1,
+          "quiet_days": 18,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 4,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "toledo",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 2,
+          "mention_events": [
+            "ev_012",
+            "ev_013",
+            "ev_020"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 6,
+          "days_stale": 18
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 6,
+          "days_stale": 11
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_lnakamura",
+          "weight": 4,
+          "days_stale": 18
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_sam",
+          "weight": 4,
+          "days_stale": 2
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 18
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 18
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 18
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 11
+        }
+      ],
+      "flags": [
+        {
+          "id": "cooling_key_contact",
+          "severity": "high",
+          "summary": "Dana Whitfield (champion) quiet for 11 days",
+          "evidence": [
+            "ev_004",
+            "ev_033",
+            "ev_034",
+            "ev_035"
+          ],
+          "suggested_move": "Re-engage Dana Whitfield with something of value, not a check-in"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Marcus Webb (CTO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Marcus Webb before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-23",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 9,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 10,
+          "quiet_days": 18,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 12,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mwebb",
+          "name": "Marcus Webb",
+          "title": "CTO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 1,
+          "quiet_days": 25,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 6,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ifarah",
+          "name": "Ines Farah",
+          "title": "Procurement Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "toledo",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 3,
+          "mention_events": [
+            "ev_012",
+            "ev_013",
+            "ev_020"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "legal",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_022",
+            "ev_031"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 7,
+          "days_stale": 2
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 6,
+          "days_stale": 18
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_sam",
+          "weight": 6,
+          "days_stale": 2
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_lnakamura",
+          "weight": 4,
+          "days_stale": 25
+        },
+        {
+          "a": "p_ifarah",
+          "b": "p_jordan",
+          "weight": 2,
+          "days_stale": 2
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 25
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 25
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 25
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_ifarah",
+          "weight": 1,
+          "days_stale": 2
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 18
+        }
+      ],
+      "flags": [
+        {
+          "id": "cooling_key_contact",
+          "severity": "high",
+          "summary": "Dana Whitfield (champion) quiet for 18 days",
+          "evidence": [
+            "ev_004",
+            "ev_033",
+            "ev_034",
+            "ev_035"
+          ],
+          "suggested_move": "Re-engage Dana Whitfield with something of value, not a check-in"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Marcus Webb (CTO) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Marcus Webb before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.5,
+        "engaged_buyers": 4,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-30",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 11,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 11,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 14,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mwebb",
+          "name": "Marcus Webb",
+          "title": "CTO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 7,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ifarah",
+          "name": "Ines Farah",
+          "title": "Procurement Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 9,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "toledo",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 3,
+          "mention_events": [
+            "ev_012",
+            "ev_013",
+            "ev_020"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "legal",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_022",
+            "ev_031"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 8,
+          "days_stale": 6
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 7,
+          "days_stale": 3
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_sam",
+          "weight": 7,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_lnakamura",
+          "weight": 5,
+          "days_stale": 6
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mwebb",
+          "weight": 2,
+          "days_stale": 2
+        },
+        {
+          "a": "p_ifarah",
+          "b": "p_jordan",
+          "weight": 2,
+          "days_stale": 9
+        },
+        {
+          "a": "p_ava",
+          "b": "p_jordan",
+          "weight": 2,
+          "days_stale": 2
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_sam",
+          "weight": 2,
+          "days_stale": 3
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 32
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 32
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_ifarah",
+          "weight": 1,
+          "days_stale": 9
+        },
+        {
+          "a": "p_ava",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 2
+        },
+        {
+          "a": "p_ava",
+          "b": "p_dwhitfield",
+          "weight": 1,
+          "days_stale": 2
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 6
+        },
+        {
+          "a": "p_ava",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 3
+        },
+        {
+          "a": "p_ava",
+          "b": "p_lnakamura",
+          "weight": 1,
+          "days_stale": 3
+        }
+      ],
+      "flags": [],
+      "rollup": {
+        "thread_score": 3.5,
+        "engaged_buyers": 4,
+        "highest_lane": "exec",
+        "open_flags": 0,
+        "top_severity": "none"
+      }
+    },
+    {
+      "t": "2026-04-06",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 14,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 14,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 15,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mwebb",
+          "name": "Marcus Webb",
+          "title": "CTO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 9,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 7,
+          "quiet_days": 10,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ifarah",
+          "name": "Ines Farah",
+          "title": "Procurement Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 3,
+          "quiet_days": 6,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 9,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "toledo",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 3,
+          "mention_events": [
+            "ev_012",
+            "ev_013",
+            "ev_020"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "legal",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 2,
+          "mention_events": [
+            "ev_022",
+            "ev_031"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 10,
+          "days_stale": 2
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 8,
+          "days_stale": 2
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_sam",
+          "weight": 7,
+          "days_stale": 10
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_lnakamura",
+          "weight": 5,
+          "days_stale": 13
+        },
+        {
+          "a": "p_ifarah",
+          "b": "p_jordan",
+          "weight": 3,
+          "days_stale": 6
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_sam",
+          "weight": 3,
+          "days_stale": 10
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mwebb",
+          "weight": 2,
+          "days_stale": 9
+        },
+        {
+          "a": "p_ava",
+          "b": "p_jordan",
+          "weight": 2,
+          "days_stale": 9
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 39
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 39
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_ifarah",
+          "weight": 1,
+          "days_stale": 16
+        },
+        {
+          "a": "p_ava",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 9
+        },
+        {
+          "a": "p_ava",
+          "b": "p_dwhitfield",
+          "weight": 1,
+          "days_stale": 9
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 13
+        },
+        {
+          "a": "p_ava",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 10
+        },
+        {
+          "a": "p_ava",
+          "b": "p_lnakamura",
+          "weight": 1,
+          "days_stale": 9
+        }
+      ],
+      "flags": [],
+      "rollup": {
+        "thread_score": 3.5,
+        "engaged_buyers": 4,
+        "highest_lane": "exec",
+        "open_flags": 0,
+        "top_severity": "none"
+      }
+    },
+    {
+      "t": "2026-04-07",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 14,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_dwhitfield",
+          "name": "Dana Whitfield",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 14,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_lnakamura",
+          "name": "Leo Nakamura",
+          "title": "Engineering Lead",
+          "side": "buyer",
+          "lane": "team",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 15,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_mwebb",
+          "name": "Marcus Webb",
+          "title": "CTO",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 10,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 7,
+          "quiet_days": 11,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ifarah",
+          "name": "Ines Farah",
+          "title": "Procurement Manager",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 3,
+          "quiet_days": 7,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 10,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "toledo",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 3,
+          "mention_events": [
+            "ev_012",
+            "ev_013",
+            "ev_020"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "legal",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 2,
+          "mention_events": [
+            "ev_022",
+            "ev_031"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_dwhitfield",
+          "b": "p_jordan",
+          "weight": 10,
+          "days_stale": 3
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_lnakamura",
+          "weight": 8,
+          "days_stale": 3
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_sam",
+          "weight": 7,
+          "days_stale": 11
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_lnakamura",
+          "weight": 5,
+          "days_stale": 14
+        },
+        {
+          "a": "p_ifarah",
+          "b": "p_jordan",
+          "weight": 3,
+          "days_stale": 7
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_sam",
+          "weight": 3,
+          "days_stale": 11
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_mwebb",
+          "weight": 2,
+          "days_stale": 10
+        },
+        {
+          "a": "p_ava",
+          "b": "p_jordan",
+          "weight": 2,
+          "days_stale": 10
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 40
+        },
+        {
+          "a": "p_lnakamura",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 40
+        },
+        {
+          "a": "p_dwhitfield",
+          "b": "p_ifarah",
+          "weight": 1,
+          "days_stale": 17
+        },
+        {
+          "a": "p_ava",
+          "b": "p_mwebb",
+          "weight": 1,
+          "days_stale": 10
+        },
+        {
+          "a": "p_ava",
+          "b": "p_dwhitfield",
+          "weight": 1,
+          "days_stale": 10
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 14
+        },
+        {
+          "a": "p_ava",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 11
+        },
+        {
+          "a": "p_ava",
+          "b": "p_lnakamura",
+          "weight": 1,
+          "days_stale": 10
+        }
+      ],
+      "flags": [],
+      "rollup": {
+        "thread_score": 3.5,
+        "engaged_buyers": 4,
+        "highest_lane": "exec",
+        "open_flags": 0,
+        "top_severity": "none"
+      }
+    }
+  ]
+}

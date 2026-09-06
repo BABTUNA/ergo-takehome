@@ -1,0 +1,14 @@
+{
+  "role": "champion",
+  "role_rationale": "Actively drives pilot expansion, reports metrics, and pushes internally for wider rollout to coordinators.",
+  "seniority": "team",
+  "seniority_rationale": "Title is Operations Manager, functioning at a team/tactical level rather than company-wide budget authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Trend moves from pain points to enthusiastic, celebratory feedback with strong internal demand for expansion.",
+  "evidence": [
+    "ev_004",
+    "ev_018",
+    "ev_020",
+    "ev_026"
+  ]
+}

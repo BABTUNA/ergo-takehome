@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "can we add our Riverside clinic coordinators as viewers this week? They're curious"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_tsingh",
+      "quote": "channel for pilot logistics as discussed"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Riverside clinic coordinators",
+      "by": "p_tsingh",
+      "context": "requesting access as viewers to the pilot logistics channel"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_tsingh",
+      "label": "collaborative"
+    }
+  ]
+}

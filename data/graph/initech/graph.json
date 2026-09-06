@@ -1,0 +1,1364 @@
+{
+  "deal": {
+    "id": "opp_011",
+    "name": "Initech - Ops Workflow Platform",
+    "account": "Initech",
+    "amount": 95000,
+    "stage": "Proposal",
+    "close_date": "2026-05-08",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-19"
+  },
+  "snapshots": [
+    {
+      "t": "2026-02-16",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        }
+      ],
+      "edges": [],
+      "flags": [
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        }
+      ],
+      "rollup": {
+        "thread_score": 0,
+        "engaged_buyers": 0,
+        "highest_lane": "none",
+        "open_flags": 1,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-02-23",
+      "nodes": [
+        {
+          "id": "p_thale",
+          "name": "thale@initech.com",
+          "title": "",
+          "side": "buyer",
+          "lane": "team",
+          "role": "neutral",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 3,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sbloom",
+          "name": "Sarah Bloom",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 1,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "Travis",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "coordinator",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_004"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_thale",
+          "weight": 2,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sbloom",
+          "weight": 1,
+          "days_stale": 2
+        }
+      ],
+      "flags": [
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 2,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-02",
+      "nodes": [
+        {
+          "id": "p_thale",
+          "name": "thale@initech.com",
+          "title": "",
+          "side": "buyer",
+          "lane": "team",
+          "role": "neutral",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 2,
+          "quiet_days": 10,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 3,
+          "quiet_days": 9,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sbloom",
+          "name": "Sarah Bloom",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 1,
+          "quiet_days": 9,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "Travis",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "coordinator",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_004"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_thale",
+          "weight": 2,
+          "days_stale": 10
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sbloom",
+          "weight": 1,
+          "days_stale": 9
+        }
+      ],
+      "flags": [
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 2,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-09",
+      "nodes": [
+        {
+          "id": "p_thale",
+          "name": "thale@initech.com",
+          "title": "",
+          "side": "buyer",
+          "lane": "team",
+          "role": "neutral",
+          "sentiment": "neutral",
+          "momentum": "cooling",
+          "events": 2,
+          "quiet_days": 17,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 6,
+          "quiet_days": 4,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sbloom",
+          "name": "Sarah Bloom",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 4,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "Travis",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "coordinator",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_004"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_sbloom",
+          "weight": 4,
+          "days_stale": 4
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_thale",
+          "weight": 2,
+          "days_stale": 17
+        }
+      ],
+      "flags": [
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        },
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-16",
+      "nodes": [
+        {
+          "id": "p_thale",
+          "name": "thale@initech.com",
+          "title": "",
+          "side": "buyer",
+          "lane": "team",
+          "role": "neutral",
+          "sentiment": "neutral",
+          "momentum": "cooling",
+          "events": 2,
+          "quiet_days": 24,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 9,
+          "quiet_days": 5,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sbloom",
+          "name": "Sarah Bloom",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 7,
+          "quiet_days": 5,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "Travis",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "coordinator",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_004"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_sbloom",
+          "weight": 7,
+          "days_stale": 5
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_thale",
+          "weight": 2,
+          "days_stale": 24
+        }
+      ],
+      "flags": [
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        },
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Sam Okafor, Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Sam Okafor with a buyer counterpart before the next milestone"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-23",
+      "nodes": [
+        {
+          "id": "p_thale",
+          "name": "thale@initech.com",
+          "title": "",
+          "side": "buyer",
+          "lane": "team",
+          "role": "neutral",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 2,
+          "quiet_days": 31,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 12,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sbloom",
+          "name": "Sarah Bloom",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 10,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "Travis",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "coordinator",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_004"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_sbloom",
+          "weight": 10,
+          "days_stale": 2
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_thale",
+          "weight": 2,
+          "days_stale": 31
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "83% of buyer contact runs through Sarah Bloom",
+          "evidence": [],
+          "suggested_move": "Ask Sarah Bloom to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-30",
+      "nodes": [
+        {
+          "id": "p_thale",
+          "name": "thale@initech.com",
+          "title": "",
+          "side": "buyer",
+          "lane": "team",
+          "role": "neutral",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 2,
+          "quiet_days": 38,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 13,
+          "quiet_days": 9,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sbloom",
+          "name": "Sarah Bloom",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 11,
+          "quiet_days": 5,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "Travis",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "coordinator",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_004"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_sbloom",
+          "weight": 11,
+          "days_stale": 5
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_thale",
+          "weight": 2,
+          "days_stale": 38
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "84% of buyer contact runs through Sarah Bloom",
+          "evidence": [],
+          "suggested_move": "Ask Sarah Bloom to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-04-06",
+      "nodes": [
+        {
+          "id": "p_thale",
+          "name": "thale@initech.com",
+          "title": "",
+          "side": "buyer",
+          "lane": "team",
+          "role": "neutral",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 2,
+          "quiet_days": 45,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 15,
+          "quiet_days": 0,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sbloom",
+          "name": "Sarah Bloom",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 12,
+          "quiet_days": 12,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "Travis",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "coordinator",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_004"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_sbloom",
+          "weight": 12,
+          "days_stale": 5
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_thale",
+          "weight": 2,
+          "days_stale": 45
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "85% of buyer contact runs through Sarah Bloom",
+          "evidence": [],
+          "suggested_move": "Ask Sarah Bloom to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "cooling_key_contact",
+          "severity": "high",
+          "summary": "Sarah Bloom (champion) quiet for 12 days",
+          "evidence": [
+            "ev_006",
+            "ev_009",
+            "ev_017",
+            "ev_019",
+            "ev_020"
+          ],
+          "suggested_move": "Re-engage Sarah Bloom with something of value, not a check-in"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 4,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-04-07",
+      "nodes": [
+        {
+          "id": "p_thale",
+          "name": "thale@initech.com",
+          "title": "",
+          "side": "buyer",
+          "lane": "team",
+          "role": "neutral",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 2,
+          "quiet_days": 46,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 15,
+          "quiet_days": 1,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sbloom",
+          "name": "Sarah Bloom",
+          "title": "Director of Operations",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 12,
+          "quiet_days": 13,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "Travis",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "coordinator",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_004"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_sbloom",
+          "weight": 12,
+          "days_stale": 6
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_thale",
+          "weight": 2,
+          "days_stale": 46
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "85% of buyer contact runs through Sarah Bloom",
+          "evidence": [],
+          "suggested_move": "Ask Sarah Bloom to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "cooling_key_contact",
+          "severity": "high",
+          "summary": "Sarah Bloom (champion) quiet for 13 days",
+          "evidence": [
+            "ev_006",
+            "ev_009",
+            "ev_017",
+            "ev_019",
+            "ev_020"
+          ],
+          "suggested_move": "Re-engage Sarah Bloom with something of value, not a check-in"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"circling back after internal review wraps\" (due a week or so)",
+          "evidence": [
+            "ev_019"
+          ],
+          "suggested_move": "Deliver \"circling back after internal review wraps\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Proposal with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 4,
+        "top_severity": "high"
+      }
+    }
+  ]
+}

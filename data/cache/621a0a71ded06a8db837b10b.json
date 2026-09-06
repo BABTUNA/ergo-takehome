@@ -1,0 +1,30 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "staging creds coming after our infra guy rotates them"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_odiaz",
+      "to": null,
+      "what": "staging creds coming after our infra guy rotates them",
+      "due": null
+    }
+  ],
+  "mentions": [
+    {
+      "name": "infra guy",
+      "by": "p_odiaz",
+      "context": "responsible for rotating credentials before staging creds can be provided"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "neutral"
+    }
+  ]
+}

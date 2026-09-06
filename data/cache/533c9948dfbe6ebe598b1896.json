@@ -1,0 +1,15 @@
+{
+  "role": "seller",
+  "role_rationale": "Jordan is on the seller side managing the deal, coordinating commitments and next steps.",
+  "seniority": "team",
+  "seniority_rationale": "Handles operational tasks like scheduling, sending docs, and coordinating internally rather than controlling budget or being deferred to for sign-off.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/cooperative tone throughout with active follow-through on most commitments, despite two broken ones recently.",
+  "evidence": [
+    "ev_007",
+    "ev_009",
+    "ev_016",
+    "ev_023",
+    "ev_025"
+  ]
+}

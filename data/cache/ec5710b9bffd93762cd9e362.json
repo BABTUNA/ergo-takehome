@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_odiaz",
+      "quote": "can you send over how the enterprise tier is structured?"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "Nina (cc'd) is putting together an internal comparison against building this ourselves"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "neutral"
+    }
+  ]
+}

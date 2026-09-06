@@ -1,0 +1,78 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "how does patient data flow through your system? I need to know what's stored, where, and encrypted how."
+    },
+    {
+      "tag": "risk",
+      "who": "p_mjones",
+      "quote": "EHR integration is the other big one - we're on Athena."
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "Can my coordinators see referral status across all clinics without switching views? That's the daily pain."
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_evasquez",
+      "quote": "I like what I'm seeing."
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_evasquez",
+      "quote": "What does the pilot look like commercially?"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_mjones",
+      "quote": "nothing today scared me, which is rare."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "Let's do the pilot. Tara owns rollout, Malik owns the technical gate."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "get the full architecture doc",
+      "due": ""
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "include the Athena integration spec with the architecture doc",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "SE who can provide deep technical review on data architecture and security"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    },
+    {
+      "who": "p_mjones",
+      "label": "cautious"
+    },
+    {
+      "who": "p_tsingh",
+      "label": "neutral"
+    },
+    {
+      "who": "p_evasquez",
+      "label": "positive"
+    }
+  ]
+}

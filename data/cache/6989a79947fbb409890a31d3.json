@@ -1,0 +1,15 @@
+{
+  "role": "champion",
+  "role_rationale": "Sarah is driving internal advocacy, building the business case, and presenting to stakeholders to push the deal through.",
+  "seniority": "director",
+  "seniority_rationale": "Title confirms Director of Operations, consistent with someone building a case rather than sole sign-off authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently enthusiastic and engaged with buying signals throughout, though recent quiet period and broken callback commitment show slight cooling.",
+  "evidence": [
+    "ev_006",
+    "ev_009",
+    "ev_017",
+    "ev_019",
+    "ev_020"
+  ]
+}

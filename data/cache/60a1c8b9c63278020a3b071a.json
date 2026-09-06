@@ -1,0 +1,13 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side technical contact handling implementation details and requests, not a buyer-side stakeholder.",
+  "seniority": "team",
+  "seniority_rationale": "Handles hands-on technical tasks (schema exports, docs, creds) typical of an implementation/engineering role, not final sign-off.",
+  "sentiment": "wary",
+  "sentiment_rationale": "Positive engagement mid-deal but a broken commitment on delivery timeline introduces risk despite rising momentum.",
+  "evidence": [
+    "ev_021",
+    "ev_028",
+    "ev_037"
+  ]
+}

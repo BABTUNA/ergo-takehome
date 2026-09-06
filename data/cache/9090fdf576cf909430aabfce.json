@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_sam",
+      "quote": "One question: the order_status enum has 14 values, do all of them actually occur?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "neutral"
+    }
+  ]
+}

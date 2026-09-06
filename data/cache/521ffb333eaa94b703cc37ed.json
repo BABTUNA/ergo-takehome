@@ -1,0 +1,15 @@
+{
+  "role": "economic_buyer",
+  "role_rationale": "COO driving board-visible commitment and seeking executive-to-executive alignment on commercial terms",
+  "seniority": "exec",
+  "seniority_rationale": "Title is COO, and behavior shows control over rollout timeline and board-level decisions",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently escalating buying signals and urgency, moving toward full rollout despite an open BAA/intro commitment",
+  "evidence": [
+    "ev_002",
+    "ev_004",
+    "ev_006",
+    "ev_018",
+    "ev_022"
+  ]
+}

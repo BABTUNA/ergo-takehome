@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "maybe 8 in practice. the rest are from an old migration"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "globex",
+      "by": "p_odiaz",
+      "context": "reference to organization/environment context"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "casual"
+    }
+  ]
+}

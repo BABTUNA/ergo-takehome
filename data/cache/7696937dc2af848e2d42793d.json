@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "That works. This gives me what I need."
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sbloom",
+      "label": "positive"
+    }
+  ]
+}

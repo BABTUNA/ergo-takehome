@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Invite coming shortly"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "building the session around the cost case"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "send invite for demo session",
+      "due": "shortly"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

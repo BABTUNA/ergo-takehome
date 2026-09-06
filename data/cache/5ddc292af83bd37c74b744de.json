@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "process_observation",
+      "who": "p_dwhitfield",
+      "quote": "watching this thread with joy. this is the monday ritual dying in real time"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_dwhitfield",
+      "label": "amused"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "nice, this works"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "what do you need from us to get the sandbox loaded?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "positive"
+    }
+  ]
+}

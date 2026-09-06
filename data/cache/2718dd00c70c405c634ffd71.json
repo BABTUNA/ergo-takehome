@@ -1,0 +1,33 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Locking March 12, 10am pacific"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Attendees on our side: me, Nina Park (business analysis, cc'd), and Rhea Kim, our CFO"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "Rhea will want the numbers story, not a feature tour"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Rhea Kim",
+      "by": "p_jordan",
+      "context": "CFO attending the demo on March 12, interested in numbers story"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

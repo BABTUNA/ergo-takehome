@@ -1,0 +1,16 @@
+{
+  "role": "champion",
+  "role_rationale": "Actively drives internal buy-in, coordinates stakeholders, pushes for decision, and advocates internally for the deal",
+  "seniority": "director",
+  "seniority_rationale": "Title states Director of IT; defers budget sign-off above $50K to others, indicating non-exec level",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistent buying signals and urgency escalating over time, culminating in strong endorsement and push to close this month",
+  "evidence": [
+    "ev_003",
+    "ev_007",
+    "ev_024",
+    "ev_027",
+    "ev_034",
+    "ev_037"
+  ]
+}

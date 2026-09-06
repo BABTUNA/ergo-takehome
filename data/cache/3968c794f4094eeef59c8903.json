@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Sending a schema export is a preparatory step, not the actual breakdown model that accounts for seasonality"
+}

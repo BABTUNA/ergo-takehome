@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_mjones",
+      "quote": "good sign"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_mjones",
+      "quote": "adding it to my review notes"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_mjones",
+      "label": "positive"
+    }
+  ]
+}

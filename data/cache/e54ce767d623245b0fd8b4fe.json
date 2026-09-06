@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Asking about enum values in exported schemas is not the same as providing staging credentials after infrastructure rotation"
+}

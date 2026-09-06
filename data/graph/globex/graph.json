@@ -1,0 +1,1932 @@
+{
+  "deal": {
+    "id": "opp_009",
+    "name": "Globex - Reconciliation Platform",
+    "account": "Globex",
+    "amount": 120000,
+    "stage": "Negotiation",
+    "close_date": "2026-04-30",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-13"
+  },
+  "snapshots": [
+    {
+      "t": "2026-02-16",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 5,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 5,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 5,
+          "days_stale": 2
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "100% of buyer contact runs through Omar Diaz",
+          "evidence": [],
+          "suggested_move": "Ask Omar Diaz to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Negotiation with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.0,
+        "engaged_buyers": 1,
+        "highest_lane": "director",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-02-23",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 5,
+          "quiet_days": 10,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 5,
+          "quiet_days": 9,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 5,
+          "days_stale": 9
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "100% of buyer contact runs through Omar Diaz",
+          "evidence": [],
+          "suggested_move": "Ask Omar Diaz to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Negotiation with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.0,
+        "engaged_buyers": 1,
+        "highest_lane": "director",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-02",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "cooling",
+          "events": 6,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "cooling",
+          "events": 6,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 6,
+          "days_stale": 3
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "100% of buyer contact runs through Omar Diaz",
+          "evidence": [],
+          "suggested_move": "Ask Omar Diaz to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Negotiation with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.0,
+        "engaged_buyers": 1,
+        "highest_lane": "director",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-09",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 8,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "flat",
+          "events": 8,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_npark",
+          "name": "Nina Park",
+          "title": "Business Analyst",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 2,
+          "quiet_days": null,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 8,
+          "days_stale": 3
+        },
+        {
+          "a": "p_npark",
+          "b": "p_odiaz",
+          "weight": 1,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_npark",
+          "weight": 1,
+          "days_stale": 3
+        }
+      ],
+      "flags": [
+        {
+          "id": "single_threaded",
+          "severity": "high",
+          "summary": "88% of buyer contact runs through Omar Diaz",
+          "evidence": [],
+          "suggested_move": "Ask Omar Diaz to introduce a second stakeholder before the next call"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "altitude_gap",
+          "severity": "med",
+          "summary": "Deal in Negotiation with no one above director level ever engaged",
+          "evidence": [],
+          "suggested_move": "Get an exec sponsor into the next meeting before advancing the stage"
+        }
+      ],
+      "rollup": {
+        "thread_score": 1.5,
+        "engaged_buyers": 2,
+        "highest_lane": "director",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-16",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 10,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 10,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_npark",
+          "name": "Nina Park",
+          "title": "Business Analyst",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 3,
+          "quiet_days": 3,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_rhea",
+          "name": "Rhea Kim",
+          "title": "",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "wary",
+          "momentum": "rising",
+          "events": 1,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "wary",
+          "momentum": "rising",
+          "events": 1,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_2",
+          "name": "Priya",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_011",
+            "ev_034"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 10,
+          "days_stale": 2
+        },
+        {
+          "a": "p_npark",
+          "b": "p_odiaz",
+          "weight": 2,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_npark",
+          "weight": 2,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_rhea",
+          "weight": 1,
+          "days_stale": 3
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_rhea",
+          "weight": 1,
+          "days_stale": 3
+        },
+        {
+          "a": "p_npark",
+          "b": "p_rhea",
+          "weight": 1,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 2
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 2
+        }
+      ],
+      "flags": [
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "internal_single_thread",
+          "severity": "med",
+          "summary": "Jordan Lee holds every buyer relationship; Ava Chen have none",
+          "evidence": [],
+          "suggested_move": "Pair Ava Chen with a buyer counterpart before the next milestone"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Rhea Kim (exec) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Rhea Kim before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 3,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-23",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 14,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 16,
+          "quiet_days": 4,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_npark",
+          "name": "Nina Park",
+          "title": "Business Analyst",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 5,
+          "quiet_days": 10,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_rhea",
+          "name": "Rhea Kim",
+          "title": "",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "wary",
+          "momentum": "rising",
+          "events": 3,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "wary",
+          "momentum": "rising",
+          "events": 3,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_2",
+          "name": "Priya",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_011",
+            "ev_034"
+          ]
+        },
+        {
+          "id": "ghost_3",
+          "name": "infra guy",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_016"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 13,
+          "days_stale": 2
+        },
+        {
+          "a": "p_npark",
+          "b": "p_odiaz",
+          "weight": 3,
+          "days_stale": 4
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_npark",
+          "weight": 3,
+          "days_stale": 4
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_rhea",
+          "weight": 3,
+          "days_stale": 2
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_sam",
+          "weight": 3,
+          "days_stale": 5
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_rhea",
+          "weight": 2,
+          "days_stale": 2
+        },
+        {
+          "a": "p_npark",
+          "b": "p_rhea",
+          "weight": 1,
+          "days_stale": 10
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 9
+        }
+      ],
+      "flags": [
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Rhea Kim (exec) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Rhea Kim before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-03-30",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "rising",
+          "events": 16,
+          "quiet_days": 3,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 19,
+          "quiet_days": 2,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_npark",
+          "name": "Nina Park",
+          "title": "Business Analyst",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "neutral",
+          "momentum": "cooling",
+          "events": 5,
+          "quiet_days": 17,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_rhea",
+          "name": "Rhea Kim",
+          "title": "",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "wary",
+          "momentum": "flat",
+          "events": 4,
+          "quiet_days": 9,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "wary",
+          "momentum": "rising",
+          "events": 4,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_2",
+          "name": "Priya",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 1,
+          "mention_events": [
+            "ev_011",
+            "ev_034"
+          ]
+        },
+        {
+          "id": "ghost_3",
+          "name": "infra guy",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_016"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 15,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_rhea",
+          "weight": 4,
+          "days_stale": 3
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_sam",
+          "weight": 4,
+          "days_stale": 2
+        },
+        {
+          "a": "p_npark",
+          "b": "p_odiaz",
+          "weight": 3,
+          "days_stale": 11
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_npark",
+          "weight": 3,
+          "days_stale": 11
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_rhea",
+          "weight": 2,
+          "days_stale": 9
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sam",
+          "weight": 2,
+          "days_stale": 4
+        },
+        {
+          "a": "p_npark",
+          "b": "p_rhea",
+          "weight": 1,
+          "days_stale": 17
+        }
+      ],
+      "flags": [
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Rhea Kim (exec) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Rhea Kim before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 2,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-04-06",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 20,
+          "quiet_days": 1,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 24,
+          "quiet_days": 1,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_npark",
+          "name": "Nina Park",
+          "title": "Business Analyst",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "neutral",
+          "momentum": "cooling",
+          "events": 5,
+          "quiet_days": 24,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_rhea",
+          "name": "Rhea Kim",
+          "title": "",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "wary",
+          "momentum": "cooling",
+          "events": 5,
+          "quiet_days": 16,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "wary",
+          "momentum": "flat",
+          "events": 7,
+          "quiet_days": 4,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_2",
+          "name": "Priya",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 2,
+          "mention_events": [
+            "ev_011",
+            "ev_034"
+          ]
+        },
+        {
+          "id": "ghost_3",
+          "name": "infra guy",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_016"
+          ]
+        },
+        {
+          "id": "ghost_4",
+          "name": "security team",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_029"
+          ]
+        },
+        {
+          "id": "ghost_5",
+          "name": "eng",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_031"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 17,
+          "days_stale": 1
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_sam",
+          "weight": 7,
+          "days_stale": 4
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_rhea",
+          "weight": 5,
+          "days_stale": 3
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sam",
+          "weight": 4,
+          "days_stale": 4
+        },
+        {
+          "a": "p_npark",
+          "b": "p_odiaz",
+          "weight": 3,
+          "days_stale": 18
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_npark",
+          "weight": 3,
+          "days_stale": 18
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_rhea",
+          "weight": 2,
+          "days_stale": 16
+        },
+        {
+          "a": "p_npark",
+          "b": "p_rhea",
+          "weight": 1,
+          "days_stale": 24
+        }
+      ],
+      "flags": [
+        {
+          "id": "cooling_key_contact",
+          "severity": "high",
+          "summary": "Rhea Kim (economic buyer) quiet for 16 days",
+          "evidence": [
+            "ev_011",
+            "ev_022",
+            "ev_033"
+          ],
+          "suggested_move": "Re-engage Rhea Kim with something of value, not a check-in"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "ghost_stakeholder",
+          "severity": "med",
+          "summary": "Priya mentioned 2x but never engaged",
+          "evidence": [
+            "ev_011",
+            "ev_034"
+          ],
+          "suggested_move": "Ask your champion to bring Priya into the next session"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Rhea Kim (exec) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Rhea Kim before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 4,
+        "top_severity": "high"
+      }
+    },
+    {
+      "t": "2026-04-07",
+      "nodes": [
+        {
+          "id": "p_jordan",
+          "name": "Jordan Lee",
+          "title": "Account Executive",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 20,
+          "quiet_days": 2,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_odiaz",
+          "name": "Omar Diaz",
+          "title": "Director of IT",
+          "side": "buyer",
+          "lane": "director",
+          "role": "champion",
+          "sentiment": "positive",
+          "momentum": "rising",
+          "events": 25,
+          "quiet_days": 0,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_npark",
+          "name": "Nina Park",
+          "title": "Business Analyst",
+          "side": "buyer",
+          "lane": "team",
+          "role": "evaluator",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 6,
+          "quiet_days": 0,
+          "in_crm": true,
+          "ghost": false
+        },
+        {
+          "id": "p_rhea",
+          "name": "Rhea Kim",
+          "title": "",
+          "side": "buyer",
+          "lane": "exec",
+          "role": "economic_buyer",
+          "sentiment": "wary",
+          "momentum": "cooling",
+          "events": 5,
+          "quiet_days": 17,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_sam",
+          "name": "Sam Okafor",
+          "title": "Solutions Engineer",
+          "side": "seller",
+          "lane": "team",
+          "role": "seller",
+          "sentiment": "wary",
+          "momentum": "rising",
+          "events": 8,
+          "quiet_days": 0,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "p_ava",
+          "name": "Ava Chen",
+          "title": "VP Sales",
+          "side": "seller",
+          "lane": "exec",
+          "role": "seller",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": false
+        },
+        {
+          "id": "ghost_0",
+          "name": "finance",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_1",
+          "name": "solutions engineers",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_003"
+          ]
+        },
+        {
+          "id": "ghost_2",
+          "name": "Priya",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": true,
+          "mentions": 2,
+          "mention_events": [
+            "ev_011",
+            "ev_034"
+          ]
+        },
+        {
+          "id": "ghost_3",
+          "name": "infra guy",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_016"
+          ]
+        },
+        {
+          "id": "ghost_4",
+          "name": "security team",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_029"
+          ]
+        },
+        {
+          "id": "ghost_5",
+          "name": "eng",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_031"
+          ]
+        },
+        {
+          "id": "ghost_6",
+          "name": "team",
+          "title": "",
+          "side": "buyer",
+          "lane": "unknown",
+          "role": "ghost",
+          "sentiment": "neutral",
+          "momentum": "flat",
+          "events": 0,
+          "quiet_days": null,
+          "in_crm": false,
+          "ghost": true,
+          "named": false,
+          "mentions": 1,
+          "mention_events": [
+            "ev_037"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "a": "p_jordan",
+          "b": "p_odiaz",
+          "weight": 17,
+          "days_stale": 2
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_sam",
+          "weight": 8,
+          "days_stale": 0
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_rhea",
+          "weight": 5,
+          "days_stale": 4
+        },
+        {
+          "a": "p_npark",
+          "b": "p_odiaz",
+          "weight": 4,
+          "days_stale": 0
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_sam",
+          "weight": 4,
+          "days_stale": 5
+        },
+        {
+          "a": "p_jordan",
+          "b": "p_npark",
+          "weight": 3,
+          "days_stale": 19
+        },
+        {
+          "a": "p_odiaz",
+          "b": "p_rhea",
+          "weight": 2,
+          "days_stale": 17
+        },
+        {
+          "a": "p_npark",
+          "b": "p_rhea",
+          "weight": 1,
+          "days_stale": 25
+        },
+        {
+          "a": "p_npark",
+          "b": "p_sam",
+          "weight": 1,
+          "days_stale": 0
+        }
+      ],
+      "flags": [
+        {
+          "id": "cooling_key_contact",
+          "severity": "high",
+          "summary": "Rhea Kim (economic buyer) quiet for 17 days",
+          "evidence": [
+            "ev_011",
+            "ev_022",
+            "ev_033"
+          ],
+          "suggested_move": "Re-engage Rhea Kim with something of value, not a check-in"
+        },
+        {
+          "id": "broken_commitment",
+          "severity": "high",
+          "summary": "Promise not kept: \"provide the full breakdown of the seasonality model\" (due this week)",
+          "evidence": [
+            "ev_023"
+          ],
+          "suggested_move": "Deliver \"provide the full breakdown of the seasonality model\" today and acknowledge the delay"
+        },
+        {
+          "id": "ghost_stakeholder",
+          "severity": "med",
+          "summary": "Priya mentioned 2x but never engaged",
+          "evidence": [
+            "ev_011",
+            "ev_034"
+          ],
+          "suggested_move": "Ask your champion to bring Priya into the next session"
+        },
+        {
+          "id": "no_exec_pairing",
+          "severity": "low",
+          "summary": "Rhea Kim (exec) has no seller-exec relationship",
+          "evidence": [],
+          "suggested_move": "Introduce Ava Chen to Rhea Kim before commercial talks"
+        }
+      ],
+      "rollup": {
+        "thread_score": 3.0,
+        "engaged_buyers": 3,
+        "highest_lane": "exec",
+        "open_flags": 4,
+        "top_severity": "high"
+      }
+    }
+  ]
+}

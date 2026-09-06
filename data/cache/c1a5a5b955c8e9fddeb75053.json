@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "coordinators from 3 non-pilot clinics have now asked me when they get access"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_tsingh",
+      "quote": "told them after security review"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "security team",
+      "by": "p_tsingh",
+      "context": "access contingent on completion of security review"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_tsingh",
+      "label": "reassuring"
+    }
+  ]
+}

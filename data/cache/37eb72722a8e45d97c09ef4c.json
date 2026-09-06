@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "Worth a look. Adding Leo Nakamura, our eng lead - anything ops adopts, he has to live with."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Monday the 16th, 10am central?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

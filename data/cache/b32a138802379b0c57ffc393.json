@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Tuesday the 24th, 10am pacific?"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Feel free to bring whoever owns day-to-day coordination"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Dr. Chen",
+      "by": "p_jordan",
+      "context": "referrer from Lakeside"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "Leo, Sam - it's all yours for the technical stuff."
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Leo",
+      "by": "p_dwhitfield",
+      "context": "Assigned to handle technical aspects of the deal"
+    },
+    {
+      "name": "Sam",
+      "by": "p_dwhitfield",
+      "context": "Assigned to handle technical aspects of the deal"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_dwhitfield",
+      "label": "positive"
+    }
+  ]
+}

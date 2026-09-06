@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "product_validation",
+      "who": "p_lnakamura",
+      "quote": "threw our worst month at it (the feb inventory count disaster). it caught every mismatch and the drift quarantine did its job when i fed it a mangled schema on purpose"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_lnakamura",
+      "label": "positive"
+    }
+  ]
+}

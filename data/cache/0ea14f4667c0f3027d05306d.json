@@ -1,0 +1,18 @@
+{
+  "signals": [],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "available at desk to answer questions during meeting",
+      "due": "during meeting"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "supportive"
+    }
+  ]
+}

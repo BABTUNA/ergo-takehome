@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "You'll have it by the 13th."
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "Thanks for keeping this moving so cleanly, Dana."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "deliver proposal",
+      "due": "the 13th"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

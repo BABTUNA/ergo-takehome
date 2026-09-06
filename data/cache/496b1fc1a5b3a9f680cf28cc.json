@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "if we signed mid-april, how fast could onboarding start?"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "trying to line it up with our q2 planning"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sbloom",
+      "label": "neutral"
+    }
+  ]
+}

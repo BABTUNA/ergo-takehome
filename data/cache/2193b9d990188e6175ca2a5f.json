@@ -1,0 +1,14 @@
+{
+  "role": "champion",
+  "role_rationale": "Consistently advocates internally, drives pilot expansion, and pushes for wider rollout based on results",
+  "seniority": "team",
+  "seniority_rationale": "Title is Operations Manager, focused on day-to-day coordinator workflows rather than company-wide budget authority",
+  "sentiment": "positive",
+  "sentiment_rationale": "Tone rises from direct/neutral concerns to enthusiastic and positive as pilot results validate the solution",
+  "evidence": [
+    "ev_004",
+    "ev_018",
+    "ev_020",
+    "ev_026"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "signals": [],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_thale",
+      "what": "Harborview intro for Sarah Bloom",
+      "due": "Friday 8am"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Sarah Bloom",
+      "by": "p_jordan",
+      "context": "subject of the scheduled intro meeting"
+    },
+    {
+      "name": "Travis",
+      "by": "p_jordan",
+      "context": "person being thanked, likely p_thale or related to scheduling"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

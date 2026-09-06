@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Email references 'docs you promised' but doesn't confirm delivery occurred; the subject line mentions the doc but the body is a follow-up request, indicating non-fulfillment"
+}

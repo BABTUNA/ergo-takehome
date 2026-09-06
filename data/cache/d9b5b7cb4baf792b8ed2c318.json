@@ -1,0 +1,14 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep managing the deal, making commitments and pushing next steps for Initech.",
+  "seniority": "team",
+  "seniority_rationale": "No title given and behavior shows a hands-on rep executing tasks (demos, pricing, follow-ups) rather than exec-level authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/helpful tone with proactive follow-ups, though slight tension emerging as internal review is delayed.",
+  "evidence": [
+    "ev_010",
+    "ev_015",
+    "ev_020",
+    "ev_021"
+  ]
+}

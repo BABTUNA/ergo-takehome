@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "pushing internally to get a decision this month"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "trying to get it scheduled for next week"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "priya",
+      "by": "p_odiaz",
+      "context": "wants a technical review with her team first"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "urgent"
+    }
+  ]
+}

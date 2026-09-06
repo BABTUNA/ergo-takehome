@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Promise was for sandbox 'the following Monday' (specific date), but later message only commits to sandbox 'by the 23rd' (later date), showing a delay rather than fulfillment"
+}
