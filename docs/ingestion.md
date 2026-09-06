@@ -6,22 +6,22 @@ Run: `python3 -m pipeline.ingest`
 
 ## Call trace
 
-```
-main()                                                          [ingest.py]
+<pre>
+<a href="../pipeline/ingest.py#L43">main()</a>                                                          [ingest.py]
 └─ for each slug in data/deals/*:
-   ingest_deal(slug)                                            [ingest.py]
-   ├─ sf_raw = SalesforceConnector.fetch(slug)                  [connectors.py]
-   ├─ Registry.seed_from_crm(contacts(sf_raw))                  [identity.py]   # CRM first: in_crm flags
-   ├─ events  = SalesforceConnector.normalize(sf_raw, ...)      [connectors.py] # stage changes
-   ├─ events += ZoomConnector.fetch + normalize                 [connectors.py]
-   │            └─ Registry.resolve() per attendee              [identity.py]
-   ├─ events += GmailConnector.fetch + normalize                [connectors.py]
-   │            └─ Registry.resolve() per from/to/cc            [identity.py]
-   ├─ events += SlackConnector.fetch + normalize                [connectors.py]
-   │            └─ Registry.resolve() per author                [identity.py]
-   └─ write_outputs(slug, events, registry,                     [ingest.py]
-                    SalesforceConnector.opportunity(sf_raw))
-```
+   <a href="../pipeline/ingest.py#L18">ingest_deal(slug)</a>                                            [ingest.py]
+   ├─ sf_raw = <a href="../pipeline/connectors.py#L20">SalesforceConnector.fetch(slug)</a>                  [connectors.py]
+   ├─ <a href="../pipeline/identity.py#L22">Registry.seed_from_crm</a>(<a href="../pipeline/connectors.py#L93">contacts(sf_raw)</a>)                  [identity.py]   # CRM first: in_crm flags
+   ├─ events  = <a href="../pipeline/connectors.py#L99">SalesforceConnector.normalize(sf_raw, ...)</a>      [connectors.py] # stage changes
+   ├─ events += <a href="../pipeline/connectors.py#L20">ZoomConnector.fetch</a> + <a href="../pipeline/connectors.py#L31">normalize</a>                 [connectors.py]
+   │            └─ <a href="../pipeline/identity.py#L36">Registry.resolve()</a> per attendee              [identity.py]
+   ├─ events += <a href="../pipeline/connectors.py#L20">GmailConnector.fetch</a> + <a href="../pipeline/connectors.py#L50">normalize</a>                [connectors.py]
+   │            └─ <a href="../pipeline/identity.py#L36">Registry.resolve()</a> per from/to/cc            [identity.py]
+   ├─ events += <a href="../pipeline/connectors.py#L20">SlackConnector.fetch</a> + <a href="../pipeline/connectors.py#L73">normalize</a>                [connectors.py]
+   │            └─ <a href="../pipeline/identity.py#L36">Registry.resolve()</a> per author                [identity.py]
+   └─ <a href="../pipeline/ingest.py#L32">write_outputs(slug, events, registry,</a>                     [ingest.py]
+                    <a href="../pipeline/connectors.py#L96">SalesforceConnector.opportunity(sf_raw)</a>)
+</pre>
 
 Order matters once: CRM seeding runs before conversation streams so a person first seen
 in a conversation is provably not-in-CRM, not just not-yet-seen.
