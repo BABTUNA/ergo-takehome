@@ -1,0 +1,96 @@
+[
+  {
+    "id": "p_dwhitfield",
+    "name": "Dana Whitfield",
+    "email": "dwhitfield@acmeind.com",
+    "title": "Director of Operations",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Dana Whitfield"
+      ]
+    }
+  },
+  {
+    "id": "p_lnakamura",
+    "name": "Leo Nakamura",
+    "email": "lnakamura@acmeind.com",
+    "title": "Engineering Lead",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Leo Nakamura"
+      ]
+    }
+  },
+  {
+    "id": "p_mwebb",
+    "name": "Marcus Webb",
+    "email": "mwebb@acmeind.com",
+    "title": "CTO",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Marcus Webb"
+      ]
+    }
+  },
+  {
+    "id": "p_ifarah",
+    "name": "Ines Farah",
+    "email": "ifarah@acmeind.com",
+    "title": "Procurement Manager",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {}
+  },
+  {
+    "id": "p_jordan",
+    "name": "Jordan Lee",
+    "email": "jordan@harborview.io",
+    "title": "",
+    "side": "seller",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {
+      "zoom": [
+        "Jordan Lee"
+      ]
+    }
+  },
+  {
+    "id": "p_sam",
+    "name": "Sam Okafor",
+    "email": "sam@harborview.io",
+    "title": "",
+    "side": "seller",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {
+      "zoom": [
+        "Sam Okafor"
+      ]
+    }
+  },
+  {
+    "id": "p_ava",
+    "name": "Ava Chen",
+    "email": "ava@harborview.io",
+    "title": "",
+    "side": "seller",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {
+      "zoom": [
+        "Ava Chen"
+      ]
+    }
+  }
+]

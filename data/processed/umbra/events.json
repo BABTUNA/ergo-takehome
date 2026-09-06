@@ -1,0 +1,587 @@
+{
+  "deal": {
+    "id": "opp_015",
+    "name": "Umbra Health - Multi-clinic Coordination",
+    "account": "Umbra Health",
+    "amount": 150000,
+    "stage": "Proposal",
+    "close_date": "2026-05-15",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-18"
+  },
+  "events": [
+    {
+      "id": "ev_001",
+      "deal_id": "umbra",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-02-18T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Discovery"
+      }
+    },
+    {
+      "id": "ev_002",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-18T19:45:00Z",
+      "participants": [
+        "p_evasquez",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_6011",
+      "content": {
+        "subject": "Referred by Dr. Chen at Lakeside - coordination tooling",
+        "from": "p_evasquez",
+        "body": "Jordan - Elena Vasquez, COO at Umbra Health. Your platform came recommended by the ops lead at Lakeside Medical. We're scaling clinics fast and our referral coordination is cracking. Do you have time next week?"
+      }
+    },
+    {
+      "id": "ev_003",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-18T21:10:00Z",
+      "participants": [
+        "p_jordan",
+        "p_evasquez"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_6011",
+      "content": {
+        "subject": "Referred by Dr. Chen at Lakeside - coordination tooling",
+        "from": "p_jordan",
+        "body": "Elena - great to hear from you, Lakeside's been a fantastic partner. Tuesday the 24th, 10am pacific? Feel free to bring whoever owns day-to-day coordination."
+      }
+    },
+    {
+      "id": "ev_004",
+      "deal_id": "umbra",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-02-24T18:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_evasquez",
+        "p_tsingh"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_71550",
+      "content": {
+        "topic": "Umbra Health <> Harborview - Discovery",
+        "duration_min": 33,
+        "transcript": [
+          {
+            "ts": "00:01:25",
+            "speaker": "Jordan Lee",
+            "text": "Elena, Tara, thanks for the time. Elena, want to start with the goals from your side?"
+          },
+          {
+            "ts": "00:02:14",
+            "speaker": "Elena Vasquez",
+            "text": "We're scaling from four clinics to eleven this year. Our intake and referral coordination breaks a little more with each new site. I need it fixed before the fall openings."
+          },
+          {
+            "ts": "00:08:40",
+            "speaker": "Tara Singh",
+            "text": "Day to day, that's me. Every clinic has its own intake spreadsheet and referrals get lost between them weekly."
+          },
+          {
+            "ts": "00:12:22",
+            "speaker": "Jordan Lee",
+            "text": "This maps well to our coordination engine. Let me show you the multi-site routing view."
+          },
+          {
+            "ts": "00:18:05",
+            "speaker": "Elena Vasquez",
+            "text": "That's the right shape. What I care about is timeline and whether this survives contact with healthcare data rules."
+          },
+          {
+            "ts": "00:19:11",
+            "speaker": "Jordan Lee",
+            "text": "We're HIPAA-compliant with a signed BAA, and eleven sites is a six-week rollout. Both go in writing."
+          },
+          {
+            "ts": "00:26:30",
+            "speaker": "Tara Singh",
+            "text": "I'd want to pilot with our two busiest clinics first. If it works there it works anywhere."
+          },
+          {
+            "ts": "00:30:15",
+            "speaker": "Elena Vasquez",
+            "text": "Agreed. Set up a full demo with Malik, our engineering director. If he's comfortable, we pilot."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_005",
+      "deal_id": "umbra",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-03-02T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Demo"
+      }
+    },
+    {
+      "id": "ev_006",
+      "deal_id": "umbra",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-03-06T17:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_evasquez",
+        "p_mjones",
+        "p_tsingh"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_75820",
+      "content": {
+        "topic": "Umbra Health <> Harborview - Platform demo",
+        "duration_min": 45,
+        "transcript": [
+          {
+            "ts": "00:01:10",
+            "speaker": "Jordan Lee",
+            "text": "Full walkthrough today - intake routing, referral tracking, and the multi-site dashboard."
+          },
+          {
+            "ts": "00:07:33",
+            "speaker": "Malik Jones",
+            "text": "Before you go further - how does patient data flow through your system? I need to know what's stored, where, and encrypted how."
+          },
+          {
+            "ts": "00:08:20",
+            "speaker": "Jordan Lee",
+            "text": "All PHI is encrypted at rest and in transit, US-only data residency, and I'll get you the full architecture doc. Our SE Sam can go as deep as you want on this."
+          },
+          {
+            "ts": "00:09:02",
+            "speaker": "Malik Jones",
+            "text": "I'll want that session. EHR integration is the other big one - we're on Athena."
+          },
+          {
+            "ts": "00:09:40",
+            "speaker": "Jordan Lee",
+            "text": "Athena's a supported integration. I'll include the spec with the architecture doc."
+          },
+          {
+            "ts": "00:16:48",
+            "speaker": "Tara Singh",
+            "text": "Can my coordinators see referral status across all clinics without switching views? That's the daily pain."
+          },
+          {
+            "ts": "00:17:15",
+            "speaker": "Jordan Lee",
+            "text": "One unified queue, filterable by clinic. Watch."
+          },
+          {
+            "ts": "00:24:30",
+            "speaker": "Elena Vasquez",
+            "text": "I like what I'm seeing. What does the pilot look like commercially?"
+          },
+          {
+            "ts": "00:25:12",
+            "speaker": "Jordan Lee",
+            "text": "Four-week pilot on your two busiest clinics, flat fee, credited fully if you roll out."
+          },
+          {
+            "ts": "00:38:55",
+            "speaker": "Malik Jones",
+            "text": "My comfort depends on the technical review. But nothing today scared me, which is rare."
+          },
+          {
+            "ts": "00:42:20",
+            "speaker": "Elena Vasquez",
+            "text": "Let's do the pilot. Tara owns rollout, Malik owns the technical gate."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_007",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-09T17:20:00Z",
+      "participants": [
+        "p_jordan",
+        "p_evasquez",
+        "p_tsingh"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_6060",
+      "content": {
+        "subject": "Pilot agreement",
+        "from": "p_jordan",
+        "body": "Elena - pilot agreement attached: four weeks, your two busiest clinics, flat fee credited on rollout. Tara cc'd for kickoff scheduling."
+      }
+    },
+    {
+      "id": "ev_008",
+      "deal_id": "umbra",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-03-10T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Pilot"
+      }
+    },
+    {
+      "id": "ev_009",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-10T14:40:00Z",
+      "participants": [
+        "p_evasquez",
+        "p_jordan",
+        "p_tsingh"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_6060",
+      "content": {
+        "subject": "Pilot agreement",
+        "from": "p_evasquez",
+        "body": "Signed and returned. Tara will take scheduling from here."
+      }
+    },
+    {
+      "id": "ev_010",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-14T16:33:00Z",
+      "participants": [
+        "p_mjones",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_6042",
+      "content": {
+        "subject": "Architecture doc + Athena integration spec",
+        "from": "p_mjones",
+        "body": "Jordan - following up on the docs you promised at the demo. Also three questions before the pilot goes further: 1) Is PHI ever processed outside your VPC? 2) What's your RTO if the sync service goes down mid-day? 3) Does the Athena integration poll or use their event API? These would normally go to an engineer but I don't have a contact on your side."
+      }
+    },
+    {
+      "id": "ev_011",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-14T22:05:00Z",
+      "participants": [
+        "p_jordan",
+        "p_mjones"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_6042",
+      "content": {
+        "subject": "Architecture doc + Athena integration spec",
+        "from": "p_jordan",
+        "body": "Malik - docs attached. On your questions: 1) No, PHI never leaves the VPC. 2) RTO is one hour, historically much faster. 3) Event API with polling fallback. Caveat that I'm the sales guy translating from our eng docs - happy to set up a session with our SE Sam for anything deeper."
+      }
+    },
+    {
+      "id": "ev_012",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-15T15:20:00Z",
+      "participants": [
+        "p_mjones",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_6042",
+      "content": {
+        "subject": "Architecture doc + Athena integration spec",
+        "from": "p_mjones",
+        "body": "Answers work for now. I'll hold the deeper questions for the formal review."
+      }
+    },
+    {
+      "id": "ev_013",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-21T16:10:00Z",
+      "participants": [
+        "p_tsingh"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_tsingh",
+        "text": "Jordan - channel for pilot logistics as discussed. First question: can we add our Riverside clinic coordinators as viewers this week? They're curious"
+      }
+    },
+    {
+      "id": "ev_014",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-21T16:25:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_jordan",
+        "text": "Done, sending viewer invites today. Curiosity from non-pilot clinics is the best sign there is."
+      }
+    },
+    {
+      "id": "ev_015",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-23T15:44:00Z",
+      "participants": [
+        "p_tsingh"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_tsingh",
+        "text": "week 1 numbers: 214 referrals routed, zero lost. one hiccup - the friday batch from clinic 2 came in slow, took about 40 min to clear"
+      }
+    },
+    {
+      "id": "ev_016",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-23T16:30:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_jordan",
+        "text": "Checked with our team - that was a queue backup on our side during a deploy window. Fixed, and I'll flag your account for the off-peak deploy group going forward."
+      }
+    },
+    {
+      "id": "ev_017",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-23T17:05:00Z",
+      "participants": [
+        "p_mjones"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_mjones",
+        "text": "noted that you caught and explained that before I had to ask. good sign. adding it to my review notes"
+      }
+    },
+    {
+      "id": "ev_018",
+      "deal_id": "umbra",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-03-28T16:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_evasquez",
+        "p_mjones",
+        "p_tsingh"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_90570",
+      "content": {
+        "topic": "Umbra Health <> Harborview - Pilot review",
+        "duration_min": 36,
+        "transcript": [
+          {
+            "ts": "00:01:30",
+            "speaker": "Tara Singh",
+            "text": "Two weeks in: zero lost referrals across both pilot clinics. Normally we'd have dropped five or six by now. My coordinators are asking when the other clinics get it."
+          },
+          {
+            "ts": "00:06:12",
+            "speaker": "Elena Vasquez",
+            "text": "That's the result I wanted to hear. Malik, where are you?"
+          },
+          {
+            "ts": "00:07:04",
+            "speaker": "Malik Jones",
+            "text": "Performance and the Athena sync have been solid. One flag: before full rollout, this goes through our formal security review. It's a real process, three-ish weeks, and I can't shortcut it."
+          },
+          {
+            "ts": "00:08:15",
+            "speaker": "Jordan Lee",
+            "text": "Understood. Send the questionnaire whenever, our compliance package is ready."
+          },
+          {
+            "ts": "00:14:40",
+            "speaker": "Malik Jones",
+            "text": "There'll be a live architecture review too, my team plus whoever built your data layer. One walkthrough, deep questions."
+          },
+          {
+            "ts": "00:15:22",
+            "speaker": "Jordan Lee",
+            "text": "We'll line up the right people on our side."
+          },
+          {
+            "ts": "00:22:36",
+            "speaker": "Elena Vasquez",
+            "text": "Assuming security clears, I want full rollout before the fall clinic openings. Jordan, get us a full proposal in parallel so the review isn't blocking paper."
+          },
+          {
+            "ts": "00:33:10",
+            "speaker": "Elena Vasquez",
+            "text": "Good milestone, everyone. Let's keep the pace."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_019",
+      "deal_id": "umbra",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-03-30T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Proposal"
+      }
+    },
+    {
+      "id": "ev_020",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-30T15:20:00Z",
+      "participants": [
+        "p_tsingh"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_tsingh",
+        "text": "coordinators from 3 non-pilot clinics have now asked me when they get access. told them after security review. no pressure malik"
+      }
+    },
+    {
+      "id": "ev_021",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-30T15:41:00Z",
+      "participants": [
+        "p_mjones"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_mjones",
+        "text": "the process takes what it takes :) questionnaire goes out to jordan this week"
+      }
+    },
+    {
+      "id": "ev_022",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-04-02T18:25:00Z",
+      "participants": [
+        "p_evasquez",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_6098",
+      "content": {
+        "subject": "Contract structure for full rollout",
+        "from": "p_evasquez",
+        "body": "Jordan - as the proposal comes together, a thought: an eleven-clinic commitment at this number is board-visible for us. It would help to get our executive teams aligned directly - is there someone on your leadership side who'd be my counterpart for the commercial conversation? Better to have that relationship before we're negotiating redlines."
+      }
+    },
+    {
+      "id": "ev_023",
+      "deal_id": "umbra",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-04-02T20:11:00Z",
+      "participants": [
+        "p_jordan",
+        "p_evasquez"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_6098",
+      "content": {
+        "subject": "Contract structure for full rollout",
+        "from": "p_jordan",
+        "body": "Completely agree - our VP of Sales Ava Chen would be your counterpart. I'll set up an intro this coming week."
+      }
+    },
+    {
+      "id": "ev_024",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-03T18:12:00Z",
+      "participants": [
+        "p_mjones"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_mjones",
+        "text": "jordan - security questionnaire sent to your email just now. also need to schedule that live architecture review, my team wants 90 minutes with your data layer people. who should I coordinate with?"
+      }
+    },
+    {
+      "id": "ev_025",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-03T18:40:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_jordan",
+        "text": "Got it, questionnaire's with me. For the architecture review let me coordinate on my side and come back with names and times - likely early next week."
+      }
+    },
+    {
+      "id": "ev_026",
+      "deal_id": "umbra",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-06T14:55:00Z",
+      "participants": [
+        "p_tsingh"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-umbra",
+      "content": {
+        "from": "p_tsingh",
+        "text": "week 3 update: still zero lost referrals. my coordinators built a small shrine to the unified queue. figuratively. mostly"
+      }
+    }
+  ]
+}

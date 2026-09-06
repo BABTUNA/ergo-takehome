@@ -1,0 +1,50 @@
+[
+  {
+    "id": "p_sbloom",
+    "name": "Sarah Bloom",
+    "email": "sbloom@initech.com",
+    "title": "Director of Operations",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Sarah Bloom"
+      ]
+    }
+  },
+  {
+    "id": "p_gortiz",
+    "name": "Gwen Ortiz",
+    "email": "gortiz@initech.com",
+    "title": "CFO",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {}
+  },
+  {
+    "id": "p_jordan",
+    "name": "Jordan Lee",
+    "email": "jordan@harborview.io",
+    "title": "",
+    "side": "seller",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {
+      "zoom": [
+        "Jordan Lee"
+      ]
+    }
+  },
+  {
+    "id": "p_thale",
+    "name": "",
+    "email": "thale@initech.com",
+    "title": "",
+    "side": "buyer",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {}
+  }
+]

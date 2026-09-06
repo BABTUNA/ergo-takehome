@@ -1,0 +1,58 @@
+[
+  {
+    "id": "p_evasquez",
+    "name": "Elena Vasquez",
+    "email": "evasquez@umbrahealth.com",
+    "title": "COO",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Elena Vasquez"
+      ]
+    }
+  },
+  {
+    "id": "p_tsingh",
+    "name": "Tara Singh",
+    "email": "tsingh@umbrahealth.com",
+    "title": "Operations Manager",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Tara Singh"
+      ]
+    }
+  },
+  {
+    "id": "p_mjones",
+    "name": "Malik Jones",
+    "email": "mjones@umbrahealth.com",
+    "title": "Director of Engineering",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Malik Jones"
+      ]
+    }
+  },
+  {
+    "id": "p_jordan",
+    "name": "Jordan Lee",
+    "email": "jordan@harborview.io",
+    "title": "",
+    "side": "seller",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {
+      "zoom": [
+        "Jordan Lee"
+      ]
+    }
+  }
+]

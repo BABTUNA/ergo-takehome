@@ -1,0 +1,450 @@
+{
+  "deal": {
+    "id": "opp_011",
+    "name": "Initech - Ops Workflow Platform",
+    "account": "Initech",
+    "amount": 95000,
+    "stage": "Proposal",
+    "close_date": "2026-05-08",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-19"
+  },
+  "events": [
+    {
+      "id": "ev_001",
+      "deal_id": "initech",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-02-19T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Discovery"
+      }
+    },
+    {
+      "id": "ev_002",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-19T15:30:00Z",
+      "participants": [
+        "p_thale",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_5102",
+      "content": {
+        "subject": "Scheduling: Harborview intro for Sarah Bloom",
+        "from": "p_thale",
+        "body": "Hi Jordan, Travis here, I coordinate for the ops team. Sarah Bloom asked me to set up an intro call re: your workflow platform. She's free Friday 8am pacific. Sending an invite unless I hear otherwise."
+      }
+    },
+    {
+      "id": "ev_003",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-19T16:02:00Z",
+      "participants": [
+        "p_jordan",
+        "p_thale"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_5102",
+      "content": {
+        "subject": "Scheduling: Harborview intro for Sarah Bloom",
+        "from": "p_jordan",
+        "body": "Friday 8am works great, thanks Travis."
+      }
+    },
+    {
+      "id": "ev_004",
+      "deal_id": "initech",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-02-20T16:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_sbloom"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_70233",
+      "content": {
+        "topic": "Initech <> Harborview - Intro call",
+        "duration_min": 28,
+        "transcript": [
+          {
+            "ts": "00:01:22",
+            "speaker": "Jordan Lee",
+            "text": "Sarah, thanks for taking this. Your coordinator mentioned ops workflow pain, want to give me the shape of it?"
+          },
+          {
+            "ts": "00:02:10",
+            "speaker": "Sarah Bloom",
+            "text": "We're a 400-person company running operations off spreadsheets and a ten-year-old ticketing system. Every handoff between teams drops something."
+          },
+          {
+            "ts": "00:07:35",
+            "speaker": "Jordan Lee",
+            "text": "That's very solvable. Here's a two-minute version of how our workflow engine handles cross-team handoffs."
+          },
+          {
+            "ts": "00:12:48",
+            "speaker": "Sarah Bloom",
+            "text": "Okay, that's genuinely what I've been looking for. I've evaluated two other tools and both wanted us to rebuild everything their way."
+          },
+          {
+            "ts": "00:18:20",
+            "speaker": "Jordan Lee",
+            "text": "Who else would be involved in evaluating something like this?"
+          },
+          {
+            "ts": "00:19:04",
+            "speaker": "Sarah Bloom",
+            "text": "Realistically it starts and ends with me making the case internally. Get me a proper demo and I'll take it from there."
+          },
+          {
+            "ts": "00:25:15",
+            "speaker": "Jordan Lee",
+            "text": "Let's do it early March. I'll send times."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_005",
+      "deal_id": "initech",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-02-27T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Demo"
+      }
+    },
+    {
+      "id": "ev_006",
+      "deal_id": "initech",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-03-03T16:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_sbloom"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_74102",
+      "content": {
+        "topic": "Initech <> Harborview - Demo",
+        "duration_min": 38,
+        "transcript": [
+          {
+            "ts": "00:01:15",
+            "speaker": "Jordan Lee",
+            "text": "I built this demo around the handoff problem you described. Just you today?"
+          },
+          {
+            "ts": "00:01:50",
+            "speaker": "Sarah Bloom",
+            "text": "Just me. Easier to move fast this way, I'll socialize it internally once I've seen it."
+          },
+          {
+            "ts": "00:09:42",
+            "speaker": "Sarah Bloom",
+            "text": "The routing rules are exactly right. Can each department keep their own view of the same workflow?"
+          },
+          {
+            "ts": "00:10:15",
+            "speaker": "Jordan Lee",
+            "text": "Yes, role-based views over one source of truth. Nobody has to change how they see their work."
+          },
+          {
+            "ts": "00:17:30",
+            "speaker": "Sarah Bloom",
+            "text": "I love this. Honestly the best fit I've seen for how we actually operate."
+          },
+          {
+            "ts": "00:24:08",
+            "speaker": "Jordan Lee",
+            "text": "What does a decision path look like on your side? Anyone else I should be talking to?"
+          },
+          {
+            "ts": "00:24:55",
+            "speaker": "Sarah Bloom",
+            "text": "I'll take it up the chain. Our CFO Gwen signs anything over fifty K but she trusts my recommendation on tooling. Let me handle the internal side."
+          },
+          {
+            "ts": "00:31:20",
+            "speaker": "Sarah Bloom",
+            "text": "Send me pricing this week and give me a couple of weeks to build the internal case."
+          },
+          {
+            "ts": "00:36:44",
+            "speaker": "Jordan Lee",
+            "text": "Pricing tomorrow morning. And happy to present to Gwen or anyone else whenever it helps."
+          },
+          {
+            "ts": "00:37:12",
+            "speaker": "Sarah Bloom",
+            "text": "Noted. I've got it from here."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_007",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-04T15:45:00Z",
+      "participants": [
+        "p_jordan",
+        "p_sbloom"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_5130",
+      "content": {
+        "subject": "Pricing overview",
+        "from": "p_jordan",
+        "body": "Sarah - pricing attached as promised, structured for your 400-person setup with the phased rollout we discussed. Also included a one-page internal pitch doc in case it helps you socialize it."
+      }
+    },
+    {
+      "id": "ev_008",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-04T20:10:00Z",
+      "participants": [
+        "p_sbloom",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_5130",
+      "content": {
+        "subject": "Pricing overview",
+        "from": "p_sbloom",
+        "body": "Perfect, the pitch doc is a nice touch. Will report back once I've made the rounds."
+      }
+    },
+    {
+      "id": "ev_009",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-10T17:20:00Z",
+      "participants": [
+        "p_sbloom",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_5158",
+      "content": {
+        "subject": "Two pricing questions",
+        "from": "p_sbloom",
+        "body": "Jordan - two questions as I build the case: does the per-seat price drop at 300+ seats, and is the onboarding fee negotiable if we self-serve the training? Trying to get the number under a threshold I know will fly."
+      }
+    },
+    {
+      "id": "ev_010",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-10T18:05:00Z",
+      "participants": [
+        "p_jordan",
+        "p_sbloom"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_5158",
+      "content": {
+        "subject": "Two pricing questions",
+        "from": "p_jordan",
+        "body": "Yes on both - 300+ takes it down 12%, and we can waive half the onboarding fee for self-serve training. That puts you at the number attached. Hope that clears the threshold."
+      }
+    },
+    {
+      "id": "ev_011",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-10T21:44:00Z",
+      "participants": [
+        "p_sbloom",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_5158",
+      "content": {
+        "subject": "Two pricing questions",
+        "from": "p_sbloom",
+        "body": "That works. This gives me what I need."
+      }
+    },
+    {
+      "id": "ev_012",
+      "deal_id": "initech",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-03-11T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Proposal"
+      }
+    },
+    {
+      "id": "ev_013",
+      "deal_id": "initech",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-17T16:05:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-initech",
+      "content": {
+        "from": "p_jordan",
+        "text": "Sarah - channel's live as discussed. Faster than email for quick stuff."
+      }
+    },
+    {
+      "id": "ev_014",
+      "deal_id": "initech",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-17T16:40:00Z",
+      "participants": [
+        "p_sbloom"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-initech",
+      "content": {
+        "from": "p_sbloom",
+        "text": "great. quick one actually: if we signed mid-april, how fast could onboarding start? trying to line it up with our q2 planning"
+      }
+    },
+    {
+      "id": "ev_015",
+      "deal_id": "initech",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-17T16:55:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-initech",
+      "content": {
+        "from": "p_jordan",
+        "text": "Kickoff within a week of signature, first workflows live in two. Q2 timing works perfectly."
+      }
+    },
+    {
+      "id": "ev_016",
+      "deal_id": "initech",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-17T17:10:00Z",
+      "participants": [
+        "p_sbloom"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-initech",
+      "content": {
+        "from": "p_sbloom",
+        "text": "perfect, that's going in the internal doc"
+      }
+    },
+    {
+      "id": "ev_017",
+      "deal_id": "initech",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-20T15:22:00Z",
+      "participants": [
+        "p_sbloom"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-initech",
+      "content": {
+        "from": "p_sbloom",
+        "text": "presenting the case tuesday. wish me luck"
+      }
+    },
+    {
+      "id": "ev_018",
+      "deal_id": "initech",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-20T15:30:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-initech",
+      "content": {
+        "from": "p_jordan",
+        "text": "You've got this. Ping me if any question comes up mid-meeting, I'll be at my desk."
+      }
+    },
+    {
+      "id": "ev_019",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-24T16:52:00Z",
+      "participants": [
+        "p_sbloom",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_5199",
+      "content": {
+        "subject": "Re: Two pricing questions",
+        "from": "p_sbloom",
+        "body": "Quick update - internal review is underway, circling back after our internal review wraps. Should know more in a week or so."
+      }
+    },
+    {
+      "id": "ev_020",
+      "deal_id": "initech",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-31T17:15:00Z",
+      "participants": [
+        "p_jordan",
+        "p_sbloom"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_5215",
+      "content": {
+        "subject": "Checking in on the internal review",
+        "from": "p_jordan",
+        "body": "Sarah - hope the review is going well. Anything I can send that would help? Happy to do a session with Gwen or whoever is weighing in, sometimes a live walkthrough moves things faster than a deck."
+      }
+    },
+    {
+      "id": "ev_021",
+      "deal_id": "initech",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-05T18:20:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-initech",
+      "content": {
+        "from": "p_jordan",
+        "text": "Hey Sarah - any word from the internal review? No rush, just keeping our onboarding slot penciled in for you."
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "p_odiaz",
+    "name": "Omar Diaz",
+    "email": "odiaz@globex.com",
+    "title": "Director of IT",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Omar Diaz"
+      ]
+    }
+  },
+  {
+    "id": "p_npark",
+    "name": "Nina Park",
+    "email": "npark@globex.com",
+    "title": "Business Analyst",
+    "side": "buyer",
+    "in_crm": true,
+    "provisional": false,
+    "aliases": {
+      "zoom": [
+        "Nina Park"
+      ]
+    }
+  },
+  {
+    "id": "p_jordan",
+    "name": "Jordan Lee",
+    "email": "jordan@harborview.io",
+    "title": "",
+    "side": "seller",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {
+      "zoom": [
+        "Jordan Lee"
+      ]
+    }
+  },
+  {
+    "id": "p_rhea",
+    "name": "Rhea Kim",
+    "email": "rhea@globex.com",
+    "title": "",
+    "side": "buyer",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {
+      "zoom": [
+        "Rhea Kim"
+      ]
+    }
+  },
+  {
+    "id": "p_sam",
+    "name": "Sam Okafor",
+    "email": "sam@harborview.io",
+    "title": "",
+    "side": "seller",
+    "in_crm": false,
+    "provisional": true,
+    "aliases": {
+      "zoom": [
+        "Sam Okafor"
+      ]
+    }
+  }
+]

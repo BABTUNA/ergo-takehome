@@ -1,0 +1,844 @@
+{
+  "deal": {
+    "id": "opp_009",
+    "name": "Globex - Reconciliation Platform",
+    "account": "Globex",
+    "amount": 120000,
+    "stage": "Negotiation",
+    "close_date": "2026-04-30",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-13"
+  },
+  "events": [
+    {
+      "id": "ev_001",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-10T15:12:00Z",
+      "participants": [
+        "p_jordan",
+        "p_odiaz"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4402",
+      "content": {
+        "subject": "Intro - Harborview / Globex",
+        "from": "p_jordan",
+        "body": "Omar - great to connect at the ops summit last week. You mentioned the reconciliation pain between your order system and warehouse tooling. That's exactly what we solve. Open to a 30 minute call Thursday?"
+      }
+    },
+    {
+      "id": "ev_002",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-10T18:40:00Z",
+      "participants": [
+        "p_odiaz",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_4402",
+      "content": {
+        "subject": "Intro - Harborview / Globex",
+        "from": "p_odiaz",
+        "body": "Thursday works. Send an invite for 9am pacific."
+      }
+    },
+    {
+      "id": "ev_003",
+      "deal_id": "globex",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-02-12T17:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_odiaz"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_71002",
+      "content": {
+        "topic": "Globex <> Harborview - Intro / discovery",
+        "duration_min": 31,
+        "transcript": [
+          {
+            "ts": "00:01:10",
+            "speaker": "Jordan Lee",
+            "text": "Appreciate you making time, Omar. I'd love to start with what's driving the evaluation on your side."
+          },
+          {
+            "ts": "00:02:04",
+            "speaker": "Omar Diaz",
+            "text": "We're drowning in manual reconciliation between our order system and the warehouse tooling. My team loses maybe fifteen hours a week to it."
+          },
+          {
+            "ts": "00:04:30",
+            "speaker": "Jordan Lee",
+            "text": "That's the exact shape of problem we built the sync engine for. Can I show you how the field mapping works?"
+          },
+          {
+            "ts": "00:09:12",
+            "speaker": "Omar Diaz",
+            "text": "This is honestly better than what I sketched for the internal build. What does implementation look like?"
+          },
+          {
+            "ts": "00:15:45",
+            "speaker": "Jordan Lee",
+            "text": "Typical rollout is four to six weeks. We'd pair one of our solutions engineers with your team."
+          },
+          {
+            "ts": "00:21:08",
+            "speaker": "Omar Diaz",
+            "text": "Budget isn't mine to sign off past fifty K, so finance will need to be in the loop at some point. But I want to move this forward."
+          },
+          {
+            "ts": "00:26:30",
+            "speaker": "Omar Diaz",
+            "text": "Send me something I can forward internally. I'll set up a proper demo with a couple more people."
+          },
+          {
+            "ts": "00:29:02",
+            "speaker": "Jordan Lee",
+            "text": "Perfect. I'll send a recap today and we'll get the demo on the calendar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_004",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-12T19:05:00Z",
+      "participants": [
+        "p_jordan",
+        "p_odiaz"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4415",
+      "content": {
+        "subject": "Re: Intro - Harborview / Globex",
+        "from": "p_jordan",
+        "body": "Omar - recap from today attached, plus the one-pager you can forward internally. Short version: continuous reconciliation, four to six week rollout, and we'd scope the exact integration in a technical session. Let me know who you'd like in the demo."
+      }
+    },
+    {
+      "id": "ev_005",
+      "deal_id": "globex",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-02-13T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Discovery"
+      }
+    },
+    {
+      "id": "ev_006",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-13T16:22:00Z",
+      "participants": [
+        "p_odiaz",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_4415",
+      "content": {
+        "subject": "Re: Intro - Harborview / Globex",
+        "from": "p_odiaz",
+        "body": "Forwarded upstairs. Will come back on demo timing - likely second week of March so I can get the right people in the room."
+      }
+    },
+    {
+      "id": "ev_007",
+      "deal_id": "globex",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-02-26T16:30:00Z",
+      "participants": [
+        "p_jordan",
+        "p_odiaz"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_74881",
+      "content": {
+        "topic": "Globex <> Harborview - Sync check-in",
+        "duration_min": 18,
+        "transcript": [
+          {
+            "ts": "00:01:20",
+            "speaker": "Omar Diaz",
+            "text": "Quick one from me. I floated this upstairs and got a cautious green light to evaluate properly."
+          },
+          {
+            "ts": "00:03:41",
+            "speaker": "Jordan Lee",
+            "text": "Great. Who should be in the room for the full demo?"
+          },
+          {
+            "ts": "00:04:15",
+            "speaker": "Omar Diaz",
+            "text": "Me, probably Nina from the business analysis side, and I want our CFO Rhea there. If she's not bought in early, nothing gets signed at this size."
+          },
+          {
+            "ts": "00:08:02",
+            "speaker": "Jordan Lee",
+            "text": "Understood. I'll build the demo around the cost story as much as the tech."
+          },
+          {
+            "ts": "00:12:33",
+            "speaker": "Omar Diaz",
+            "text": "Second week of March works. I'll get it scheduled on our side."
+          },
+          {
+            "ts": "00:16:04",
+            "speaker": "Jordan Lee",
+            "text": "Looking forward to it. Anything you want me to prep for Rhea specifically?"
+          },
+          {
+            "ts": "00:16:40",
+            "speaker": "Omar Diaz",
+            "text": "Numbers. She will not care about the field mapper. She'll care what it costs and what it saves."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_008",
+      "deal_id": "globex",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-03-05T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Demo"
+      }
+    },
+    {
+      "id": "ev_009",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-05T20:15:00Z",
+      "participants": [
+        "p_odiaz",
+        "p_jordan",
+        "p_npark"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_4436",
+      "content": {
+        "subject": "Demo scheduling - March 12",
+        "from": "p_odiaz",
+        "body": "Locking March 12, 10am pacific. Attendees on our side: me, Nina Park (business analysis, cc'd), and Rhea Kim, our CFO. Reminder that Rhea will want the numbers story, not a feature tour."
+      }
+    },
+    {
+      "id": "ev_010",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-05T21:03:00Z",
+      "participants": [
+        "p_jordan",
+        "p_odiaz",
+        "p_npark"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4436",
+      "content": {
+        "subject": "Demo scheduling - March 12",
+        "from": "p_jordan",
+        "body": "Got it - building the session around the cost case. Invite coming shortly."
+      }
+    },
+    {
+      "id": "ev_011",
+      "deal_id": "globex",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-03-12T17:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_rhea",
+        "p_odiaz",
+        "p_npark"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_88213",
+      "content": {
+        "topic": "Globex <> Harborview - Platform demo",
+        "duration_min": 42,
+        "transcript": [
+          {
+            "ts": "00:01:05",
+            "speaker": "Jordan Lee",
+            "text": "Thanks everyone for joining. Omar suggested we spend as much time on the business case as the product, so that's the plan."
+          },
+          {
+            "ts": "00:02:22",
+            "speaker": "Rhea Kim",
+            "text": "Good, because that's the part I'm here for. Go ahead."
+          },
+          {
+            "ts": "00:05:48",
+            "speaker": "Jordan Lee",
+            "text": "Here's the sync engine running against a copy of a typical order flow. What used to be a manual reconciliation pass just happens continuously."
+          },
+          {
+            "ts": "00:08:30",
+            "speaker": "Omar Diaz",
+            "text": "For context, this is the fifteen hours a week I keep complaining about."
+          },
+          {
+            "ts": "00:11:14",
+            "speaker": "Nina Park",
+            "text": "Does the audit trail export? We report on reconciliation exceptions quarterly."
+          },
+          {
+            "ts": "00:11:52",
+            "speaker": "Jordan Lee",
+            "text": "Yes, full export on any window, CSV or straight to your BI tool."
+          },
+          {
+            "ts": "00:14:22",
+            "speaker": "Rhea Kim",
+            "text": "Before we go further. What does this look like at 500 seats? I need total cost, not list price. Implementation, support tier, the real number."
+          },
+          {
+            "ts": "00:15:01",
+            "speaker": "Jordan Lee",
+            "text": "Fair question. Rather than hand-wave it now, let me put together a full ROI breakdown, real cost against the hours you're losing. I can have that to you this week."
+          },
+          {
+            "ts": "00:15:38",
+            "speaker": "Rhea Kim",
+            "text": "That works. I want it before we talk again. We start renewal planning for our other vendors in April and this either fits in that cycle or waits a year."
+          },
+          {
+            "ts": "00:16:10",
+            "speaker": "Jordan Lee",
+            "text": "Understood, that timeline is very doable."
+          },
+          {
+            "ts": "00:22:47",
+            "speaker": "Omar Diaz",
+            "text": "One thing on the technical side. Priya's team will want to see the SSO flow before we sign anything. She runs engineering and she's strict about auth."
+          },
+          {
+            "ts": "00:23:15",
+            "speaker": "Jordan Lee",
+            "text": "Happy to run a session with her team whenever. We're SAML and OIDC out of the box."
+          },
+          {
+            "ts": "00:29:33",
+            "speaker": "Rhea Kim",
+            "text": "What's your pricing model when seats fluctuate? We're seasonal. I don't want to pay January rates for July headcount."
+          },
+          {
+            "ts": "00:30:20",
+            "speaker": "Jordan Lee",
+            "text": "There's a flex band on the enterprise tier. I'll make sure the breakdown models your seasonality."
+          },
+          {
+            "ts": "00:36:41",
+            "speaker": "Omar Diaz",
+            "text": "I'd like to get a sandbox going with our real schemas next."
+          },
+          {
+            "ts": "00:37:10",
+            "speaker": "Jordan Lee",
+            "text": "I'll have Sam set that up this week."
+          },
+          {
+            "ts": "00:40:12",
+            "speaker": "Rhea Kim",
+            "text": "Good session. Send me that breakdown and we'll go from there."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_012",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-13T18:02:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_jordan",
+        "text": "Welcome Omar! Figured this beats email for the sandbox work. Sam from our solutions team is in here too."
+      }
+    },
+    {
+      "id": "ev_013",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-13T18:15:00Z",
+      "participants": [
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_odiaz",
+        "text": "nice, this works. what do you need from us to get the sandbox loaded?"
+      }
+    },
+    {
+      "id": "ev_014",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-13T18:21:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_sam",
+        "text": "A schema export from your order system and read creds for a staging copy of the warehouse db. Template for both incoming."
+      }
+    },
+    {
+      "id": "ev_015",
+      "deal_id": "globex",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-03-15T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Negotiation"
+      }
+    },
+    {
+      "id": "ev_016",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-16T16:40:00Z",
+      "participants": [
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_odiaz",
+        "text": "schema export sent to your secure upload. staging creds coming after our infra guy rotates them"
+      }
+    },
+    {
+      "id": "ev_017",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-17T17:05:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_sam",
+        "text": "Got the export, schemas look clean. One question: the order_status enum has 14 values, do all of them actually occur?"
+      }
+    },
+    {
+      "id": "ev_018",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-17T17:32:00Z",
+      "participants": [
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_odiaz",
+        "text": "lol no, maybe 8 in practice. the rest are from an old migration. welcome to globex"
+      }
+    },
+    {
+      "id": "ev_019",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-18T17:30:00Z",
+      "participants": [
+        "p_odiaz",
+        "p_jordan",
+        "p_npark"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_4462",
+      "content": {
+        "subject": "Pricing structure question",
+        "from": "p_odiaz",
+        "body": "Ahead of any proposal - can you send over how the enterprise tier is structured? Nina (cc'd) is putting together an internal comparison against building this ourselves."
+      }
+    },
+    {
+      "id": "ev_020",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-18T19:11:00Z",
+      "participants": [
+        "p_jordan",
+        "p_odiaz",
+        "p_npark"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4462",
+      "content": {
+        "subject": "Pricing structure question",
+        "from": "p_jordan",
+        "body": "Attached the tier structure. Happy to walk Nina through the build-vs-buy math too, we have a calculator for exactly that."
+      }
+    },
+    {
+      "id": "ev_021",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-19T21:14:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_sam",
+        "text": "Sandbox is loading. Should have your real flows running by early next week."
+      }
+    },
+    {
+      "id": "ev_022",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-20T14:02:00Z",
+      "participants": [
+        "p_rhea",
+        "p_jordan",
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_4471",
+      "content": {
+        "subject": "ROI breakdown",
+        "from": "p_rhea",
+        "body": "Jordan - following up from the demo. I still need the ROI breakdown we discussed: total cost at 500 seats with the seasonality modeled, against the hours saved. Our renewal planning cycle starts in April. Can you get it to me this week?"
+      }
+    },
+    {
+      "id": "ev_023",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-20T16:45:00Z",
+      "participants": [
+        "p_jordan",
+        "p_rhea",
+        "p_odiaz"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4471",
+      "content": {
+        "subject": "ROI breakdown",
+        "from": "p_jordan",
+        "body": "Absolutely - pulling the seasonality model together now. You'll have the full breakdown this week."
+      }
+    },
+    {
+      "id": "ev_024",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-25T19:12:00Z",
+      "participants": [
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_odiaz",
+        "text": "sandbox is up and running on our side, looks great so far. btw Rhea K. still waiting on that ROI doc - she asked me about it this morning"
+      }
+    },
+    {
+      "id": "ev_025",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-25T19:30:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_jordan",
+        "text": "On it - the seasonality modeling took longer than planned, sent her a first-look one-pager in the meantime"
+      }
+    },
+    {
+      "id": "ev_026",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-26T22:18:00Z",
+      "participants": [
+        "p_jordan",
+        "p_rhea",
+        "p_odiaz"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4489",
+      "content": {
+        "subject": "Pricing one-pager",
+        "from": "p_jordan",
+        "body": "Rhea - attaching our enterprise pricing one-pager as a first look while we finalize the fuller model. Happy to talk through it live if useful."
+      }
+    },
+    {
+      "id": "ev_027",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-27T20:02:00Z",
+      "participants": [
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_odiaz",
+        "text": "ran the exception flow against last month's data. caught 3 mismatches our manual process missed. showed my team, they're sold"
+      }
+    },
+    {
+      "id": "ev_028",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-27T20:18:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_sam",
+        "text": "Love to hear it. Those 3 would've been silent failures in most setups."
+      }
+    },
+    {
+      "id": "ev_029",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-31T18:47:00Z",
+      "participants": [
+        "p_odiaz",
+        "p_jordan",
+        "p_sam"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_4503",
+      "content": {
+        "subject": "Security review process",
+        "from": "p_odiaz",
+        "body": "Heads up on process: before anything gets signed, our security team has to review the vendor package. I'll send their questionnaire once the sandbox evaluation wraps. Usually takes them two to three weeks, so let's not let it be the long pole."
+      }
+    },
+    {
+      "id": "ev_030",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-31T20:02:00Z",
+      "participants": [
+        "p_sam",
+        "p_odiaz",
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4503",
+      "content": {
+        "subject": "Security review process",
+        "from": "p_sam",
+        "body": "Thanks for the heads up. Our SOC 2 report and standard security package are ready whenever they are."
+      }
+    },
+    {
+      "id": "ev_031",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-01T17:25:00Z",
+      "participants": [
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_odiaz",
+        "text": "can you send over your SSO docs? want to have them ready for the eng review"
+      }
+    },
+    {
+      "id": "ev_032",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-01T17:41:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_sam",
+        "text": "Sent - SAML + OIDC guides plus the SCIM provisioning doc."
+      }
+    },
+    {
+      "id": "ev_033",
+      "deal_id": "globex",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-04-02T16:30:00Z",
+      "participants": [
+        "p_jordan",
+        "p_rhea"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4521",
+      "content": {
+        "subject": "Checking in",
+        "from": "p_jordan",
+        "body": "Rhea - wanted to make sure the pricing one-pager landed. Anything you'd like to see adjusted as you head into renewal planning?"
+      }
+    },
+    {
+      "id": "ev_034",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-04T15:30:00Z",
+      "participants": [
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_odiaz",
+        "text": "pushing internally to get a decision this month. priya wants a technical review with her team first - trying to get it scheduled for next week"
+      }
+    },
+    {
+      "id": "ev_035",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-04T16:02:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_jordan",
+        "text": "We can do any day next week. Sam will run it. Anything specific her team will want beyond SSO?"
+      }
+    },
+    {
+      "id": "ev_036",
+      "deal_id": "globex",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-04T16:20:00Z",
+      "participants": [
+        "p_odiaz"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-globex",
+      "content": {
+        "from": "p_odiaz",
+        "text": "data residency and the API rate limits probably. she's thorough, come prepared"
+      }
+    },
+    {
+      "id": "ev_037",
+      "deal_id": "globex",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-04-06T15:00:00Z",
+      "participants": [
+        "p_sam",
+        "p_odiaz",
+        "p_npark"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_91457",
+      "content": {
+        "topic": "Globex <> Harborview - Sandbox working session",
+        "duration_min": 18,
+        "transcript": [
+          {
+            "ts": "00:01:15",
+            "speaker": "Sam Okafor",
+            "text": "So the sandbox has your real order schemas loaded. Want to walk through the exception flow?"
+          },
+          {
+            "ts": "00:03:02",
+            "speaker": "Omar Diaz",
+            "text": "This is exactly what my team needs. The dedupe behavior alone saves us a hire."
+          },
+          {
+            "ts": "00:07:44",
+            "speaker": "Nina Park",
+            "text": "What export formats does the exception report support? We're a Tableau shop."
+          },
+          {
+            "ts": "00:08:10",
+            "speaker": "Sam Okafor",
+            "text": "Native Tableau connector, or CSV if you want raw."
+          },
+          {
+            "ts": "00:12:29",
+            "speaker": "Omar Diaz",
+            "text": "Next step on our side is the security questionnaire. I'll get it over to you this week."
+          },
+          {
+            "ts": "00:14:50",
+            "speaker": "Sam Okafor",
+            "text": "Send it whenever. Our compliance docs are ready to go."
+          },
+          {
+            "ts": "00:16:33",
+            "speaker": "Omar Diaz",
+            "text": "Good. I'm pushing to get this wrapped this month."
+          }
+        ]
+      }
+    }
+  ]
+}
