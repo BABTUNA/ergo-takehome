@@ -1,0 +1,27 @@
+{
+  "channel": "harborview-umbra",
+  "created": "2026-03-21T16:00:00Z",
+  "members": ["jordan@harborview.io", "tsingh@umbrahealth.com", "mjones@umbrahealth.com"],
+  "messages": [
+    {"author": "tsingh@umbrahealth.com", "ts": "2026-03-21T16:10:00Z",
+     "text": "Jordan - channel for pilot logistics as discussed. First question: can we add our Riverside clinic coordinators as viewers this week? They're curious"},
+    {"author": "jordan@harborview.io", "ts": "2026-03-21T16:25:00Z",
+     "text": "Done, sending viewer invites today. Curiosity from non-pilot clinics is the best sign there is."},
+    {"author": "tsingh@umbrahealth.com", "ts": "2026-03-23T15:44:00Z",
+     "text": "week 1 numbers: 214 referrals routed, zero lost. one hiccup - the friday batch from clinic 2 came in slow, took about 40 min to clear"},
+    {"author": "jordan@harborview.io", "ts": "2026-03-23T16:30:00Z",
+     "text": "Checked with our team - that was a queue backup on our side during a deploy window. Fixed, and I'll flag your account for the off-peak deploy group going forward."},
+    {"author": "mjones@umbrahealth.com", "ts": "2026-03-23T17:05:00Z",
+     "text": "noted that you caught and explained that before I had to ask. good sign. adding it to my review notes"},
+    {"author": "tsingh@umbrahealth.com", "ts": "2026-03-30T15:20:00Z",
+     "text": "coordinators from 3 non-pilot clinics have now asked me when they get access. told them after security review. no pressure malik"},
+    {"author": "mjones@umbrahealth.com", "ts": "2026-03-30T15:41:00Z",
+     "text": "the process takes what it takes :) questionnaire goes out to jordan this week"},
+    {"author": "mjones@umbrahealth.com", "ts": "2026-04-03T18:12:00Z",
+     "text": "jordan - security questionnaire sent to your email just now. also need to schedule that live architecture review, my team wants 90 minutes with your data layer people. who should I coordinate with?"},
+    {"author": "jordan@harborview.io", "ts": "2026-04-03T18:40:00Z",
+     "text": "Got it, questionnaire's with me. For the architecture review let me coordinate on my side and come back with names and times - likely early next week."},
+    {"author": "tsingh@umbrahealth.com", "ts": "2026-04-06T14:55:00Z",
+     "text": "week 3 update: still zero lost referrals. my coordinators built a small shrine to the unified queue. figuratively. mostly"}
+  ]
+}

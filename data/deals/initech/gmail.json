@@ -1,0 +1,52 @@
+{
+  "threads": [
+    {
+      "id": "th_5102",
+      "subject": "Scheduling: Harborview intro for Sarah Bloom",
+      "messages": [
+        {"from": "thale@initech.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-02-19T15:30:00Z",
+         "body": "Hi Jordan, Travis here, I coordinate for the ops team. Sarah Bloom asked me to set up an intro call re: your workflow platform. She's free Friday 8am pacific. Sending an invite unless I hear otherwise."},
+        {"from": "jordan@harborview.io", "to": ["thale@initech.com"], "cc": [], "date": "2026-02-19T16:02:00Z",
+         "body": "Friday 8am works great, thanks Travis."}
+      ]
+    },
+    {
+      "id": "th_5130",
+      "subject": "Pricing overview",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["sbloom@initech.com"], "cc": [], "date": "2026-03-04T15:45:00Z",
+         "body": "Sarah - pricing attached as promised, structured for your 400-person setup with the phased rollout we discussed. Also included a one-page internal pitch doc in case it helps you socialize it."},
+        {"from": "sbloom@initech.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-03-04T20:10:00Z",
+         "body": "Perfect, the pitch doc is a nice touch. Will report back once I've made the rounds."}
+      ]
+    },
+    {
+      "id": "th_5158",
+      "subject": "Two pricing questions",
+      "messages": [
+        {"from": "sbloom@initech.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-03-10T17:20:00Z",
+         "body": "Jordan - two questions as I build the case: does the per-seat price drop at 300+ seats, and is the onboarding fee negotiable if we self-serve the training? Trying to get the number under a threshold I know will fly."},
+        {"from": "jordan@harborview.io", "to": ["sbloom@initech.com"], "cc": [], "date": "2026-03-10T18:05:00Z",
+         "body": "Yes on both - 300+ takes it down 12%, and we can waive half the onboarding fee for self-serve training. That puts you at the number attached. Hope that clears the threshold."},
+        {"from": "sbloom@initech.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-03-10T21:44:00Z",
+         "body": "That works. This gives me what I need."}
+      ]
+    },
+    {
+      "id": "th_5199",
+      "subject": "Re: Two pricing questions",
+      "messages": [
+        {"from": "sbloom@initech.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-03-24T16:52:00Z",
+         "body": "Quick update - internal review is underway, circling back after our internal review wraps. Should know more in a week or so."}
+      ]
+    },
+    {
+      "id": "th_5215",
+      "subject": "Checking in on the internal review",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["sbloom@initech.com"], "cc": [], "date": "2026-03-31T17:15:00Z",
+         "body": "Sarah - hope the review is going well. Anything I can send that would help? Happy to do a session with Gwen or whoever is weighing in, sometimes a live walkthrough moves things faster than a deck."}
+      ]
+    }
+  ]
+}

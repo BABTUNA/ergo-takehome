@@ -1,0 +1,123 @@
+# Story outlines: the hand-written contract the synthetic streams are generated from.
+# Every beat must appear in the named stream within +/- 1 day of its date.
+# Window: 2026-02-10 .. 2026-04-07. "Today" for the demo is 2026-04-07.
+
+anchor:
+  window_start: 2026-02-10
+  today: 2026-04-07
+
+seller:
+  company: Harborview Software
+  domain: harborview.io
+  cast:
+    - {id: jordan, name: Jordan Lee, title: Account Executive, email: jordan@harborview.io}
+    - {id: sam, name: Sam Okafor, title: Solutions Engineer, email: sam@harborview.io}
+    - {id: ava, name: Ava Chen, title: VP Sales, email: ava@harborview.io}
+
+deals:
+  acme:
+    name: Acme Industrial
+    domain: acmeind.com
+    amount: 80000
+    stage: Proposal
+    close_date: 2026-04-24
+    story: >
+      The healthy control. Four buyer contacts engaged across channels, CTO involved,
+      multi-threaded on both sides: Jordan runs the deal, Sam owns the technical
+      threads with the eng lead, Ava has met the CTO. Positive sentiment, rising
+      momentum. Nothing to flag; the baseline every other deal is compared against.
+    cast:
+      - {id: marcus, name: Marcus Webb, title: CTO, email: mwebb@acmeind.com, in_crm: true}
+      - {id: dana, name: Dana Whitfield, title: Director of Operations, email: dwhitfield@acmeind.com, in_crm: true}
+      - {id: leo, name: Leo Nakamura, title: Engineering Lead, email: lnakamura@acmeind.com, in_crm: true}
+      - {id: ines, name: Ines Farah, title: Procurement Manager, email: ifarah@acmeind.com, in_crm: true}
+    beats:
+      - {date: 2026-02-16, stream: zoom, note: "Discovery call: Jordan + Dana + Leo; Dana frames ops pain, Leo asks integration questions"}
+      - {date: 2026-02-25, stream: zoom, note: "Demo: Marcus (CTO) joins; positive reaction, asks about rollout timeline"}
+      - {date: 2026-03-04, stream: slack, note: "Slack Connect opens; Leo and Sam start technical thread on API limits"}
+      - {date: 2026-03-13, stream: zoom, note: "Technical deep dive: Sam + Leo; sandbox agreed"}
+      - {date: 2026-03-20, stream: gmail, note: "Ines starts procurement thread; standard terms, no friction"}
+      - {date: 2026-03-27, stream: zoom, note: "Exec sync: Ava + Marcus align on rollout and pricing shape"}
+      - {date: 2026-04-03, stream: slack, note: "Leo confirms sandbox success; Dana asks for proposal by mid-April"}
+
+  globex:
+    name: Globex
+    domain: globex.com
+    amount: 120000
+    stage: Negotiation
+    close_date: 2026-04-30
+    story: >
+      The flagship. CFO Rhea engages early and asks for an ROI breakdown; Jordan
+      promises it "this week" and never sends it; Rhea goes silent after Mar 26
+      (12 days by demo day). Champion Omar stays active and rising on Slack, and
+      mentions VP eng Priya twice, but she never appears in any channel. An email
+      mentions an unnamed "security team" that must review before signature.
+      Rhea is absent from Salesforce contacts despite being the economic buyer.
+    cast:
+      - {id: rhea, name: Rhea Kim, title: CFO, email: rhea@globex.com, in_crm: false}
+      - {id: omar, name: Omar Diaz, title: Director of IT, email: odiaz@globex.com, in_crm: true}
+      - {id: nina, name: Nina Park, title: Business Analyst, email: npark@globex.com, in_crm: true}
+    ghosts:
+      - {name: Priya Shah, title: VP Engineering, mentioned_by: omar, times: 2}
+      - {name: null, label: security team, mentioned_in: gmail}
+    beats:
+      - {date: 2026-02-12, stream: zoom, note: "Discovery: Jordan + Omar; strong fit, Omar becomes champion"}
+      - {date: 2026-03-12, stream: zoom, note: "Platform demo: Rhea joins, asks for total cost at 500 seats; Jordan promises ROI breakdown; Omar first mentions Priya's team wanting to see SSO"}
+      - {date: 2026-03-18, stream: gmail, note: "Nina cc'd on pricing thread, never replies directly"}
+      - {date: 2026-03-20, stream: gmail, note: "Rhea emails asking for the ROI breakdown before renewal planning; Jordan replies promising it this week"}
+      - {date: 2026-03-25, stream: slack, note: "Omar: sandbox up; notes 'Rhea K. still waiting on that ROI doc'"}
+      - {date: 2026-03-26, stream: gmail, note: "Jordan sends pricing one-pager, no ROI breakdown attached; Rhea never replies again"}
+      - {date: 2026-03-31, stream: gmail, note: "Omar email mentions 'our security team' must review before signature; no names"}
+      - {date: 2026-04-04, stream: slack, note: "Omar pushing internally for a decision this month; second Priya mention, wants technical review"}
+      - {date: 2026-04-06, stream: zoom, note: "Working session: Sam + Omar + Nina; sandbox confirmed, next step security questionnaire; Nina asks one question about export formats"}
+
+  initech:
+    name: Initech
+    domain: initech.com
+    amount: 95000
+    stage: Proposal
+    close_date: 2026-05-08
+    story: >
+      Single-threaded with an altitude problem. Sarah (Director of Ops) is the only
+      engaged contact and holds every thread; she is responsive and warm through
+      mid-March, then goes quiet after Mar 24 (two weeks by demo day). Nobody above
+      director level has ever joined a call or thread. A CFO exists in Salesforce
+      contacts but has zero events. A coordinator appears once to schedule and
+      vanishes.
+    cast:
+      - {id: sarah, name: Sarah Bloom, title: Director of Operations, email: sbloom@initech.com, in_crm: true}
+      - {id: travis, name: Travis Hale, title: Team Coordinator, email: thale@initech.com, in_crm: false}
+      - {id: gwen, name: Gwen Ortiz, title: CFO, email: gortiz@initech.com, in_crm: true, note: zero events, CRM-only}
+    beats:
+      - {date: 2026-02-19, stream: gmail, note: "Travis schedules intro call for Sarah, then never appears again"}
+      - {date: 2026-02-20, stream: zoom, note: "Intro call: Jordan + Sarah; good fit for ops workflows"}
+      - {date: 2026-03-03, stream: zoom, note: "Demo: Sarah only; enthusiastic, says she'll socialize internally"}
+      - {date: 2026-03-10, stream: gmail, note: "Sarah asks pricing questions; Jordan answers same day"}
+      - {date: 2026-03-17, stream: slack, note: "Slack Connect: Sarah active, asks about onboarding timeline"}
+      - {date: 2026-03-24, stream: gmail, note: "Sarah: 'circling back after our internal review' - her last message in any channel"}
+      - {date: 2026-03-31, stream: gmail, note: "Jordan follow-up, no reply"}
+      - {date: 2026-04-05, stream: slack, note: "Jordan nudge on Slack, no reply"}
+
+  umbra:
+    name: Umbra Health
+    domain: umbrahealth.com
+    amount: 150000
+    stage: Proposal
+    close_date: 2026-05-15
+    story: >
+      Internal single-threading. Buyer side looks healthy: COO Elena, eng director
+      Malik, and ops manager Tara are all engaged with good sentiment. But every
+      single relationship runs through Jordan; Sam and Ava have zero contact with
+      anyone at Umbra. A security review is coming (Malik flags it) that Sam should
+      own, and Elena has no exec counterpart: Ava has never met her.
+    cast:
+      - {id: elena, name: Elena Vasquez, title: COO, email: evasquez@umbrahealth.com, in_crm: true}
+      - {id: malik, name: Malik Jones, title: Director of Engineering, email: mjones@umbrahealth.com, in_crm: true}
+      - {id: tara, name: Tara Singh, title: Operations Manager, email: tsingh@umbrahealth.com, in_crm: true}
+    beats:
+      - {date: 2026-02-24, stream: zoom, note: "Discovery: Jordan + Elena + Tara; Elena states goals, Tara owns rollout"}
+      - {date: 2026-03-06, stream: zoom, note: "Demo: Jordan solo on seller side despite Malik asking deep technical questions"}
+      - {date: 2026-03-14, stream: gmail, note: "Malik emails Jordan integration questions Sam should be answering"}
+      - {date: 2026-03-21, stream: slack, note: "Slack Connect: Tara and Jordan coordinate pilot logistics"}
+      - {date: 2026-03-28, stream: zoom, note: "Pilot review: Jordan + all three buyers; goes well; Malik flags an upcoming security review"}
+      - {date: 2026-04-02, stream: gmail, note: "Elena asks about contract shape; suggests execs 'get aligned'; no seller exec has ever engaged"}

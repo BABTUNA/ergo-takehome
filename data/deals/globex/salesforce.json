@@ -1,0 +1,21 @@
+{
+  "opportunity": {
+    "id": "opp_009",
+    "name": "Globex - Reconciliation Platform",
+    "account": "Globex",
+    "amount": 120000,
+    "stage": "Negotiation",
+    "close_date": "2026-04-30",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-13"
+  },
+  "contacts": [
+    {"id": "sf_c_101", "name": "Omar Diaz", "email": "odiaz@globex.com", "title": "Director of IT", "created": "2026-02-13"},
+    {"id": "sf_c_118", "name": "Nina Park", "email": "npark@globex.com", "title": "Business Analyst", "created": "2026-03-06"}
+  ],
+  "stage_history": [
+    {"stage": "Discovery", "entered": "2026-02-13"},
+    {"stage": "Demo", "entered": "2026-03-05"},
+    {"stage": "Negotiation", "entered": "2026-03-15"}
+  ]
+}

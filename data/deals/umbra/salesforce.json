@@ -1,0 +1,23 @@
+{
+  "opportunity": {
+    "id": "opp_015",
+    "name": "Umbra Health - Multi-clinic Coordination",
+    "account": "Umbra Health",
+    "amount": 150000,
+    "stage": "Proposal",
+    "close_date": "2026-05-15",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-18"
+  },
+  "contacts": [
+    {"id": "sf_c_150", "name": "Elena Vasquez", "email": "evasquez@umbrahealth.com", "title": "COO", "created": "2026-02-18"},
+    {"id": "sf_c_151", "name": "Tara Singh", "email": "tsingh@umbrahealth.com", "title": "Operations Manager", "created": "2026-02-25"},
+    {"id": "sf_c_152", "name": "Malik Jones", "email": "mjones@umbrahealth.com", "title": "Director of Engineering", "created": "2026-03-02"}
+  ],
+  "stage_history": [
+    {"stage": "Discovery", "entered": "2026-02-18"},
+    {"stage": "Demo", "entered": "2026-03-02"},
+    {"stage": "Pilot", "entered": "2026-03-10"},
+    {"stage": "Proposal", "entered": "2026-03-30"}
+  ]
+}

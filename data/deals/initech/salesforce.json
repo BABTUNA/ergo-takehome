@@ -1,0 +1,21 @@
+{
+  "opportunity": {
+    "id": "opp_011",
+    "name": "Initech - Ops Workflow Platform",
+    "account": "Initech",
+    "amount": 95000,
+    "stage": "Proposal",
+    "close_date": "2026-05-08",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-19"
+  },
+  "contacts": [
+    {"id": "sf_c_130", "name": "Sarah Bloom", "email": "sbloom@initech.com", "title": "Director of Operations", "created": "2026-02-19"},
+    {"id": "sf_c_131", "name": "Gwen Ortiz", "email": "gortiz@initech.com", "title": "CFO", "created": "2026-03-05"}
+  ],
+  "stage_history": [
+    {"stage": "Discovery", "entered": "2026-02-19"},
+    {"stage": "Demo", "entered": "2026-02-27"},
+    {"stage": "Proposal", "entered": "2026-03-11"}
+  ]
+}

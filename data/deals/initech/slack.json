@@ -1,0 +1,21 @@
+{
+  "channel": "harborview-initech",
+  "created": "2026-03-17T16:00:00Z",
+  "members": ["jordan@harborview.io", "sbloom@initech.com"],
+  "messages": [
+    {"author": "jordan@harborview.io", "ts": "2026-03-17T16:05:00Z",
+     "text": "Sarah - channel's live as discussed. Faster than email for quick stuff."},
+    {"author": "sbloom@initech.com", "ts": "2026-03-17T16:40:00Z",
+     "text": "great. quick one actually: if we signed mid-april, how fast could onboarding start? trying to line it up with our q2 planning"},
+    {"author": "jordan@harborview.io", "ts": "2026-03-17T16:55:00Z",
+     "text": "Kickoff within a week of signature, first workflows live in two. Q2 timing works perfectly."},
+    {"author": "sbloom@initech.com", "ts": "2026-03-17T17:10:00Z",
+     "text": "perfect, that's going in the internal doc"},
+    {"author": "sbloom@initech.com", "ts": "2026-03-20T15:22:00Z",
+     "text": "presenting the case tuesday. wish me luck"},
+    {"author": "jordan@harborview.io", "ts": "2026-03-20T15:30:00Z",
+     "text": "You've got this. Ping me if any question comes up mid-meeting, I'll be at my desk."},
+    {"author": "jordan@harborview.io", "ts": "2026-04-05T18:20:00Z",
+     "text": "Hey Sarah - any word from the internal review? No rush, just keeping our onboarding slot penciled in for you."}
+  ]
+}

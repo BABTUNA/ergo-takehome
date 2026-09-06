@@ -1,0 +1,58 @@
+{
+  "threads": [
+    {
+      "id": "th_3901",
+      "subject": "Following up from MFG Ops Expo",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["dwhitfield@acmeind.com"], "cc": [], "date": "2026-02-11T16:20:00Z",
+         "body": "Dana - good talking at the expo. You described the Monday spreadsheet ritual and I haven't stopped thinking about it. We built Harborview for exactly that. 30 minutes this week to see if it's a fit?"},
+        {"from": "dwhitfield@acmeind.com", "to": ["jordan@harborview.io"], "cc": ["lnakamura@acmeind.com"], "date": "2026-02-12T14:55:00Z",
+         "body": "Worth a look. Adding Leo Nakamura, our eng lead - anything ops adopts, he has to live with. Monday the 16th, 10am central?"}
+      ]
+    },
+    {
+      "id": "th_3928",
+      "subject": "Re: Discovery call recap + API docs",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["dwhitfield@acmeind.com", "lnakamura@acmeind.com"], "cc": [], "date": "2026-02-16T21:10:00Z",
+         "body": "Recap attached. Leo - API docs and SAP connector spec included as promised. Dana - whenever Marcus has 40 minutes, we'll run the full demo."},
+        {"from": "lnakamura@acmeind.com", "to": ["jordan@harborview.io"], "cc": ["dwhitfield@acmeind.com"], "date": "2026-02-19T15:34:00Z",
+         "body": "Docs look solid. Found two field types in our WMS payloads that won't map cleanly - details at the demo."},
+        {"from": "dwhitfield@acmeind.com", "to": ["jordan@harborview.io"], "cc": ["lnakamura@acmeind.com"], "date": "2026-02-19T17:02:00Z",
+         "body": "Marcus is in for Wednesday the 25th. Calendar invite sent."}
+      ]
+    },
+    {
+      "id": "th_3980",
+      "subject": "Sanitized exports",
+      "messages": [
+        {"from": "lnakamura@acmeind.com", "to": ["sam@harborview.io"], "cc": [], "date": "2026-03-19T22:41:00Z",
+         "body": "Sam - exports from all three plants are in your secure upload. Toledo's is ugly, don't say I didn't warn you."},
+        {"from": "sam@harborview.io", "to": ["lnakamura@acmeind.com"], "cc": [], "date": "2026-03-20T15:12:00Z",
+         "body": "Received. Toledo's is genuinely creative, but the mapper handles it. Sandbox on track for Monday."}
+      ]
+    },
+    {
+      "id": "th_3994",
+      "subject": "Vendor onboarding - procurement",
+      "messages": [
+        {"from": "ifarah@acmeind.com", "to": ["jordan@harborview.io"], "cc": ["dwhitfield@acmeind.com"], "date": "2026-03-20T16:08:00Z",
+         "body": "Jordan - Ines Farah, procurement. Marcus asked me to start our vendor pass early. Please send: W-9, insurance certs, your standard MSA, and SOC 2 report. Standard review is two weeks."},
+        {"from": "jordan@harborview.io", "to": ["ifarah@acmeind.com"], "cc": ["dwhitfield@acmeind.com"], "date": "2026-03-20T18:30:00Z",
+         "body": "All four attached. Happy to connect our legal with yours directly if anything in the MSA needs discussion."},
+        {"from": "ifarah@acmeind.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-03-30T19:15:00Z",
+         "body": "Package looks complete. Two standard redlines on the MSA coming from legal, nothing controversial. We'll be ready when the proposal lands."}
+      ]
+    },
+    {
+      "id": "th_4010",
+      "subject": "Proposal timing",
+      "messages": [
+        {"from": "dwhitfield@acmeind.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-04-03T20:22:00Z",
+         "body": "Jordan - sandbox verdict from Leo is a clear pass. Marcus wants the proposal by April 15 so we can approve before end of quarter. Both pricing paths like Ava discussed, please."},
+        {"from": "jordan@harborview.io", "to": ["dwhitfield@acmeind.com"], "cc": [], "date": "2026-04-03T21:04:00Z",
+         "body": "You'll have it by the 13th. Thanks for keeping this moving so cleanly, Dana."}
+      ]
+    }
+  ]
+}

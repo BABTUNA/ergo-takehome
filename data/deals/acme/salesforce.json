@@ -1,0 +1,24 @@
+{
+  "opportunity": {
+    "id": "opp_004",
+    "name": "Acme Industrial - Multi-plant Inventory Sync",
+    "account": "Acme Industrial",
+    "amount": 80000,
+    "stage": "Proposal",
+    "close_date": "2026-04-24",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-12"
+  },
+  "contacts": [
+    {"id": "sf_c_071", "name": "Dana Whitfield", "email": "dwhitfield@acmeind.com", "title": "Director of Operations", "created": "2026-02-12"},
+    {"id": "sf_c_072", "name": "Leo Nakamura", "email": "lnakamura@acmeind.com", "title": "Engineering Lead", "created": "2026-02-12"},
+    {"id": "sf_c_080", "name": "Marcus Webb", "email": "mwebb@acmeind.com", "title": "CTO", "created": "2026-02-20"},
+    {"id": "sf_c_095", "name": "Ines Farah", "email": "ifarah@acmeind.com", "title": "Procurement Manager", "created": "2026-03-20"}
+  ],
+  "stage_history": [
+    {"stage": "Discovery", "entered": "2026-02-12"},
+    {"stage": "Demo", "entered": "2026-02-20"},
+    {"stage": "Technical Evaluation", "entered": "2026-03-05"},
+    {"stage": "Proposal", "entered": "2026-03-30"}
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "meetings": [
+    {
+      "id": "zm_71550",
+      "topic": "Umbra Health <> Harborview - Discovery",
+      "start_time": "2026-02-24T18:00:00Z",
+      "duration_min": 33,
+      "attendees": [
+        {"name": "Jordan Lee", "email": "jordan@harborview.io"},
+        {"name": "Elena Vasquez", "email": "evasquez@umbrahealth.com"},
+        {"name": "Tara Singh", "email": "tsingh@umbrahealth.com"}
+      ],
+      "transcript": [
+        {"ts": "00:01:25", "speaker": "Jordan Lee", "text": "Elena, Tara, thanks for the time. Elena, want to start with the goals from your side?"},
+        {"ts": "00:02:14", "speaker": "Elena Vasquez", "text": "We're scaling from four clinics to eleven this year. Our intake and referral coordination breaks a little more with each new site. I need it fixed before the fall openings."},
+        {"ts": "00:08:40", "speaker": "Tara Singh", "text": "Day to day, that's me. Every clinic has its own intake spreadsheet and referrals get lost between them weekly."},
+        {"ts": "00:12:22", "speaker": "Jordan Lee", "text": "This maps well to our coordination engine. Let me show you the multi-site routing view."},
+        {"ts": "00:18:05", "speaker": "Elena Vasquez", "text": "That's the right shape. What I care about is timeline and whether this survives contact with healthcare data rules."},
+        {"ts": "00:19:11", "speaker": "Jordan Lee", "text": "We're HIPAA-compliant with a signed BAA, and eleven sites is a six-week rollout. Both go in writing."},
+        {"ts": "00:26:30", "speaker": "Tara Singh", "text": "I'd want to pilot with our two busiest clinics first. If it works there it works anywhere."},
+        {"ts": "00:30:15", "speaker": "Elena Vasquez", "text": "Agreed. Set up a full demo with Malik, our engineering director. If he's comfortable, we pilot."}
+      ]
+    },
+    {
+      "id": "zm_75820",
+      "topic": "Umbra Health <> Harborview - Platform demo",
+      "start_time": "2026-03-06T17:00:00Z",
+      "duration_min": 45,
+      "attendees": [
+        {"name": "Jordan Lee", "email": "jordan@harborview.io"},
+        {"name": "Elena Vasquez", "email": "evasquez@umbrahealth.com"},
+        {"name": "Malik Jones", "email": "mjones@umbrahealth.com"},
+        {"name": "Tara Singh", "email": "tsingh@umbrahealth.com"}
+      ],
+      "transcript": [
+        {"ts": "00:01:10", "speaker": "Jordan Lee", "text": "Full walkthrough today - intake routing, referral tracking, and the multi-site dashboard."},
+        {"ts": "00:07:33", "speaker": "Malik Jones", "text": "Before you go further - how does patient data flow through your system? I need to know what's stored, where, and encrypted how."},
+        {"ts": "00:08:20", "speaker": "Jordan Lee", "text": "All PHI is encrypted at rest and in transit, US-only data residency, and I'll get you the full architecture doc. Our SE Sam can go as deep as you want on this."},
+        {"ts": "00:09:02", "speaker": "Malik Jones", "text": "I'll want that session. EHR integration is the other big one - we're on Athena."},
+        {"ts": "00:09:40", "speaker": "Jordan Lee", "text": "Athena's a supported integration. I'll include the spec with the architecture doc."},
+        {"ts": "00:16:48", "speaker": "Tara Singh", "text": "Can my coordinators see referral status across all clinics without switching views? That's the daily pain."},
+        {"ts": "00:17:15", "speaker": "Jordan Lee", "text": "One unified queue, filterable by clinic. Watch."},
+        {"ts": "00:24:30", "speaker": "Elena Vasquez", "text": "I like what I'm seeing. What does the pilot look like commercially?"},
+        {"ts": "00:25:12", "speaker": "Jordan Lee", "text": "Four-week pilot on your two busiest clinics, flat fee, credited fully if you roll out."},
+        {"ts": "00:38:55", "speaker": "Malik Jones", "text": "My comfort depends on the technical review. But nothing today scared me, which is rare."},
+        {"ts": "00:42:20", "speaker": "Elena Vasquez", "text": "Let's do the pilot. Tara owns rollout, Malik owns the technical gate."}
+      ]
+    },
+    {
+      "id": "zm_90570",
+      "topic": "Umbra Health <> Harborview - Pilot review",
+      "start_time": "2026-03-28T16:00:00Z",
+      "duration_min": 36,
+      "attendees": [
+        {"name": "Jordan Lee", "email": "jordan@harborview.io"},
+        {"name": "Elena Vasquez", "email": "evasquez@umbrahealth.com"},
+        {"name": "Malik Jones", "email": "mjones@umbrahealth.com"},
+        {"name": "Tara Singh", "email": "tsingh@umbrahealth.com"}
+      ],
+      "transcript": [
+        {"ts": "00:01:30", "speaker": "Tara Singh", "text": "Two weeks in: zero lost referrals across both pilot clinics. Normally we'd have dropped five or six by now. My coordinators are asking when the other clinics get it."},
+        {"ts": "00:06:12", "speaker": "Elena Vasquez", "text": "That's the result I wanted to hear. Malik, where are you?"},
+        {"ts": "00:07:04", "speaker": "Malik Jones", "text": "Performance and the Athena sync have been solid. One flag: before full rollout, this goes through our formal security review. It's a real process, three-ish weeks, and I can't shortcut it."},
+        {"ts": "00:08:15", "speaker": "Jordan Lee", "text": "Understood. Send the questionnaire whenever, our compliance package is ready."},
+        {"ts": "00:14:40", "speaker": "Malik Jones", "text": "There'll be a live architecture review too, my team plus whoever built your data layer. One walkthrough, deep questions."},
+        {"ts": "00:15:22", "speaker": "Jordan Lee", "text": "We'll line up the right people on our side."},
+        {"ts": "00:22:36", "speaker": "Elena Vasquez", "text": "Assuming security clears, I want full rollout before the fall clinic openings. Jordan, get us a full proposal in parallel so the review isn't blocking paper."},
+        {"ts": "00:33:10", "speaker": "Elena Vasquez", "text": "Good milestone, everyone. Let's keep the pace."}
+      ]
+    }
+  ]
+}

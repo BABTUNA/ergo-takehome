@@ -1,0 +1,45 @@
+{
+  "meetings": [
+    {
+      "id": "zm_70233",
+      "topic": "Initech <> Harborview - Intro call",
+      "start_time": "2026-02-20T16:00:00Z",
+      "duration_min": 28,
+      "attendees": [
+        {"name": "Jordan Lee", "email": "jordan@harborview.io"},
+        {"name": "Sarah Bloom", "email": "sbloom@initech.com"}
+      ],
+      "transcript": [
+        {"ts": "00:01:22", "speaker": "Jordan Lee", "text": "Sarah, thanks for taking this. Your coordinator mentioned ops workflow pain, want to give me the shape of it?"},
+        {"ts": "00:02:10", "speaker": "Sarah Bloom", "text": "We're a 400-person company running operations off spreadsheets and a ten-year-old ticketing system. Every handoff between teams drops something."},
+        {"ts": "00:07:35", "speaker": "Jordan Lee", "text": "That's very solvable. Here's a two-minute version of how our workflow engine handles cross-team handoffs."},
+        {"ts": "00:12:48", "speaker": "Sarah Bloom", "text": "Okay, that's genuinely what I've been looking for. I've evaluated two other tools and both wanted us to rebuild everything their way."},
+        {"ts": "00:18:20", "speaker": "Jordan Lee", "text": "Who else would be involved in evaluating something like this?"},
+        {"ts": "00:19:04", "speaker": "Sarah Bloom", "text": "Realistically it starts and ends with me making the case internally. Get me a proper demo and I'll take it from there."},
+        {"ts": "00:25:15", "speaker": "Jordan Lee", "text": "Let's do it early March. I'll send times."}
+      ]
+    },
+    {
+      "id": "zm_74102",
+      "topic": "Initech <> Harborview - Demo",
+      "start_time": "2026-03-03T16:00:00Z",
+      "duration_min": 38,
+      "attendees": [
+        {"name": "Jordan Lee", "email": "jordan@harborview.io"},
+        {"name": "Sarah Bloom", "email": "sbloom@initech.com"}
+      ],
+      "transcript": [
+        {"ts": "00:01:15", "speaker": "Jordan Lee", "text": "I built this demo around the handoff problem you described. Just you today?"},
+        {"ts": "00:01:50", "speaker": "Sarah Bloom", "text": "Just me. Easier to move fast this way, I'll socialize it internally once I've seen it."},
+        {"ts": "00:09:42", "speaker": "Sarah Bloom", "text": "The routing rules are exactly right. Can each department keep their own view of the same workflow?"},
+        {"ts": "00:10:15", "speaker": "Jordan Lee", "text": "Yes, role-based views over one source of truth. Nobody has to change how they see their work."},
+        {"ts": "00:17:30", "speaker": "Sarah Bloom", "text": "I love this. Honestly the best fit I've seen for how we actually operate."},
+        {"ts": "00:24:08", "speaker": "Jordan Lee", "text": "What does a decision path look like on your side? Anyone else I should be talking to?"},
+        {"ts": "00:24:55", "speaker": "Sarah Bloom", "text": "I'll take it up the chain. Our CFO Gwen signs anything over fifty K but she trusts my recommendation on tooling. Let me handle the internal side."},
+        {"ts": "00:31:20", "speaker": "Sarah Bloom", "text": "Send me pricing this week and give me a couple of weeks to build the internal case."},
+        {"ts": "00:36:44", "speaker": "Jordan Lee", "text": "Pricing tomorrow morning. And happy to present to Gwen or anyone else whenever it helps."},
+        {"ts": "00:37:12", "speaker": "Sarah Bloom", "text": "Noted. I've got it from here."}
+      ]
+    }
+  ]
+}

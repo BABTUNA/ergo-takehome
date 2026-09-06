@@ -1,0 +1,46 @@
+{
+  "threads": [
+    {
+      "id": "th_6011",
+      "subject": "Referred by Dr. Chen at Lakeside - coordination tooling",
+      "messages": [
+        {"from": "evasquez@umbrahealth.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-02-18T19:45:00Z",
+         "body": "Jordan - Elena Vasquez, COO at Umbra Health. Your platform came recommended by the ops lead at Lakeside Medical. We're scaling clinics fast and our referral coordination is cracking. Do you have time next week?"},
+        {"from": "jordan@harborview.io", "to": ["evasquez@umbrahealth.com"], "cc": [], "date": "2026-02-18T21:10:00Z",
+         "body": "Elena - great to hear from you, Lakeside's been a fantastic partner. Tuesday the 24th, 10am pacific? Feel free to bring whoever owns day-to-day coordination."}
+      ]
+    },
+    {
+      "id": "th_6042",
+      "subject": "Architecture doc + Athena integration spec",
+      "messages": [
+        {"from": "mjones@umbrahealth.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-03-14T16:33:00Z",
+         "body": "Jordan - following up on the docs you promised at the demo. Also three questions before the pilot goes further: 1) Is PHI ever processed outside your VPC? 2) What's your RTO if the sync service goes down mid-day? 3) Does the Athena integration poll or use their event API? These would normally go to an engineer but I don't have a contact on your side."},
+        {"from": "jordan@harborview.io", "to": ["mjones@umbrahealth.com"], "cc": [], "date": "2026-03-14T22:05:00Z",
+         "body": "Malik - docs attached. On your questions: 1) No, PHI never leaves the VPC. 2) RTO is one hour, historically much faster. 3) Event API with polling fallback. Caveat that I'm the sales guy translating from our eng docs - happy to set up a session with our SE Sam for anything deeper."},
+        {"from": "mjones@umbrahealth.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-03-15T15:20:00Z",
+         "body": "Answers work for now. I'll hold the deeper questions for the formal review."}
+      ]
+    },
+    {
+      "id": "th_6060",
+      "subject": "Pilot agreement",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["evasquez@umbrahealth.com"], "cc": ["tsingh@umbrahealth.com"], "date": "2026-03-09T17:20:00Z",
+         "body": "Elena - pilot agreement attached: four weeks, your two busiest clinics, flat fee credited on rollout. Tara cc'd for kickoff scheduling."},
+        {"from": "evasquez@umbrahealth.com", "to": ["jordan@harborview.io"], "cc": ["tsingh@umbrahealth.com"], "date": "2026-03-10T14:40:00Z",
+         "body": "Signed and returned. Tara will take scheduling from here."}
+      ]
+    },
+    {
+      "id": "th_6098",
+      "subject": "Contract structure for full rollout",
+      "messages": [
+        {"from": "evasquez@umbrahealth.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-04-02T18:25:00Z",
+         "body": "Jordan - as the proposal comes together, a thought: an eleven-clinic commitment at this number is board-visible for us. It would help to get our executive teams aligned directly - is there someone on your leadership side who'd be my counterpart for the commercial conversation? Better to have that relationship before we're negotiating redlines."},
+        {"from": "jordan@harborview.io", "to": ["evasquez@umbrahealth.com"], "cc": [], "date": "2026-04-02T20:11:00Z",
+         "body": "Completely agree - our VP of Sales Ava Chen would be your counterpart. I'll set up an intro this coming week."}
+      ]
+    }
+  ]
+}

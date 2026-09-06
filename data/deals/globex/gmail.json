@@ -1,0 +1,80 @@
+{
+  "threads": [
+    {
+      "id": "th_4402",
+      "subject": "Intro - Harborview / Globex",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["odiaz@globex.com"], "cc": [], "date": "2026-02-10T15:12:00Z",
+         "body": "Omar - great to connect at the ops summit last week. You mentioned the reconciliation pain between your order system and warehouse tooling. That's exactly what we solve. Open to a 30 minute call Thursday?"},
+        {"from": "odiaz@globex.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-02-10T18:40:00Z",
+         "body": "Thursday works. Send an invite for 9am pacific."}
+      ]
+    },
+    {
+      "id": "th_4415",
+      "subject": "Re: Intro - Harborview / Globex",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["odiaz@globex.com"], "cc": [], "date": "2026-02-12T19:05:00Z",
+         "body": "Omar - recap from today attached, plus the one-pager you can forward internally. Short version: continuous reconciliation, four to six week rollout, and we'd scope the exact integration in a technical session. Let me know who you'd like in the demo."},
+        {"from": "odiaz@globex.com", "to": ["jordan@harborview.io"], "cc": [], "date": "2026-02-13T16:22:00Z",
+         "body": "Forwarded upstairs. Will come back on demo timing - likely second week of March so I can get the right people in the room."}
+      ]
+    },
+    {
+      "id": "th_4436",
+      "subject": "Demo scheduling - March 12",
+      "messages": [
+        {"from": "odiaz@globex.com", "to": ["jordan@harborview.io"], "cc": ["npark@globex.com"], "date": "2026-03-05T20:15:00Z",
+         "body": "Locking March 12, 10am pacific. Attendees on our side: me, Nina Park (business analysis, cc'd), and Rhea Kim, our CFO. Reminder that Rhea will want the numbers story, not a feature tour."},
+        {"from": "jordan@harborview.io", "to": ["odiaz@globex.com"], "cc": ["npark@globex.com"], "date": "2026-03-05T21:03:00Z",
+         "body": "Got it - building the session around the cost case. Invite coming shortly."}
+      ]
+    },
+    {
+      "id": "th_4462",
+      "subject": "Pricing structure question",
+      "messages": [
+        {"from": "odiaz@globex.com", "to": ["jordan@harborview.io"], "cc": ["npark@globex.com"], "date": "2026-03-18T17:30:00Z",
+         "body": "Ahead of any proposal - can you send over how the enterprise tier is structured? Nina (cc'd) is putting together an internal comparison against building this ourselves."},
+        {"from": "jordan@harborview.io", "to": ["odiaz@globex.com"], "cc": ["npark@globex.com"], "date": "2026-03-18T19:11:00Z",
+         "body": "Attached the tier structure. Happy to walk Nina through the build-vs-buy math too, we have a calculator for exactly that."}
+      ]
+    },
+    {
+      "id": "th_4471",
+      "subject": "ROI breakdown",
+      "messages": [
+        {"from": "rhea@globex.com", "to": ["jordan@harborview.io"], "cc": ["odiaz@globex.com"], "date": "2026-03-20T14:02:00Z",
+         "body": "Jordan - following up from the demo. I still need the ROI breakdown we discussed: total cost at 500 seats with the seasonality modeled, against the hours saved. Our renewal planning cycle starts in April. Can you get it to me this week?"},
+        {"from": "jordan@harborview.io", "to": ["rhea@globex.com"], "cc": ["odiaz@globex.com"], "date": "2026-03-20T16:45:00Z",
+         "body": "Absolutely - pulling the seasonality model together now. You'll have the full breakdown this week."}
+      ]
+    },
+    {
+      "id": "th_4489",
+      "subject": "Pricing one-pager",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["rhea@globex.com"], "cc": ["odiaz@globex.com"], "date": "2026-03-26T22:18:00Z",
+         "body": "Rhea - attaching our enterprise pricing one-pager as a first look while we finalize the fuller model. Happy to talk through it live if useful."}
+      ]
+    },
+    {
+      "id": "th_4503",
+      "subject": "Security review process",
+      "messages": [
+        {"from": "odiaz@globex.com", "to": ["jordan@harborview.io", "sam@harborview.io"], "cc": [], "date": "2026-03-31T18:47:00Z",
+         "body": "Heads up on process: before anything gets signed, our security team has to review the vendor package. I'll send their questionnaire once the sandbox evaluation wraps. Usually takes them two to three weeks, so let's not let it be the long pole."},
+        {"from": "sam@harborview.io", "to": ["odiaz@globex.com"], "cc": ["jordan@harborview.io"], "date": "2026-03-31T20:02:00Z",
+         "body": "Thanks for the heads up. Our SOC 2 report and standard security package are ready whenever they are."}
+      ]
+    },
+    {
+      "id": "th_4521",
+      "subject": "Checking in",
+      "messages": [
+        {"from": "jordan@harborview.io", "to": ["rhea@globex.com"], "cc": [], "date": "2026-04-02T16:30:00Z",
+         "body": "Rhea - wanted to make sure the pricing one-pager landed. Anything you'd like to see adjusted as you head into renewal planning?"}
+      ]
+    }
+  ]
+}
