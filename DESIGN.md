@@ -15,7 +15,7 @@ on pricing, and a VP of engineering keeps getting mentioned but has never been i
 3. Extraction layer
 4. Graph + detection logic
 5. UI
-6. Polish (MCP server, README)
+6. Polish (README, demo script)
 
 ---
 
@@ -376,19 +376,6 @@ Runs with one `npm run dev`; deployable as a static site.
 
 ## 6. Polish
 
-### MCP server
-
-A small server exposing deal context to AI agents - plays directly to Ergo's "context
-layer for agents" positioning. Serves the precomputed JSON, ~100 lines. Tools:
-
-- `list_deals()` - deals with risk summary
-- `get_deal_graph(deal)` - nodes, edges, flags
-- `get_contact_timeline(deal, person)` - the evidence trail
-- `get_suggested_moves(deal)` - open flags with templated moves
-
-Demo: point Claude at it, ask "which of my deals is most at risk and why?", screen-record
-the answer for the README.
-
 ### README structure
 
 1. What it is + demo GIF
@@ -401,5 +388,7 @@ the answer for the README.
 
 ### Not built, on purpose
 
-Real OAuth, streaming ingestion, cross-deal identity resolution, CRM write-back.
+Real OAuth, streaming ingestion, cross-deal identity resolution, CRM write-back, and
+an MCP server exposing deal context to agents (a natural extension given Ergo's
+"context layer for agents" positioning, but it would not improve a 5-minute demo).
 Listed explicitly - naming cuts is the point.

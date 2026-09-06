@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SENTIMENT_COLOR, sellerColors } from "./StakeholderGraph";
 import type { DealBundle, Event, GraphNode } from "./types";
 
@@ -10,6 +10,31 @@ function sellerAbsenceNote(title: string): string {
   if (title.includes("Solutions")) return "Zero contacts means every technical question the buyer asks is being answered by sales instead of an engineer.";
   if (title.includes("VP")) return "Zero contacts means no exec-to-exec relationship exists if this deal needs leverage or unblocking.";
   return "Zero contacts on a deal they are rostered for.";
+}
+
+function FullContent({ e }: { e: Event }) {
+  if (e.type === "meeting") {
+    return (
+      <div className="snippet">
+        <div style={{ fontWeight: 600, marginBottom: 6 }}>{e.content.topic} ({e.content.duration_min} min)</div>
+        {(e.content.transcript ?? []).map((t, i) => (
+          <div key={i} style={{ marginBottom: 6 }}>
+            <span style={{ color: "#8494a8", fontSize: 11, marginRight: 6 }}>{t.ts}</span>
+            <span style={{ fontWeight: 600, color: "#16304f" }}>{t.speaker.split(" ")[0]}:</span> {t.text}
+          </div>
+        ))}
+      </div>
+    );
+  }
+  if (e.channel === "gmail") {
+    return (
+      <div className="snippet">
+        <div style={{ fontWeight: 600, marginBottom: 4 }}>{e.content.subject}</div>
+        <div style={{ whiteSpace: "pre-wrap" }}>{e.content.body}</div>
+      </div>
+    );
+  }
+  return <div className="snippet" style={{ whiteSpace: "pre-wrap" }}>{e.content.text}</div>;
 }
 
 function snippet(e: Event): string {
@@ -26,6 +51,7 @@ export function ContactPanel({ bundle, node, cutoff, highlightEvent, onClose }: 
   onClose: () => void;
 }) {
   const listRef = useRef<HTMLDivElement>(null);
+  const [expanded, setExpanded] = useState<string | null>(null);
 
   const isGhost = node.ghost;
   const events = bundle.events.events.filter((e) =>
@@ -111,7 +137,9 @@ export function ContactPanel({ bundle, node, cutoff, highlightEvent, onClose }: 
       <div ref={listRef}>
         {events.length === 0 && <div className="empty">No activity before {cutoff}</div>}
         {events.map((e) => (
-          <div key={e.id} data-ev={e.id} className={`tev${highlightEvent === e.id ? " hilite" : ""}`}>
+          <div key={e.id} data-ev={e.id} className={`tev${highlightEvent === e.id ? " hilite" : ""}`}
+            style={{ cursor: "pointer" }}
+            onClick={() => setExpanded(expanded === e.id ? null : e.id)}>
             <span className="ico">{CHANNEL_LABEL[e.channel] ?? e.channel}</span>
             <div className="body">
               <div className="when" style={{ display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap" }}>
@@ -123,7 +151,9 @@ export function ContactPanel({ bundle, node, cutoff, highlightEvent, onClose }: 
                 {e.participants.map((pid, i) =>
                   chip(pid, e.type !== "meeting" && i === 0))}
               </div>
-              <div className="snippet">{snippet(e).slice(0, 180)}</div>
+              {expanded === e.id ? <FullContent e={e} /> : (
+                <div className="snippet">{snippet(e).slice(0, 180)}{snippet(e).length > 180 ? "…" : ""}</div>
+              )}
               <div className="tags">
                 {isGhost && <span className="tag" style={{ background: "#fffbeb", color: "#b45309" }}>mentioned here</span>}
                 {(signalsByEvent.get(e.id) ?? []).map((s, i) => (
