@@ -7,20 +7,21 @@ export const SENTIMENT_COLOR: Record<string, string> = {
   negative: "#dc2626",
 };
 const ENGAGED = "#3b82f6";
-const W = 1000, H = 560;
+const W = 1000, H = 604;
 const LANES: [string, string][] = [["exec", "Exec"], ["director", "Director"], ["team", "Team"]];
-const LANE_H = H / 3;
+const LANE_TOP = 26;
+const LANE_H = 186;
 
 interface Pos { x: number; y: number }
 
 export function layout(nodes: GraphNode[]): Map<string, Pos> {
   const pos = new Map<string, Pos>();
-  const laneY = (lane: string) => LANE_H * (lane === "exec" ? 0 : lane === "director" ? 1 : 2);
+  const laneY = (lane: string) => LANE_TOP + LANE_H * (lane === "exec" ? 0 : lane === "director" ? 1 : 2);
 
   for (const [lane] of LANES) {
     const sellers = nodes.filter((n) => n.side === "seller" && n.lane === lane).sort((a, b) => b.events - a.events);
     sellers.forEach((n, i) => {
-      const frac = sellers.length === 1 ? 0.5 : 0.22 + (0.58 * i) / (sellers.length - 1);
+      const frac = sellers.length === 1 ? 0.5 : 0.26 + (0.48 * i) / (sellers.length - 1);
       pos.set(n.id, { x: i % 2 ? 205 : 105, y: laneY(lane) + LANE_H * frac });
     });
     const buyers = nodes.filter((n) => n.side === "buyer" && !n.ghost && n.lane === lane).sort((a, b) => a.id.localeCompare(b.id));
@@ -31,7 +32,7 @@ export function layout(nodes: GraphNode[]): Map<string, Pos> {
   }
   const ghosts = nodes.filter((n) => n.ghost);
   ghosts.forEach((n, i) => {
-    pos.set(n.id, { x: 925, y: 90 + (i * (H - 180)) / Math.max(1, ghosts.length - 1 || 1) });
+    pos.set(n.id, { x: 925, y: 110 + (i * (H - 240)) / Math.max(1, ghosts.length - 1 || 1) });
   });
   const unknownLane = nodes.filter((n) => !n.ghost && n.lane === "unknown");
   unknownLane.forEach((n, i) => pos.set(n.id, { x: 620, y: 60 + i * 50 }));
@@ -68,9 +69,9 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
     <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto", display: "block" }}>
       {LANES.map(([lane, label], i) => (
         <g key={lane}>
-          <rect x={0} y={i * LANE_H + 2} width={W} height={LANE_H - 4} rx={8}
+          <rect x={0} y={LANE_TOP + i * LANE_H + 2} width={W} height={LANE_H - 4} rx={8}
             fill={i % 2 ? "#eef2f7" : "#f4f7fb"} />
-          <text x={12} y={i * LANE_H + 22} fontSize={11.5} fill="#94a3b8">{label}</text>
+          <text x={12} y={LANE_TOP + i * LANE_H + 22} fontSize={11.5} fill="#94a3b8">{label}</text>
         </g>
       ))}
       <text x={130} y={16} fontSize={11.5} fill="#94a3b8" textAnchor="middle">Your team</text>
@@ -114,16 +115,19 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
                 {n.name.split(" ").map((w) => w[0]).join("").slice(0, 2)}
               </text>
             )}
-            <text x={p.x} y={p.y + r + 14} fontSize={11.5} fill="#334155" textAnchor="middle" fontWeight={500}>
+            <text x={p.x} y={p.y + r + 14} fontSize={11.5} fill="#334155" textAnchor="middle" fontWeight={500}
+              style={{ paintOrder: "stroke" }} stroke="#ffffff" strokeWidth={3.5} strokeLinejoin="round">
               {n.name.split(" ")[0]}{n.title ? ` · ${shortTitle(n.title)}` : ""}
             </text>
             {(n.ghost || !engaged) && (
-              <text x={p.x} y={p.y + r + 27} fontSize={10.5} fill="#d97706" textAnchor="middle">
+              <text x={p.x} y={p.y + r + 27} fontSize={10.5} fill="#d97706" textAnchor="middle"
+                style={{ paintOrder: "stroke" }} stroke="#ffffff" strokeWidth={3.5} strokeLinejoin="round">
                 {n.ghost ? `mentioned ${n.mentions ?? 1}x` : "0 contacts"}
               </text>
             )}
             {!n.ghost && engaged && n.side === "buyer" && n.momentum === "cooling" && (n.quiet_days ?? 0) > 7 && (
-              <text x={p.x} y={p.y + r + 27} fontSize={10.5} fill="#dc2626" textAnchor="middle">
+              <text x={p.x} y={p.y + r + 27} fontSize={10.5} fill="#dc2626" textAnchor="middle"
+                style={{ paintOrder: "stroke" }} stroke="#ffffff" strokeWidth={3.5} strokeLinejoin="round">
                 quiet {n.quiet_days}d
               </text>
             )}
