@@ -100,6 +100,9 @@ def build_graph(events, insights, people, roster, t):
 
     events_by_id = {e["id"]: e for e in events}
     for i, ghost in enumerate(insights.get("ghosts", [])):
+        blocking = any(w in ghost["label"].lower() for w in ("security", "review", "approval"))
+        if not (ghost.get("named") and ghost["count"] >= 2) and not blocking:
+            continue  # low-signal mention; keep the graph readable
         mention_times = [_ts(events_by_id[eid]) for eid in ghost["events"] if eid in events_by_id]
         if not mention_times or min(mention_times) > t:
             continue
@@ -110,7 +113,8 @@ def build_graph(events, insights, people, roster, t):
             "sentiment": "neutral", "momentum": "flat", "events": 0,
             "quiet_days": None, "in_crm": False, "ghost": True,
             "named": ghost.get("named", False), "mentions": seen_mentions,
-            "mention_events": ghost["events"]})
+            "mention_events": ghost["events"],
+            "mention_contexts": ghost.get("contexts", [])})
 
     edges = _build_edges(conv, t)
     return {"t": t.date().isoformat(), "nodes": nodes, "edges": edges}

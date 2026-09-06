@@ -35,10 +35,21 @@ def build_deal(slug):
     deal = events["deal"]
     roster = seller_roster()
 
+    ts_by_event = {e["id"]: e["ts"] for e in events["events"]}
     snapshots = []
     for t in snapshot_dates():
         graph = build_graph(events["events"], insights, people, roster, t)
-        flags = run_detectors(graph, insights, deal, t)
+        grace = (t - timedelta(days=2)).date().isoformat()
+        visible_commitments = []
+        for c in insights.get("commitments", []):
+            if ts_by_event.get(c["origin_event"], "9999") > t.isoformat():
+                continue
+            status = c["status"]
+            if status == "broken" and (c.get("due_date") or "9999") >= grace:
+                status = "open"
+            visible_commitments.append({**c, "status": status})
+        visible = {**insights, "commitments": visible_commitments}
+        flags = run_detectors(graph, visible, deal, t)
         graph["flags"] = flags
         graph["rollup"] = deal_rollup(graph, flags)
         snapshots.append(graph)

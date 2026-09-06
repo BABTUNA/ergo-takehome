@@ -1,0 +1,788 @@
+{
+  "deal": {
+    "id": "opp_004",
+    "name": "Acme Industrial - Multi-plant Inventory Sync",
+    "account": "Acme Industrial",
+    "amount": 80000,
+    "stage": "Proposal",
+    "close_date": "2026-04-24",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-12"
+  },
+  "events": [
+    {
+      "id": "ev_001",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-11T16:20:00Z",
+      "participants": [
+        "p_jordan",
+        "p_dwhitfield"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_3901",
+      "content": {
+        "subject": "Following up from MFG Ops Expo",
+        "from": "p_jordan",
+        "body": "Dana - good talking at the expo. You described the Monday spreadsheet ritual and I haven't stopped thinking about it. We built Harborview for exactly that. 30 minutes this week to see if it's a fit?"
+      }
+    },
+    {
+      "id": "ev_002",
+      "deal_id": "acme",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-02-12T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Discovery"
+      }
+    },
+    {
+      "id": "ev_003",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-12T14:55:00Z",
+      "participants": [
+        "p_dwhitfield",
+        "p_jordan",
+        "p_lnakamura"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_3901",
+      "content": {
+        "subject": "Following up from MFG Ops Expo",
+        "from": "p_dwhitfield",
+        "body": "Worth a look. Adding Leo Nakamura, our eng lead - anything ops adopts, he has to live with. Monday the 16th, 10am central?"
+      }
+    },
+    {
+      "id": "ev_004",
+      "deal_id": "acme",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-02-16T18:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_dwhitfield",
+        "p_lnakamura"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_69410",
+      "content": {
+        "topic": "Acme Industrial <> Harborview - Discovery",
+        "duration_min": 34,
+        "transcript": [
+          {
+            "ts": "00:01:30",
+            "speaker": "Jordan Lee",
+            "text": "Thanks both. Dana, you mentioned the ops team is feeling the pain most, want to start there?"
+          },
+          {
+            "ts": "00:02:12",
+            "speaker": "Dana Whitfield",
+            "text": "Sure. We run three plants and every one of them reports inventory differently. My analysts spend Mondays just normalizing spreadsheets."
+          },
+          {
+            "ts": "00:06:45",
+            "speaker": "Leo Nakamura",
+            "text": "From my side the question is integration. We're on a mix of SAP and a homegrown WMS at the Toledo plant. What does connecting that look like?"
+          },
+          {
+            "ts": "00:07:20",
+            "speaker": "Jordan Lee",
+            "text": "SAP is a native connector. For the homegrown system we'd use the REST ingestion API, and our SE Sam would scope that with your team directly."
+          },
+          {
+            "ts": "00:13:08",
+            "speaker": "Dana Whitfield",
+            "text": "If Monday normalization goes away, that's two heads worth of time back. I want to see this properly."
+          },
+          {
+            "ts": "00:18:52",
+            "speaker": "Leo Nakamura",
+            "text": "Can we get API docs before a demo? I'd rather come with real questions."
+          },
+          {
+            "ts": "00:19:15",
+            "speaker": "Jordan Lee",
+            "text": "Sending them today, along with the SAP connector spec."
+          },
+          {
+            "ts": "00:27:40",
+            "speaker": "Dana Whitfield",
+            "text": "Let's do a full demo next week. I'll bring Marcus, our CTO. He'll want to see it before we go anywhere serious."
+          },
+          {
+            "ts": "00:31:02",
+            "speaker": "Jordan Lee",
+            "text": "Perfect. I'll coordinate times over email."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_005",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-16T21:10:00Z",
+      "participants": [
+        "p_jordan",
+        "p_dwhitfield",
+        "p_lnakamura"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_3928",
+      "content": {
+        "subject": "Re: Discovery call recap + API docs",
+        "from": "p_jordan",
+        "body": "Recap attached. Leo - API docs and SAP connector spec included as promised. Dana - whenever Marcus has 40 minutes, we'll run the full demo."
+      }
+    },
+    {
+      "id": "ev_006",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-19T15:34:00Z",
+      "participants": [
+        "p_lnakamura",
+        "p_jordan",
+        "p_dwhitfield"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_3928",
+      "content": {
+        "subject": "Re: Discovery call recap + API docs",
+        "from": "p_lnakamura",
+        "body": "Docs look solid. Found two field types in our WMS payloads that won't map cleanly - details at the demo."
+      }
+    },
+    {
+      "id": "ev_007",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-02-19T17:02:00Z",
+      "participants": [
+        "p_dwhitfield",
+        "p_jordan",
+        "p_lnakamura"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_3928",
+      "content": {
+        "subject": "Re: Discovery call recap + API docs",
+        "from": "p_dwhitfield",
+        "body": "Marcus is in for Wednesday the 25th. Calendar invite sent."
+      }
+    },
+    {
+      "id": "ev_008",
+      "deal_id": "acme",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-02-20T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Demo"
+      }
+    },
+    {
+      "id": "ev_009",
+      "deal_id": "acme",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-02-25T18:00:00Z",
+      "participants": [
+        "p_jordan",
+        "p_mwebb",
+        "p_dwhitfield",
+        "p_lnakamura"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_70988",
+      "content": {
+        "topic": "Acme Industrial <> Harborview - Platform demo",
+        "duration_min": 40,
+        "transcript": [
+          {
+            "ts": "00:01:10",
+            "speaker": "Jordan Lee",
+            "text": "Marcus, welcome. Plan is a live run of the platform against a three-site inventory setup that mirrors yours."
+          },
+          {
+            "ts": "00:02:05",
+            "speaker": "Marcus Webb",
+            "text": "Good. I've read Dana's summary, so assume I know the pitch. Show me the product."
+          },
+          {
+            "ts": "00:08:33",
+            "speaker": "Jordan Lee",
+            "text": "Here's the normalized view across all three sites, updating live. The Toledo-style custom source is flowing through the ingestion API."
+          },
+          {
+            "ts": "00:12:19",
+            "speaker": "Marcus Webb",
+            "text": "This is cleaner than I expected. What's the story when a source schema changes without warning? Because that happens here monthly."
+          },
+          {
+            "ts": "00:13:01",
+            "speaker": "Jordan Lee",
+            "text": "Schema drift gets quarantined, you get an alert, and the mapping editor shows you exactly what changed. Nothing silently corrupts."
+          },
+          {
+            "ts": "00:17:26",
+            "speaker": "Leo Nakamura",
+            "text": "I tested the API docs against our WMS payloads last night. Two field types won't map cleanly, I'll send details."
+          },
+          {
+            "ts": "00:18:04",
+            "speaker": "Jordan Lee",
+            "text": "Send them over, that's exactly the kind of thing Sam will scope in a technical session."
+          },
+          {
+            "ts": "00:24:50",
+            "speaker": "Marcus Webb",
+            "text": "What's a realistic rollout timeline for three plants? I don't want a six-month professional services engagement."
+          },
+          {
+            "ts": "00:25:33",
+            "speaker": "Jordan Lee",
+            "text": "Six to eight weeks for all three, phased. First plant live in three."
+          },
+          {
+            "ts": "00:33:15",
+            "speaker": "Marcus Webb",
+            "text": "Alright. I'm interested. Dana, take this to a technical evaluation and let's see real numbers when you have them."
+          },
+          {
+            "ts": "00:37:44",
+            "speaker": "Dana Whitfield",
+            "text": "I'll set up the technical session with Leo and Sam, and let's get a Slack channel going so this isn't all email."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_010",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-04T17:05:00Z",
+      "participants": [
+        "p_dwhitfield"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_dwhitfield",
+        "text": "As promised, one channel instead of forty email threads. Leo, Sam - it's all yours for the technical stuff."
+      }
+    },
+    {
+      "id": "ev_011",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-04T17:20:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_sam",
+        "text": "Perfect. Leo, want to start with those two field mapping issues before our deep dive next week?"
+      }
+    },
+    {
+      "id": "ev_012",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-04T18:11:00Z",
+      "participants": [
+        "p_lnakamura"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_lnakamura",
+        "text": "yes - biggest one is our nested BOM structure. also what are the API rate limits? toledo syncs in bursts"
+      }
+    },
+    {
+      "id": "ev_013",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-04T18:36:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_sam",
+        "text": "10k requests/min sustained, bursts to 50k. Toledo's bursts won't touch that. BOM structure let's do live on Thursday."
+      }
+    },
+    {
+      "id": "ev_014",
+      "deal_id": "acme",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-03-05T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Technical Evaluation"
+      }
+    },
+    {
+      "id": "ev_015",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-09T16:44:00Z",
+      "participants": [
+        "p_lnakamura"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_lnakamura",
+        "text": "ran your postman collection against a staging copy. clean except the timestamp thing, curious what you'll say thursday"
+      }
+    },
+    {
+      "id": "ev_016",
+      "deal_id": "acme",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-03-13T16:00:00Z",
+      "participants": [
+        "p_sam",
+        "p_lnakamura"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_79544",
+      "content": {
+        "topic": "Acme <> Harborview - Technical deep dive",
+        "duration_min": 47,
+        "transcript": [
+          {
+            "ts": "00:01:40",
+            "speaker": "Sam Okafor",
+            "text": "I went through the two field mapping issues you flagged. The timestamp one is solved with a transform rule, I'll show you. The nested BOM structure is the interesting one."
+          },
+          {
+            "ts": "00:04:22",
+            "speaker": "Leo Nakamura",
+            "text": "Interesting good or interesting bad?"
+          },
+          {
+            "ts": "00:04:35",
+            "speaker": "Sam Okafor",
+            "text": "Good. The ingestion API takes nested payloads, we just flatten them with a mapping template. Here, watch."
+          },
+          {
+            "ts": "00:15:12",
+            "speaker": "Leo Nakamura",
+            "text": "Okay, that handles it. What about backfill? We'd want two years of history loaded."
+          },
+          {
+            "ts": "00:16:00",
+            "speaker": "Sam Okafor",
+            "text": "Bulk import handles that, two years is maybe a weekend job. We should just test it in a sandbox with your real exports."
+          },
+          {
+            "ts": "00:28:47",
+            "speaker": "Leo Nakamura",
+            "text": "Let's do it. I can get you sanitized exports from all three plants by end of next week."
+          },
+          {
+            "ts": "00:41:19",
+            "speaker": "Sam Okafor",
+            "text": "Then let's agree: sandbox loaded by the following Monday, and you try to break it for a week."
+          },
+          {
+            "ts": "00:42:02",
+            "speaker": "Leo Nakamura",
+            "text": "Deal. I'm good at breaking things."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_017",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-13T17:55:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_sam",
+        "text": "Good session today. Recap: timestamp solved with transform rule, BOM flattening template works, sandbox by the 23rd with real exports."
+      }
+    },
+    {
+      "id": "ev_018",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-13T18:12:00Z",
+      "participants": [
+        "p_lnakamura"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_lnakamura",
+        "text": "confirmed on all three. exports to you by end of next week"
+      }
+    },
+    {
+      "id": "ev_019",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-19T22:41:00Z",
+      "participants": [
+        "p_lnakamura",
+        "p_sam"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_3980",
+      "content": {
+        "subject": "Sanitized exports",
+        "from": "p_lnakamura",
+        "body": "Sam - exports from all three plants are in your secure upload. Toledo's is ugly, don't say I didn't warn you."
+      }
+    },
+    {
+      "id": "ev_020",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-20T15:12:00Z",
+      "participants": [
+        "p_sam",
+        "p_lnakamura"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_3980",
+      "content": {
+        "subject": "Sanitized exports",
+        "from": "p_sam",
+        "body": "Received. Toledo's is genuinely creative, but the mapper handles it. Sandbox on track for Monday."
+      }
+    },
+    {
+      "id": "ev_021",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-20T16:08:00Z",
+      "participants": [
+        "p_ifarah",
+        "p_jordan",
+        "p_dwhitfield"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_3994",
+      "content": {
+        "subject": "Vendor onboarding - procurement",
+        "from": "p_ifarah",
+        "body": "Jordan - Ines Farah, procurement. Marcus asked me to start our vendor pass early. Please send: W-9, insurance certs, your standard MSA, and SOC 2 report. Standard review is two weeks."
+      }
+    },
+    {
+      "id": "ev_022",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-20T18:30:00Z",
+      "participants": [
+        "p_jordan",
+        "p_ifarah",
+        "p_dwhitfield"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_3994",
+      "content": {
+        "subject": "Vendor onboarding - procurement",
+        "from": "p_jordan",
+        "body": "All four attached. Happy to connect our legal with yours directly if anything in the MSA needs discussion."
+      }
+    },
+    {
+      "id": "ev_023",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-23T16:30:00Z",
+      "participants": [
+        "p_jordan"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_jordan",
+        "text": "Sandbox is live with all three plants loaded. Leo, go break it."
+      }
+    },
+    {
+      "id": "ev_024",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-23T19:48:00Z",
+      "participants": [
+        "p_lnakamura"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_lnakamura",
+        "text": "challenge accepted"
+      }
+    },
+    {
+      "id": "ev_025",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-26T22:15:00Z",
+      "participants": [
+        "p_lnakamura"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_lnakamura",
+        "text": "update: threw our worst month at it (the feb inventory count disaster). it caught every mismatch and the drift quarantine did its job when i fed it a mangled schema on purpose"
+      }
+    },
+    {
+      "id": "ev_026",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-26T22:40:00Z",
+      "participants": [
+        "p_sam"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_sam",
+        "text": "That february dataset is going in our internal hall of fame."
+      }
+    },
+    {
+      "id": "ev_027",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-27T14:20:00Z",
+      "participants": [
+        "p_dwhitfield"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_dwhitfield",
+        "text": "watching this thread with joy. this is the monday ritual dying in real time"
+      }
+    },
+    {
+      "id": "ev_028",
+      "deal_id": "acme",
+      "channel": "zoom",
+      "type": "meeting",
+      "ts": "2026-03-27T17:00:00Z",
+      "participants": [
+        "p_ava",
+        "p_jordan",
+        "p_mwebb"
+      ],
+      "direction": "n/a",
+      "thread_key": "zm_90112",
+      "content": {
+        "topic": "Acme <> Harborview - Exec sync",
+        "duration_min": 25,
+        "transcript": [
+          {
+            "ts": "00:01:12",
+            "speaker": "Ava Chen",
+            "text": "Marcus, thanks for making time. I wanted us connected before anything hits paper."
+          },
+          {
+            "ts": "00:02:30",
+            "speaker": "Marcus Webb",
+            "text": "Appreciated. The technical eval is going well from what Leo tells me. My questions are all commercial now."
+          },
+          {
+            "ts": "00:05:44",
+            "speaker": "Marcus Webb",
+            "text": "Three plants now, but if this works we'd add the two Canadian sites next year. I want pricing that doesn't punish us for growing."
+          },
+          {
+            "ts": "00:06:20",
+            "speaker": "Ava Chen",
+            "text": "That's exactly how we'd structure it, a five-site ramp with the discount locked now. Jordan will model both paths in the proposal."
+          },
+          {
+            "ts": "00:11:08",
+            "speaker": "Marcus Webb",
+            "text": "Second thing: support. Toledo runs a night shift. If sync breaks at 2am, what happens?"
+          },
+          {
+            "ts": "00:12:15",
+            "speaker": "Ava Chen",
+            "text": "Enterprise tier is 24/7 with a one-hour response SLA. It's in writing in the proposal."
+          },
+          {
+            "ts": "00:19:36",
+            "speaker": "Marcus Webb",
+            "text": "Good. Get us a proposal by mid-April and I'll have procurement start their pass now so legal isn't the long pole."
+          },
+          {
+            "ts": "00:22:50",
+            "speaker": "Ava Chen",
+            "text": "You'll have it. And I'm a call away if anything needs unblocking on our side."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ev_029",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-03-27T18:10:00Z",
+      "participants": [
+        "p_ava"
+      ],
+      "direction": "outbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_ava",
+        "text": "Great exec sync with Marcus today - proposal by mid-April with both pricing paths. Team, let's make it airtight."
+      }
+    },
+    {
+      "id": "ev_030",
+      "deal_id": "acme",
+      "channel": "salesforce",
+      "type": "stage_change",
+      "ts": "2026-03-30T00:00:00Z",
+      "participants": [],
+      "direction": "n/a",
+      "thread_key": "",
+      "content": {
+        "stage": "Proposal"
+      }
+    },
+    {
+      "id": "ev_031",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-03-30T19:15:00Z",
+      "participants": [
+        "p_ifarah",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_3994",
+      "content": {
+        "subject": "Vendor onboarding - procurement",
+        "from": "p_ifarah",
+        "body": "Package looks complete. Two standard redlines on the MSA coming from legal, nothing controversial. We'll be ready when the proposal lands."
+      }
+    },
+    {
+      "id": "ev_032",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-03T15:55:00Z",
+      "participants": [
+        "p_lnakamura"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_lnakamura",
+        "text": "official verdict from eng: pass. told dana and marcus this morning. from my side, ship it"
+      }
+    },
+    {
+      "id": "ev_033",
+      "deal_id": "acme",
+      "channel": "slack",
+      "type": "message",
+      "ts": "2026-04-03T16:20:00Z",
+      "participants": [
+        "p_dwhitfield"
+      ],
+      "direction": "inbound",
+      "thread_key": "harborview-acme",
+      "content": {
+        "from": "p_dwhitfield",
+        "text": "proposal request just went to jordan by email. excited over here"
+      }
+    },
+    {
+      "id": "ev_034",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-04-03T20:22:00Z",
+      "participants": [
+        "p_dwhitfield",
+        "p_jordan"
+      ],
+      "direction": "inbound",
+      "thread_key": "th_4010",
+      "content": {
+        "subject": "Proposal timing",
+        "from": "p_dwhitfield",
+        "body": "Jordan - sandbox verdict from Leo is a clear pass. Marcus wants the proposal by April 15 so we can approve before end of quarter. Both pricing paths like Ava discussed, please."
+      }
+    },
+    {
+      "id": "ev_035",
+      "deal_id": "acme",
+      "channel": "gmail",
+      "type": "message",
+      "ts": "2026-04-03T21:04:00Z",
+      "participants": [
+        "p_jordan",
+        "p_dwhitfield"
+      ],
+      "direction": "outbound",
+      "thread_key": "th_4010",
+      "content": {
+        "subject": "Proposal timing",
+        "from": "p_jordan",
+        "body": "You'll have it by the 13th. Thanks for keeping this moving so cleanly, Dana."
+      }
+    }
+  ]
+}

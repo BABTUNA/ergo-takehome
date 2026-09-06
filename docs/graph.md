@@ -86,6 +86,13 @@ Entry point and writer.
 - Weekly snapshots (8 per deal + "today"), not arbitrary-date computation: keeps all
   logic in Python, the UI just picks a snapshot, and the slider snaps to weeks.
 - Roster sellers get nodes even with zero events - absence is the insight at Umbra.
+  **Stated simplification:** the roster is the entire seller org, which works because
+  Harborview has 3 salespeople who plausibly belong on every deal. In production the
+  rule would be the deal team, not the org: draw the people *assigned* to the deal
+  (Salesforce's Opportunity Team object), so an empty circle means "assigned but never
+  engaged". The smarter version adds stage-based role expectations - a deal in
+  technical evaluation should have an SE engaged, a deal past proposal should have an
+  exec sponsor - drawing the missing role even when nobody is assigned to it yet.
 - Ghost nodes only appear in snapshots after their first mention event.
 - Sentiment and role come from insights.json (judged over the whole deal) and are held
   constant across snapshots; momentum and edges are recomputed per `t`. Noted in the

@@ -114,16 +114,18 @@ def match_fulfillment(commitments, events, people_by_id):
             if verdict.get("fulfills"):
                 fulfilled = True
                 break
+        due_date = None
         if fulfilled:
             status = "kept"
         elif not c.get("due"):
             status = "open"
         else:
-            due = llm.complete(llm.HAIKU, prompts.DUE_PROMPT.format(
+            due_date = llm.complete(llm.HAIKU, prompts.DUE_PROMPT.format(
                 origin_ts=origin_ts[:10], due=c["due"])).get("due_date")
             grace = (TODAY - timedelta(days=2)).date().isoformat()
-            status = "broken" if due and due < grace else "open"
-        results.append({**c, "origin_event": event_id, "status": status})
+            status = "broken" if due_date and due_date < grace else "open"
+        results.append({**c, "origin_event": event_id, "status": status,
+                        "due_date": due_date})
     return results
 
 
