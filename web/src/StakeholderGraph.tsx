@@ -1,12 +1,12 @@
 import type { GraphEdge, GraphNode } from "./types";
 
 export const SENTIMENT_COLOR: Record<string, string> = {
-  positive: "#1d7a52",
-  neutral: "#77756d",
-  wary: "#b07b16",
-  negative: "#b3382f",
+  positive: "#16a34a",
+  neutral: "#64748b",
+  wary: "#d97706",
+  negative: "#dc2626",
 };
-const ENGAGED = "#2f6fb3";
+const ENGAGED = "#3b82f6";
 const W = 1000, H = 560;
 const LANES: [string, string][] = [["exec", "Exec"], ["director", "Director"], ["team", "Team"]];
 const LANE_H = H / 3;
@@ -52,19 +52,19 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
       {LANES.map(([lane, label], i) => (
         <g key={lane}>
           <rect x={0} y={i * LANE_H + 2} width={W} height={LANE_H - 4} rx={8}
-            fill={i % 2 ? "#f1efe9" : "#f5f3ee"} />
-          <text x={12} y={i * LANE_H + 22} fontSize={11.5} fill="#8a887f">{label}</text>
+            fill={i % 2 ? "#eef2f7" : "#f4f7fb"} />
+          <text x={12} y={i * LANE_H + 22} fontSize={11.5} fill="#94a3b8">{label}</text>
         </g>
       ))}
-      <text x={130} y={16} fontSize={11.5} fill="#8a887f" textAnchor="middle">Your team</text>
-      {nodes.some((n) => n.ghost) && <text x={925} y={16} fontSize={11.5} fill="#8a887f" textAnchor="middle">Never engaged</text>}
+      <text x={130} y={16} fontSize={11.5} fill="#94a3b8" textAnchor="middle">Your team</text>
+      {nodes.some((n) => n.ghost) && <text x={925} y={16} fontSize={11.5} fill="#94a3b8" textAnchor="middle">Never engaged</text>}
 
       {edges.map((e) => {
         const a = pos.get(e.a), b = pos.get(e.b);
         if (!a || !b) return null;
         return (
           <line key={`${e.a}-${e.b}`} x1={a.x} y1={a.y} x2={b.x} y2={b.y}
-            stroke="#96938a"
+            stroke="#94a3b8"
             strokeWidth={Math.min(1 + e.weight / 3, 6)}
             strokeOpacity={Math.max(0.18, 1 - e.days_stale / 30)} />
         );
@@ -76,9 +76,9 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
         const engaged = n.events > 0;
         const fill = n.ghost ? "transparent"
           : !engaged ? "transparent"
-          : n.side === "seller" ? "#5a6b7d"
+          : n.side === "seller" ? "#16304f"
           : showSentiment ? SENTIMENT_COLOR[n.sentiment] : ENGAGED;
-        const stroke = n.ghost ? "#b07b16" : engaged ? "none" : "#b07b16";
+        const stroke = n.ghost ? "#d97706" : engaged ? "none" : "#d97706";
         const r = n.ghost ? 15 : Math.min(16 + n.events, 26);
         return (
           <g key={n.id} style={{ cursor: "pointer" }} onClick={() => onSelect(n.id === selected ? null : n.id)}>
@@ -86,22 +86,22 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
             <circle cx={p.x} cy={p.y} r={r} fill={fill}
               stroke={stroke} strokeWidth={1.4}
               strokeDasharray={n.ghost || !engaged ? "4 3" : undefined} />
-            {n.ghost && <text x={p.x} y={p.y + 4} fontSize={12} fill="#b07b16" textAnchor="middle">?</text>}
+            {n.ghost && <text x={p.x} y={p.y + 4} fontSize={12} fill="#d97706" textAnchor="middle">?</text>}
             {!n.ghost && engaged && (
               <text x={p.x} y={p.y + 4} fontSize={10.5} fill="#fff" textAnchor="middle">
                 {n.name.split(" ").map((w) => w[0]).join("").slice(0, 2)}
               </text>
             )}
-            <text x={p.x} y={p.y + r + 14} fontSize={11.5} fill="#3c3a34" textAnchor="middle" fontWeight={500}>
+            <text x={p.x} y={p.y + r + 14} fontSize={11.5} fill="#334155" textAnchor="middle" fontWeight={500}>
               {n.name.split(" ")[0]}{n.title ? ` · ${shortTitle(n.title)}` : ""}
             </text>
             {(n.ghost || !engaged) && (
-              <text x={p.x} y={p.y + r + 27} fontSize={10.5} fill="#b07b16" textAnchor="middle">
+              <text x={p.x} y={p.y + r + 27} fontSize={10.5} fill="#d97706" textAnchor="middle">
                 {n.ghost ? `mentioned ${n.mentions ?? 1}x` : "0 contacts"}
               </text>
             )}
             {!n.ghost && engaged && n.side === "buyer" && n.momentum === "cooling" && (n.quiet_days ?? 0) > 7 && (
-              <text x={p.x} y={p.y + r + 27} fontSize={10.5} fill="#b3382f" textAnchor="middle">
+              <text x={p.x} y={p.y + r + 27} fontSize={10.5} fill="#dc2626" textAnchor="middle">
                 quiet {n.quiet_days}d
               </text>
             )}
@@ -110,7 +110,7 @@ export function StakeholderGraph({ nodes, edges, showSentiment, showMomentum, se
                 d={n.momentum === "rising"
                   ? `M ${p.x + r + 6} ${p.y + 4} l 5 -9 l 5 9 z`
                   : `M ${p.x + r + 6} ${p.y - 5} l 5 9 l 5 -9 z`}
-                fill={n.momentum === "rising" ? "#1d7a52" : "#b3382f"} />
+                fill={n.momentum === "rising" ? "#16a34a" : "#dc2626"} />
             )}
           </g>
         );

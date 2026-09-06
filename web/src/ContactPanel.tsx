@@ -107,7 +107,7 @@ export function ContactPanel({ bundle, node, cutoff, highlightEvent, onClose }: 
               </div>
               <div className="snippet">{snippet(e).slice(0, 180)}</div>
               <div className="tags">
-                {isGhost && <span className="tag" style={{ background: "#faf0da", color: "#9a6a12" }}>mentioned here</span>}
+                {isGhost && <span className="tag" style={{ background: "#fffbeb", color: "#b45309" }}>mentioned here</span>}
                 {(signalsByEvent.get(e.id) ?? []).map((s, i) => (
                   <span key={i} className="tag" title={s.quote}>{s.tag.replace(/_/g, " ")}</span>
                 ))}

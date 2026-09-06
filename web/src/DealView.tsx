@@ -38,7 +38,8 @@ export function DealView({ slug }: { slug: string }) {
   return (
     <>
       <div className="topbar">
-        <a className="back" href="#/">← Pipeline</a>
+        <a className="back" href="#/">Pipeline</a>
+        <span className="crumb">›</span>
         <h1>{deal.name}</h1>
         <span className="sub">
           ${Math.round(deal.amount / 1000)}k · {deal.stage} · closes {deal.close_date}
@@ -69,9 +70,9 @@ export function DealView({ slug }: { slug: string }) {
               <span><Line w={1.5} faded /> going stale</span>
               <span><Dashed /> never engaged / ghost</span>
               {showSentiment && <>
-                <span><Dot c="#1d7a52" /> positive</span>
-                <span><Dot c="#77756d" /> neutral</span>
-                <span><Dot c="#b07b16" /> wary</span>
+                <span><Dot c="#16a34a" /> positive</span>
+                <span><Dot c="#64748b" /> neutral</span>
+                <span><Dot c="#d97706" /> wary</span>
               </>}
               {showMomentum && <>
                 <span><Tri up /> rising</span>
@@ -130,11 +131,11 @@ function fmtDate(iso: string): string {
 }
 
 const Line = ({ w, faded }: { w: number; faded?: boolean }) => (
-  <svg width="22" height="8"><line x1="0" y1="4" x2="22" y2="4" stroke="#96938a"
+  <svg width="22" height="8"><line x1="0" y1="4" x2="22" y2="4" stroke="#94a3b8"
     strokeWidth={w} strokeOpacity={faded ? 0.35 : 1} /></svg>
 );
 const Dashed = () => (
-  <svg width="14" height="14"><circle cx="7" cy="7" r="5.5" fill="none" stroke="#b07b16"
+  <svg width="14" height="14"><circle cx="7" cy="7" r="5.5" fill="none" stroke="#d97706"
     strokeDasharray="3 2" /></svg>
 );
 const Dot = ({ c }: { c: string }) => (
@@ -143,6 +144,6 @@ const Dot = ({ c }: { c: string }) => (
 const Tri = ({ up }: { up?: boolean }) => (
   <svg width="12" height="10">
     <path d={up ? "M 1 9 L 6 1 L 11 9 z" : "M 1 1 L 6 9 L 11 1 z"}
-      fill={up ? "#1d7a52" : "#b3382f"} />
+      fill={up ? "#16a34a" : "#dc2626"} />
   </svg>
 );

@@ -28,11 +28,17 @@ export function PipelineList() {
       SEV_ORDER[a.rollup.top_severity] - SEV_ORDER[b.rollup.top_severity] ||
       a.rollup.thread_score - b.rollup.thread_score);
 
+  const flagged = rows.filter((r) => r.flags.length > 0).length;
   return (
     <>
       <div className="topbar">
         <h1>Pipeline</h1>
-        <span className="sub">{rows.length} open deals · as of Apr 7, 2026</span>
+        <span className="sub">as of Apr 7, 2026</span>
+      </div>
+      <div className="pills">
+        <span className="pill active">Open deals <span className="count">{rows.length}</span></span>
+        <span className="pill">At risk <span className="count">{flagged}</span></span>
+        <span className="pill">Healthy <span className="count">{rows.length - flagged}</span></span>
       </div>
       <div className="card rows">
         <div className="header">
