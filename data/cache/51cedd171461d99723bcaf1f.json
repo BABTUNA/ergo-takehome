@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "pilot agreement attached: four weeks, your two busiest clinics, flat fee credited on rollout"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Tara cc'd for kickoff scheduling"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "direct"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_lnakamura",
+      "quote": "what are the API rate limits?"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_lnakamura",
+      "quote": "yes - biggest one is our nested BOM structure"
+    },
+    {
+      "tag": "technical_concern",
+      "who": "p_lnakamura",
+      "quote": "toledo syncs in bursts"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_lnakamura",
+      "label": "neutral"
+    }
+  ]
+}

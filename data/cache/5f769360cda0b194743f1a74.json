@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "Should have your real flows running by early next week"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "have your real flows running",
+      "due": "early next week"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "neutral"
+    }
+  ]
+}

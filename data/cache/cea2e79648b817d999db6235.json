@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Signed and returned"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Tara will take scheduling from here"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_tsingh",
+      "to": "p_jordan",
+      "what": "take scheduling",
+      "due": ""
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

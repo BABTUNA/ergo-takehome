@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "circling back after our internal review wraps"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_sbloom",
+      "to": "p_jordan",
+      "what": "provide update after internal review completes",
+      "due": "in a week or so"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sbloom",
+      "label": "neutral"
+    }
+  ]
+}

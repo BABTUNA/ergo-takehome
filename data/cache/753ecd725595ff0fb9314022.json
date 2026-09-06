@@ -1,0 +1,15 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep making pricing/demo commitments and driving next steps for Initech deal.",
+  "seniority": "team",
+  "seniority_rationale": "Handles day-to-day tasks like sending pricing and scheduling demos rather than setting strategy, suggesting individual contributor level.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/helpful tone with proactive next-step offers despite several broken commitments.",
+  "evidence": [
+    "ev_007",
+    "ev_010",
+    "ev_015",
+    "ev_020",
+    "ev_021"
+  ]
+}

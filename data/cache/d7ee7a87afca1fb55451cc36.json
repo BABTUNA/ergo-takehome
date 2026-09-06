@@ -1,0 +1,12 @@
+{
+  "role": "economic_buyer",
+  "role_rationale": "Focused on total cost, seat pricing at scale, and ties purchase to budget/renewal cycle decisions",
+  "seniority": "director",
+  "seniority_rationale": "Controls vendor renewal planning cycle and demands precise cost accountability, indicating budget authority",
+  "sentiment": "wary",
+  "sentiment_rationale": "Initially engaged with buying signals but growing frustrated as multiple promised ROI breakdowns went unfulfilled",
+  "evidence": [
+    "ev_011",
+    "ev_022"
+  ]
+}

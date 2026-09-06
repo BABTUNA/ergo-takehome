@@ -1,0 +1,16 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Drives technical vetting (security, integration, compliance review) rather than budget approval or advocacy",
+  "seniority": "director",
+  "seniority_rationale": "Title is Director of Engineering, consistent with technical evaluation scope",
+  "sentiment": "positive",
+  "sentiment_rationale": "Started cautious but trend shows increasing confidence with buying signals and smooth answers to concerns",
+  "evidence": [
+    "ev_006",
+    "ev_010",
+    "ev_012",
+    "ev_017",
+    "ev_018",
+    "ev_021"
+  ]
+}

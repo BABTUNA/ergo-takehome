@@ -1,0 +1,14 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving the deal through demos, docs, and proposal commitments.",
+  "seniority": "team",
+  "seniority_rationale": "Handles execution tasks like scheduling, docs, and sandbox setup rather than final authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/professional tone with steady momentum and kept commitments throughout.",
+  "evidence": [
+    "ev_001",
+    "ev_022",
+    "ev_023",
+    "ev_035"
+  ]
+}

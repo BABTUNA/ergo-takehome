@@ -20,10 +20,21 @@ CACHE = Path(__file__).resolve().parent.parent / "data" / "cache"
 _client = None
 
 
+def _load_dotenv():
+    env = Path(__file__).resolve().parent.parent / ".env"
+    if env.exists():
+        for line in env.read_text().splitlines():
+            if "=" in line and not line.strip().startswith("#"):
+                k, _, v = line.partition("=")
+                if k.strip() == "ANTHROPIC_API_KEY" and "paste-your" not in v:
+                    os.environ.setdefault(k.strip(), v.strip())
+
+
 def _get_client():
     global _client
     if _client is None:
         import anthropic
+        _load_dotenv()
         if not os.environ.get("ANTHROPIC_API_KEY"):
             raise SystemExit(
                 "ANTHROPIC_API_KEY is not set and no cached result exists for this call.\n"
@@ -46,9 +57,11 @@ def _parse_json(text):
 
 
 def _call(model, prompt):
-    resp = _get_client().messages.create(
-        model=model, max_tokens=2000, temperature=0,
-        messages=[{"role": "user", "content": prompt}])
+    kwargs = {"model": model, "max_tokens": 2000,
+              "messages": [{"role": "user", "content": prompt}]}
+    if model == HAIKU:
+        kwargs["temperature"] = 0  # newer models reject the param
+    resp = _get_client().messages.create(**kwargs)
     return resp.content[0].text
 
 

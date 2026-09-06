@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "sandbox is up and running on our side, looks great so far"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_odiaz",
+      "quote": "Rhea K. still waiting on that ROI doc - she asked me about it this morning"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Rhea K.",
+      "by": "p_odiaz",
+      "context": "waiting on ROI documentation, asked p_odiaz about it this morning"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "positive"
+    }
+  ]
+}

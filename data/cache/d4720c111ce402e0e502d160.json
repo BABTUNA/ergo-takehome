@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Monday the 16th, 10am central?"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Adding Leo Nakamura, our eng lead - anything ops adopts, he has to live with."
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

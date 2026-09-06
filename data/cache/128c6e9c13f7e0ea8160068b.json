@@ -1,0 +1,4 @@
+{
+  "fulfills": true,
+  "why": "Identified nested BOM structure as one field type that won't map cleanly, though only one of two promised details was provided"
+}

@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "As promised, one channel instead of forty email threads. Leo, Sam - it's all yours for the technical stuff."
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Leo",
+      "by": "p_dwhitfield",
+      "context": "Assigned technical responsibility"
+    },
+    {
+      "name": "Sam",
+      "by": "p_dwhitfield",
+      "context": "Assigned technical responsibility"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_dwhitfield",
+      "label": "positive"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Announcing a channel is live does not fulfill the promise to send an invite; it's a related but lesser action that shifts responsibility to the recipient"
+}

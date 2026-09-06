@@ -1,0 +1,58 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "Zero lost referrals across both pilot clinics. Normally we'd have dropped five or six by now. My coordinators are asking when the other clinics get it."
+    },
+    {
+      "tag": "risk",
+      "who": "p_mjones",
+      "quote": "Before full rollout, this goes through our formal security review. It's a real process, three-ish weeks, and I can't shortcut it."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "Assuming security clears, I want full rollout before the fall clinic openings. Jordan, get us a full proposal in parallel so the review isn't blocking paper."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "Send compliance package and line up the right people for live architecture review with data layer team",
+      "due": ""
+    },
+    {
+      "by": "p_evasquez",
+      "to": "p_jordan",
+      "what": "Get us a full proposal in parallel",
+      "due": "before the fall clinic openings"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "coordinators",
+      "by": "p_tsingh",
+      "context": "Tara's coordinators asking when other clinics will get the system"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_tsingh",
+      "label": "enthusiastic"
+    },
+    {
+      "who": "p_evasquez",
+      "label": "positive"
+    },
+    {
+      "who": "p_mjones",
+      "label": "neutral"
+    },
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

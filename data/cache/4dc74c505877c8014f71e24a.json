@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Promise was for 'the following Monday' (specific date), but later message only commits to 'by the 23rd' (10 days later), which is a delay and rescheduling, not fulfillment"
+}

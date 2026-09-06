@@ -1,0 +1,41 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "whenever Marcus has 40 minutes, we'll run the full demo"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_lnakamura",
+      "quote": "API docs and SAP connector spec included as promised"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_lnakamura",
+      "what": "API docs and SAP connector spec",
+      "due": ""
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "run the full demo",
+      "due": "whenever Marcus has 40 minutes"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Marcus",
+      "by": "p_jordan",
+      "context": "needs to have 40 minutes available for the full demo"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "presenting the case tuesday"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sbloom",
+      "label": "hopeful"
+    }
+  ]
+}

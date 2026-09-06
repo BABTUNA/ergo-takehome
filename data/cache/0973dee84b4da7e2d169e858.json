@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "confirmed on all three. exports to you by end of next week"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_lnakamura",
+      "to": null,
+      "what": "exports",
+      "due": "end of next week"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_lnakamura",
+      "label": "neutral"
+    }
+  ]
+}

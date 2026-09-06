@@ -1,0 +1,788 @@
+{
+  "deal": {
+    "id": "opp_009",
+    "name": "Globex - Reconciliation Platform",
+    "account": "Globex",
+    "amount": 120000,
+    "stage": "Negotiation",
+    "close_date": "2026-04-30",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-13"
+  },
+  "people": {
+    "p_jordan": {
+      "role": "seller",
+      "role_rationale": "Jordan Lee is on the seller side, managing demos, pricing, and follow-ups for Globex.",
+      "seniority": "team",
+      "seniority_rationale": "No title given; behavior shows execution-level work (scheduling, sending one-pagers, coordinating sandbox) rather than final authority.",
+      "sentiment": "neutral",
+      "sentiment_rationale": "Tone has drifted from consistently positive early on to neutral/professional recently, with several broken commitments signaling flat momentum.",
+      "evidence": [
+        "ev_009",
+        "ev_025",
+        "ev_033",
+        "ev_035"
+      ],
+      "stats": {
+        "events": 13,
+        "last_touch": "2026-04-04",
+        "quiet_days": 2,
+        "momentum": "flat"
+      }
+    },
+    "p_odiaz": {
+      "role": "champion",
+      "role_rationale": "Drives evaluation internally, rallies stakeholders, pushes for decision, and advocates the tool to his team.",
+      "seniority": "director",
+      "seniority_rationale": "Title is Director of IT, and he defers budget/sign-off decisions above 50K to finance and Rhea.",
+      "sentiment": "positive",
+      "sentiment_rationale": "Consistently enthusiastic and urgent tone with growing internal buy-in and no unresolved negativity.",
+      "evidence": [
+        "ev_027",
+        "ev_034",
+        "ev_037",
+        "ev_007"
+      ],
+      "stats": {
+        "events": 17,
+        "last_touch": "2026-04-06",
+        "quiet_days": 0,
+        "momentum": "rising"
+      }
+    },
+    "p_rhea": {
+      "role": "economic_buyer",
+      "role_rationale": "Focused on total cost across 500 seats, seasonality pricing, and controls the renewal cycle timing",
+      "seniority": "exec",
+      "seniority_rationale": "Drives vendor renewal planning cycle and demands full cost accountability, indicating budget authority",
+      "sentiment": "wary",
+      "sentiment_rationale": "Initial buying interest turning urgent and pressuring as promised ROI breakdown remains undelivered (broken commitments)",
+      "evidence": [
+        "ev_011",
+        "ev_022",
+        "ev_023"
+      ],
+      "stats": {
+        "events": 2,
+        "last_touch": "2026-03-20",
+        "quiet_days": 17,
+        "momentum": "cooling"
+      }
+    },
+    "p_npark": {
+      "role": "evaluator",
+      "role_rationale": "Asking technical/functional questions about export formats and audit trail, typical of someone assessing fit",
+      "seniority": "team",
+      "seniority_rationale": "Title of Business Analyst indicates individual contributor level, not final decision authority",
+      "sentiment": "neutral",
+      "sentiment_rationale": "Consistent neutral tone across both interactions, focused on functional requirements rather than expressing enthusiasm or concern",
+      "evidence": [
+        "ev_011",
+        "ev_037"
+      ],
+      "stats": {
+        "events": 2,
+        "last_touch": "2026-04-06",
+        "quiet_days": 0,
+        "momentum": "flat"
+      }
+    },
+    "p_sam": {
+      "role": "seller",
+      "role_rationale": "Seller-side technical contact handling implementation details, docs, and commitments for Globex.",
+      "seniority": "team",
+      "seniority_rationale": "Handles technical execution and support tasks (schema exports, docs, questionnaires) rather than strategic sign-off.",
+      "sentiment": "positive",
+      "sentiment_rationale": "Engaged and encouraging tone throughout, with positive reinforcement on buyer's technical findings despite one broken commitment.",
+      "evidence": [
+        "ev_014",
+        "ev_021",
+        "ev_028",
+        "ev_032",
+        "ev_037"
+      ],
+      "stats": {
+        "events": 7,
+        "last_touch": "2026-04-06",
+        "quiet_days": 0,
+        "momentum": "rising"
+      }
+    }
+  },
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "You mentioned the reconciliation pain between your order system and warehouse tooling",
+      "event_id": "ev_001"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Open to a 30 minute call Thursday?",
+      "event_id": "ev_001"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Thursday works. Send an invite for 9am pacific.",
+      "event_id": "ev_002"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "This is honestly better than what I sketched for the internal build.",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "I want to move this forward.",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_odiaz",
+      "quote": "Budget isn't mine to sign off past fifty K, so finance will need to be in the loop at some point.",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_odiaz",
+      "quote": "What does implementation look like?",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Send me something I can forward internally. I'll set up a proper demo with a couple more people.",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "we'd scope the exact integration in a technical session",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "Let me know who you'd like in the demo",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Will come back on demo timing - likely second week of March so I can get the right people in the room.",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "I floated this upstairs and got a cautious green light to evaluate properly",
+      "event_id": "ev_007"
+    },
+    {
+      "tag": "stakeholder_requirement",
+      "who": "p_odiaz",
+      "quote": "If she's not bought in early, nothing gets signed at this size",
+      "event_id": "ev_007"
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_odiaz",
+      "quote": "She will not care about the field mapper. She'll care what it costs and what it saves",
+      "event_id": "ev_007"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Locking March 12, 10am pacific",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Attendees on our side: me, Nina Park (business analysis, cc'd), and Rhea Kim, our CFO",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "Rhea will want the numbers story, not a feature tour",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Invite coming shortly",
+      "event_id": "ev_010"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "building the session around the cost case",
+      "event_id": "ev_010"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_rhea",
+      "quote": "Good, because that's the part I'm here for.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "business_case_validation",
+      "who": "p_odiaz",
+      "quote": "For context, this is the fifteen hours a week I keep complaining about.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_npark",
+      "quote": "Does the audit trail export? We report on reconciliation exceptions quarterly.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_rhea",
+      "quote": "What does this look like at 500 seats? I need total cost, not list price. Implementation, support tier, the real number.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "timeline_constraint",
+      "who": "p_rhea",
+      "quote": "We start renewal planning for our other vendors in April and this either fits in that cycle or waits a year.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "Priya's team will want to see the SSO flow before we sign anything. She runs engineering and she's strict about auth.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_rhea",
+      "quote": "What's your pricing model when seats fluctuate? We're seasonal. I don't want to pay January rates for July headcount.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "I'd like to get a sandbox going with our real schemas next.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "nice, this works",
+      "event_id": "ev_013"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "what do you need from us to get the sandbox loaded?",
+      "event_id": "ev_013"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_sam",
+      "quote": "A schema export from your order system and read creds for a staging copy of the warehouse db. Template for both incoming.",
+      "event_id": "ev_014"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "staging creds coming after our infra guy rotates them",
+      "event_id": "ev_016"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_sam",
+      "quote": "One question: the order_status enum has 14 values, do all of them actually occur?",
+      "event_id": "ev_017"
+    },
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "maybe 8 in practice. the rest are from an old migration",
+      "event_id": "ev_018"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_odiaz",
+      "quote": "can you send over how the enterprise tier is structured?",
+      "event_id": "ev_019"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "Nina (cc'd) is putting together an internal comparison against building this ourselves",
+      "event_id": "ev_019"
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_odiaz",
+      "quote": "Pricing structure question",
+      "event_id": "ev_020"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "Attached the tier structure",
+      "event_id": "ev_020"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "Should have your real flows running by early next week",
+      "event_id": "ev_021"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_rhea",
+      "quote": "I still need the ROI breakdown we discussed: total cost at 500 seats with the seasonality modeled, against the hours saved.",
+      "event_id": "ev_022"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_rhea",
+      "quote": "Our renewal planning cycle starts in April.",
+      "event_id": "ev_022"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_rhea",
+      "quote": "Can you get it to me this week?",
+      "event_id": "ev_022"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "pulling the seasonality model together now",
+      "event_id": "ev_023"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_rhea",
+      "quote": "You'll have the full breakdown this week",
+      "event_id": "ev_023"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "sandbox is up and running on our side, looks great so far",
+      "event_id": "ev_024"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_odiaz",
+      "quote": "Rhea K. still waiting on that ROI doc - she asked me about it this morning",
+      "event_id": "ev_024"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "sent her a first-look one-pager in the meantime",
+      "event_id": "ev_025"
+    },
+    {
+      "tag": "risk",
+      "who": "p_jordan",
+      "quote": "the seasonality modeling took longer than planned",
+      "event_id": "ev_025"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "Happy to talk through it live if useful",
+      "event_id": "ev_026"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "attaching our enterprise pricing one-pager as a first look while we finalize the fuller model",
+      "event_id": "ev_026"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "caught 3 mismatches our manual process missed. showed my team, they're sold",
+      "event_id": "ev_027"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_sam",
+      "quote": "Love to hear it. Those 3 would've been silent failures in most setups.",
+      "event_id": "ev_028"
+    },
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "before anything gets signed, our security team has to review the vendor package",
+      "event_id": "ev_029"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "I'll send their questionnaire once the sandbox evaluation wraps",
+      "event_id": "ev_029"
+    },
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "Usually takes them two to three weeks, so let's not let it be the long pole",
+      "event_id": "ev_029"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "Our SOC 2 report and standard security package are ready whenever they are",
+      "event_id": "ev_030"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_odiaz",
+      "quote": "can you send over your SSO docs?",
+      "event_id": "ev_031"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "want to have them ready for the eng review",
+      "event_id": "ev_031"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_sam",
+      "quote": "Sent - SAML + OIDC guides plus the SCIM provisioning doc.",
+      "event_id": "ev_032"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "wanted to make sure the pricing one-pager landed",
+      "event_id": "ev_033"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "as you head into renewal planning",
+      "event_id": "ev_033"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "pushing internally to get a decision this month",
+      "event_id": "ev_034"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "trying to get it scheduled for next week",
+      "event_id": "ev_034"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "We can do any day next week. Sam will run it.",
+      "event_id": "ev_035"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "Anything specific her team will want beyond SSO?",
+      "event_id": "ev_035"
+    },
+    {
+      "tag": "objection",
+      "who": "p_odiaz",
+      "quote": "data residency and the API rate limits probably",
+      "event_id": "ev_036"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "come prepared",
+      "event_id": "ev_036"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "This is exactly what my team needs. The dedupe behavior alone saves us a hire.",
+      "event_id": "ev_037"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_npark",
+      "quote": "What export formats does the exception report support? We're a Tableau shop.",
+      "event_id": "ev_037"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Next step on our side is the security questionnaire. I'll get it over to you this week.",
+      "event_id": "ev_037"
+    },
+    {
+      "tag": "urgency",
+      "who": "p_odiaz",
+      "quote": "I'm pushing to get this wrapped this month.",
+      "event_id": "ev_037"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Send an invite for 9am pacific",
+      "due": "Thursday",
+      "origin_event": "ev_002",
+      "status": "broken"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Send a recap",
+      "due": "today",
+      "origin_event": "ev_003",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Get the demo on the calendar",
+      "due": "",
+      "origin_event": "ev_003",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "recap from today attached, plus the one-pager you can forward internally",
+      "due": null,
+      "origin_event": "ev_004",
+      "status": "open"
+    },
+    {
+      "by": "p_odiaz",
+      "to": "p_jordan",
+      "what": "come back on demo timing",
+      "due": "second week of March",
+      "origin_event": "ev_006",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "build the demo around the cost story as much as the tech",
+      "due": null,
+      "origin_event": "ev_007",
+      "status": "kept"
+    },
+    {
+      "by": "p_odiaz",
+      "to": "p_jordan",
+      "what": "get it scheduled on our side",
+      "due": "Second week of March",
+      "origin_event": "ev_007",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Send demo session invite",
+      "due": "shortly",
+      "origin_event": "ev_010",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "Put together a full ROI breakdown, real cost against the hours you're losing",
+      "due": "this week",
+      "origin_event": "ev_011",
+      "status": "broken"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Run a session with Priya's team on the SSO flow",
+      "due": "",
+      "origin_event": "ev_011",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "Make sure the breakdown models your seasonality",
+      "due": "",
+      "origin_event": "ev_011",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Have Sam set up a sandbox with real schemas",
+      "due": "this week",
+      "origin_event": "ev_011",
+      "status": "broken"
+    },
+    {
+      "by": "p_odiaz",
+      "to": null,
+      "what": "staging creds coming after our infra guy rotates them",
+      "due": "",
+      "origin_event": "ev_016",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_npark",
+      "what": "walk Nina through the build-vs-buy math",
+      "due": "",
+      "origin_event": "ev_020",
+      "status": "open"
+    },
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "have your real flows running",
+      "due": "early next week",
+      "origin_event": "ev_021",
+      "status": "broken"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "provide full ROI breakdown with seasonality model",
+      "due": "this week",
+      "origin_event": "ev_023",
+      "status": "broken"
+    },
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "sent her a first-look one-pager",
+      "due": null,
+      "origin_event": "ev_025",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "finalize the fuller model",
+      "due": "",
+      "origin_event": "ev_026",
+      "status": "open"
+    },
+    {
+      "by": "p_odiaz",
+      "to": "p_jordan",
+      "what": "send their questionnaire once the sandbox evaluation wraps",
+      "due": "after sandbox evaluation completes",
+      "origin_event": "ev_029",
+      "status": "open"
+    },
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "Sent SAML + OIDC guides plus the SCIM provisioning doc.",
+      "due": null,
+      "origin_event": "ev_032",
+      "status": "open"
+    },
+    {
+      "by": "p_odiaz",
+      "to": "p_sam",
+      "what": "Send security questionnaire",
+      "due": "this week",
+      "origin_event": "ev_037",
+      "status": "open"
+    },
+    {
+      "by": "p_sam",
+      "to": "p_odiaz",
+      "what": "Provide compliance docs",
+      "due": "",
+      "origin_event": "ev_037",
+      "status": "open"
+    }
+  ],
+  "ghosts": [
+    {
+      "name": "finance",
+      "label": "finance",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_003"
+      ],
+      "contexts": [
+        "Finance team will need to be looped in for budget approval beyond 50K"
+      ]
+    },
+    {
+      "name": "Priya",
+      "label": "Priya",
+      "named": true,
+      "count": 2,
+      "events": [
+        "ev_011",
+        "ev_034"
+      ],
+      "contexts": [
+        "Runs engineering and will need to review SSO flow before signing; strict about auth",
+        "wants a technical review with her team first"
+      ]
+    },
+    {
+      "name": "infra guy",
+      "label": "infra guy",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_016"
+      ],
+      "contexts": [
+        "responsible for rotating staging credentials"
+      ]
+    },
+    {
+      "name": "security team",
+      "label": "security team",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_029"
+      ],
+      "contexts": [
+        "internal team that must review the vendor package before signing"
+      ]
+    },
+    {
+      "name": "eng",
+      "label": "eng",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_031"
+      ],
+      "contexts": [
+        "engineering team that will review SSO documentation"
+      ]
+    },
+    {
+      "name": "compliance",
+      "label": "compliance",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_037"
+      ],
+      "contexts": [
+        "Compliance docs are ready to go"
+      ]
+    }
+  ]
+}

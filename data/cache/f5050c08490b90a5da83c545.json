@@ -1,0 +1,16 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Runs technical/security due diligence (Athena integration, PHI, RTO, formal security review) rather than championing or controlling budget",
+  "seniority": "director",
+  "seniority_rationale": "Title confirms Director of Engineering; owns formal review process and coordinates his own team",
+  "sentiment": "neutral",
+  "sentiment_rationale": "Consistently cautious-to-positive tone with real engagement, but progress stalled by broken seller commitments (questionnaire, architecture review) keeping him guarded",
+  "evidence": [
+    "ev_006",
+    "ev_010",
+    "ev_012",
+    "ev_017",
+    "ev_018",
+    "ev_024"
+  ]
+}

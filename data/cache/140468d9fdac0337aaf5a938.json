@@ -1,0 +1,15 @@
+{
+  "role": "champion",
+  "role_rationale": "Drives pilot, reports strong results internally, pushes for wider rollout and rallies coordinators.",
+  "seniority": "director",
+  "seniority_rationale": "Title is Operations Manager overseeing multiple clinics' coordinators, not final budget authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Trend moves from pragmatic pain points to enthusiastic, sustained zero-loss results and organic demand for expansion.",
+  "evidence": [
+    "ev_004",
+    "ev_015",
+    "ev_018",
+    "ev_020",
+    "ev_026"
+  ]
+}

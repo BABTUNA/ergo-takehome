@@ -1,0 +1,12 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep managing proposal commitments and pricing structure for Acme deal.",
+  "seniority": "team",
+  "seniority_rationale": "No title given; handles execution/proposal drafting rather than final budget authority, suggesting a team-level role.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Tone recorded as collaborative and positive with a buying signal noted after exec sync, though commitments later broken.",
+  "evidence": [
+    "ev_028",
+    "ev_029"
+  ]
+}

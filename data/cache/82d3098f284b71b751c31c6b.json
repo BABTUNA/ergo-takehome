@@ -1,0 +1,30 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_mjones",
+      "quote": "questionnaire goes out to jordan this week"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_mjones",
+      "to": null,
+      "what": "questionnaire goes out to jordan",
+      "due": "this week"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "jordan",
+      "by": "p_mjones",
+      "context": "recipient of questionnaire going out this week"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_mjones",
+      "label": "casual"
+    }
+  ]
+}

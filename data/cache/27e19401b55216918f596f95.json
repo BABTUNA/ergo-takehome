@@ -1,0 +1,12 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side participant making proposal commitments to the buyer.",
+  "seniority": "team",
+  "seniority_rationale": "No title given and no evidence of exec-level authority; handling proposal execution tasks suggests team-level role.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Collaborative tone with clear next steps and committed deliverables shows positive momentum.",
+  "evidence": [
+    "ev_028",
+    "ev_029"
+  ]
+}

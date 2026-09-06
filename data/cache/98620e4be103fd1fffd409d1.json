@@ -1,0 +1,12 @@
+{
+  "role": "economic_buyer",
+  "role_rationale": "CTO driving requirements, timeline, and pricing structure with authority to direct next steps and procurement",
+  "seniority": "exec",
+  "seniority_rationale": "Title CTO, directs procurement/legal and sets terms for the deal",
+  "sentiment": "wary",
+  "sentiment_rationale": "Interested and expanding scope (Canadian sites) but repeated pricing/reliability concerns and multiple broken seller commitments erode trust",
+  "evidence": [
+    "ev_009",
+    "ev_028"
+  ]
+}

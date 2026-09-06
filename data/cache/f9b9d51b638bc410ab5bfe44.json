@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_mjones",
+      "quote": "Answers work for now."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_mjones",
+      "quote": "I'll hold the deeper questions for the formal review."
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_mjones",
+      "label": "neutral"
+    }
+  ]
+}

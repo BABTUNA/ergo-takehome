@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_odiaz",
+      "quote": "can you send over your SSO docs?"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "want to have them ready for the eng review"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "eng",
+      "by": "p_odiaz",
+      "context": "engineering team that will review SSO documentation"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "direct"
+    }
+  ]
+}

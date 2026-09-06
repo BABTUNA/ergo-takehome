@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "testing_completed",
+      "who": "p_lnakamura",
+      "quote": "ran your postman collection against a staging copy. clean except the timestamp thing"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "curious what you'll say thursday"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_lnakamura",
+      "label": "neutral"
+    }
+  ]
+}

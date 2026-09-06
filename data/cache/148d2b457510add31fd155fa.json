@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_lnakamura",
+      "quote": "challenge accepted"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_lnakamura",
+      "label": "enthusiastic"
+    }
+  ]
+}

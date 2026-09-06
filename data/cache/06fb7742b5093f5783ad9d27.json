@@ -1,0 +1,40 @@
+{
+  "signals": [
+    {
+      "tag": "pricing_concern",
+      "who": "p_odiaz",
+      "quote": "Pricing structure question"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "Attached the tier structure"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Happy to walk Nina through the build-vs-buy math too, we have a calculator for exactly that"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_npark",
+      "what": "walk Nina through the build-vs-buy math",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Nina",
+      "by": "p_jordan",
+      "context": "seller offering to walk her through build-vs-buy analysis"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "helpful"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "pricing attached as promised, structured for your 400-person setup with the phased rollout we discussed"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Also included a one-page internal pitch doc in case it helps you socialize it"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_sbloom",
+      "what": "pricing attached",
+      "due": "as promised"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "professional"
+    }
+  ]
+}

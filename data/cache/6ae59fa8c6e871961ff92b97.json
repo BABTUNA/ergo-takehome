@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "coordinators from 3 non-pilot clinics have now asked me when they get access"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_tsingh",
+      "quote": "told them after security review"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_tsingh",
+      "to": null,
+      "what": "provide access to coordinators from 3 non-pilot clinics after security review",
+      "due": "after security review"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "malik",
+      "by": "p_tsingh",
+      "context": "recipient of message, addressed directly"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_tsingh",
+      "label": "neutral"
+    }
+  ]
+}

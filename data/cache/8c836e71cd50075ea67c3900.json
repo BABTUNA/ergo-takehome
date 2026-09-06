@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Locking March 12, 10am pacific"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Reminder that Rhea will want the numbers story, not a feature tour"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Demo on March 12, 10am pacific with attendees: Jordan Lee, Nina Park, and Rhea Kim",
+      "due": "March 12, 10am pacific"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Rhea Kim",
+      "by": "p_jordan",
+      "context": "CFO attending the demo, wants numbers story rather than feature tour"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "professional"
+    }
+  ]
+}

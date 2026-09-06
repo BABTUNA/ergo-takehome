@@ -1,0 +1,14 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving next steps, demos, and proposal delivery for the deal.",
+  "seniority": "team",
+  "seniority_rationale": "Handles operational tasks like scheduling, docs, and sandbox setup rather than strategic/budget decisions.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/enthusiastic tone with active momentum, despite several broken commitments on timelines.",
+  "evidence": [
+    "ev_001",
+    "ev_022",
+    "ev_023",
+    "ev_035"
+  ]
+}

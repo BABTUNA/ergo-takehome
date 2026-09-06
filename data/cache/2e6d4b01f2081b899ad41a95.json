@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "pulling the seasonality model together now"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_rhea",
+      "quote": "You'll have the full breakdown this week"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "provide full ROI breakdown with seasonality model",
+      "due": "this week"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Coordinating intro call on behalf of Sarah Bloom, acting as scheduler/facilitator rather than decision-maker",
+  "seniority": "team",
+  "seniority_rationale": "Acts as an assistant/coordinator setting up calls for others, no indication of budget authority",
+  "sentiment": "wary",
+  "sentiment_rationale": "Initial neutral engagement followed by broken commitments and 46 days of silence signal disengagement",
+  "evidence": [
+    "ev_002"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Sandbox is live with all three plants loaded. Leo, go break it."
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Leo",
+      "by": "p_jordan",
+      "context": "Being asked to test/break the sandbox environment"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "casual"
+    }
+  ]
+}

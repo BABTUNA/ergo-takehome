@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "we'd scope the exact integration in a technical session"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "Let me know who you'd like in the demo"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "recap from today attached, plus the one-pager you can forward internally",
+      "due": null
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "professional"
+    }
+  ]
+}

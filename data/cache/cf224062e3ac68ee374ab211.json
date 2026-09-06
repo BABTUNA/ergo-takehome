@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "jordan",
+      "quote": "security questionnaire sent to your email just now. also need to schedule that live architecture review, my team wants 90 minutes with your data layer people"
+    },
+    {
+      "tag": "info_request",
+      "who": "jordan",
+      "quote": "who should I coordinate with?"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "jordan",
+      "to": "p_mjones",
+      "what": "security questionnaire sent to your email",
+      "due": "just now"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "data layer people",
+      "by": "jordan",
+      "context": "team requesting 90 minutes for live architecture review"
+    }
+  ],
+  "tone": [
+    {
+      "who": "jordan",
+      "label": "neutral"
+    }
+  ]
+}

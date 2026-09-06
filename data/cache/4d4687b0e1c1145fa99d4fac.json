@@ -1,0 +1,13 @@
+{
+  "role": "seller",
+  "role_rationale": "Sam is on the seller side driving next steps, technical scoping, and sandbox delivery for the deal.",
+  "seniority": "team",
+  "seniority_rationale": "Handles hands-on technical execution (sandbox, BOM mapping) rather than budget or exec-level decisions, suggesting a team-level contributor.",
+  "sentiment": "wary",
+  "sentiment_rationale": "Momentum is cooling with multiple broken commitments (sandbox delays) despite earlier positive engagement, signaling growing concern.",
+  "evidence": [
+    "ev_016",
+    "ev_017",
+    "ev_026"
+  ]
+}

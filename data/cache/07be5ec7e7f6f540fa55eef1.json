@@ -1,0 +1,34 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_rhea",
+      "quote": "I still need the ROI breakdown we discussed: total cost at 500 seats with the seasonality modeled, against the hours saved"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_rhea",
+      "quote": "Our renewal planning cycle starts in April"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_rhea",
+      "quote": "Can you get it to me this week?"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "Provide ROI breakdown with total cost at 500 seats with seasonality modeled, against hours saved",
+      "due": "this week"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_rhea",
+      "label": "urgent"
+    }
+  ]
+}

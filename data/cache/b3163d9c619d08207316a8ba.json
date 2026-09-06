@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Will come back on demo timing - likely second week of March so I can get the right people in the room."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_odiaz",
+      "to": "p_jordan",
+      "what": "come back on demo timing",
+      "due": "second week of March"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "neutral"
+    }
+  ]
+}

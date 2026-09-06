@@ -1,0 +1,12 @@
+{
+  "role": "economic_buyer",
+  "role_rationale": "CTO directing next steps, pushing procurement/legal, and setting pricing structure expectations shows budget/decision control.",
+  "seniority": "exec",
+  "seniority_rationale": "CTO title, C-suite equals exec.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistent buying signals, expansion talk, and proactive procurement push show rising, engaged interest despite pragmatic concerns.",
+  "evidence": [
+    "ev_009",
+    "ev_028"
+  ]
+}

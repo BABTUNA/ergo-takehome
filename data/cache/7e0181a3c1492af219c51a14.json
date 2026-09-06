@@ -1,0 +1,53 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "This is exactly what my team needs. The dedupe behavior alone saves us a hire."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_npark",
+      "quote": "What export formats does the exception report support? We're a Tableau shop."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Next step on our side is the security questionnaire. I'll get it over to you this week."
+    },
+    {
+      "tag": "urgency",
+      "who": "p_odiaz",
+      "quote": "I'm pushing to get this wrapped this month."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_odiaz",
+      "to": "p_sam",
+      "what": "Send security questionnaire",
+      "due": "this week"
+    },
+    {
+      "by": "p_sam",
+      "to": "p_odiaz",
+      "what": "Provide compliance docs",
+      "due": ""
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "neutral"
+    },
+    {
+      "who": "p_odiaz",
+      "label": "positive"
+    },
+    {
+      "who": "p_npark",
+      "label": "neutral"
+    }
+  ]
+}

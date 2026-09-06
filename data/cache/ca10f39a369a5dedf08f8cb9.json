@@ -1,0 +1,15 @@
+{
+  "role": "champion",
+  "role_rationale": "Drives evaluation internally, rallies stakeholders, pushes for decision and coordinates security/demo processes",
+  "seniority": "director",
+  "seniority_rationale": "Title confirms Director of IT; defers final budget sign-off to finance/exec above $50K",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently enthusiastic buying signals and urgency to close, momentum rising through the deal",
+  "evidence": [
+    "ev_003",
+    "ev_024",
+    "ev_027",
+    "ev_034",
+    "ev_037"
+  ]
+}

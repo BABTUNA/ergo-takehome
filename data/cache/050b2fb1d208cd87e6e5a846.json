@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "technical_capability",
+      "who": "p_sam",
+      "quote": "10k requests/min sustained, bursts to 50k. Toledo's bursts won't touch that."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "BOM structure let's do live on Thursday."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "BOM structure live discussion",
+      "due": "Thursday"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Toledo",
+      "by": "p_sam",
+      "context": "Performance comparison regarding burst capacity"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "confident"
+    }
+  ]
+}

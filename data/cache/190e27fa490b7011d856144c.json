@@ -1,0 +1,11 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Coordinating an intro call on behalf of Sarah Bloom, acting as a scheduling/evaluating contact rather than decision-maker",
+  "seniority": "team",
+  "seniority_rationale": "Acts in a supporting/coordinating capacity for another named stakeholder, no indication of budget authority",
+  "sentiment": "neutral",
+  "sentiment_rationale": "Single interaction shows willingness to engage but a broken commitment (invite not sent) tempers positivity",
+  "evidence": [
+    "ev_002"
+  ]
+}

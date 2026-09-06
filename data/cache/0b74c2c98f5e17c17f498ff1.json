@@ -1,0 +1,15 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side participant driving technical commitments and next steps in the deal.",
+  "seniority": "team",
+  "seniority_rationale": "Handles hands-on technical delivery (sandbox, BOM structure) rather than executive decision-making, suggesting a team-level role.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/confident tone with kept commitments and enthusiastic praise of results by end of period.",
+  "evidence": [
+    "ev_011",
+    "ev_013",
+    "ev_016",
+    "ev_017",
+    "ev_026"
+  ]
+}

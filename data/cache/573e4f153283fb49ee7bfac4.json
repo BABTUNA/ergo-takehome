@@ -1,0 +1,39 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_lnakamura",
+      "quote": "Let's do it. I can get you sanitized exports from all three plants by end of next week."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "Then let's agree: sandbox loaded by the following Monday, and you try to break it for a week."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_lnakamura",
+      "to": "p_sam",
+      "what": "get sanitized exports from all three plants",
+      "due": "end of next week"
+    },
+    {
+      "by": "p_sam",
+      "to": "p_lnakamura",
+      "what": "sandbox loaded",
+      "due": "the following Monday"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "positive"
+    },
+    {
+      "who": "p_lnakamura",
+      "label": "positive"
+    }
+  ]
+}

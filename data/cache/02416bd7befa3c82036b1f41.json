@@ -1,0 +1,16 @@
+{
+  "role": "champion",
+  "role_rationale": "Driving internal case, presenting to leadership, pushing deal forward with buying signals throughout",
+  "seniority": "director",
+  "seniority_rationale": "Title is Director of Operations",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently enthusiastic and engaged though cooling slightly with a broken update commitment and quiet period near end",
+  "evidence": [
+    "ev_004",
+    "ev_006",
+    "ev_009",
+    "ev_014",
+    "ev_017",
+    "ev_019"
+  ]
+}

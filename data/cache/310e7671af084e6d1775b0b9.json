@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Proposing to schedule a meeting about SSO does not fulfill the promise of sending specific technical documentation (SAML, OIDC guides, and SCIM provisioning doc)"
+}

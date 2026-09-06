@@ -1,0 +1,73 @@
+{
+  "signals": [
+    {
+      "tag": "objection",
+      "who": "p_mwebb",
+      "quote": "What's the story when a source schema changes without warning? Because that happens here monthly."
+    },
+    {
+      "tag": "risk",
+      "who": "p_lnakamura",
+      "quote": "I tested the API docs against our WMS payloads last night. Two field types won't map cleanly, I'll send details."
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_mwebb",
+      "quote": "Alright. I'm interested."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mwebb",
+      "quote": "What's a realistic rollout timeline for three plants? I don't want a six-month professional services engagement."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_mwebb",
+      "quote": "Dana, take this to a technical evaluation and let's see real numbers when you have them."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_lnakamura",
+      "what": "Sam will scope the field type mapping issues in a technical session",
+      "due": ""
+    },
+    {
+      "by": "p_dwhitfield",
+      "to": "p_mwebb",
+      "what": "Set up the technical session with Leo and Sam, and get a Slack channel going",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "Will scope technical issues in a technical session"
+    },
+    {
+      "name": "Sam",
+      "by": "p_dwhitfield",
+      "context": "Will participate in technical session"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "professional"
+    },
+    {
+      "who": "p_mwebb",
+      "label": "direct"
+    },
+    {
+      "who": "p_lnakamura",
+      "label": "technical"
+    },
+    {
+      "who": "p_dwhitfield",
+      "label": "organized"
+    }
+  ]
+}

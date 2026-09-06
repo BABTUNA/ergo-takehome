@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "risk_resolved",
+      "who": "p_jordan",
+      "quote": "that was a queue backup on our side during a deploy window. Fixed"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "I'll flag your account for the off-peak deploy group going forward"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "flag your account for the off-peak deploy group going forward",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "our team",
+      "by": "p_jordan",
+      "context": "Checked with team regarding queue backup issue"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "solution-oriented"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "sometimes a live walkthrough moves things faster than a deck"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Happy to do a session with Gwen or whoever is weighing in"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Gwen",
+      "by": "p_jordan",
+      "context": "person weighing in on the internal review, potential participant in a live walkthrough session"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "helpful"
+    }
+  ]
+}

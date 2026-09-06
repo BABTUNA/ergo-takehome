@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "Our SOC 2 report and standard security package are ready whenever they are"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "SOC 2",
+      "by": "p_odiaz",
+      "context": "Security compliance documentation ready for delivery"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "neutral"
+    }
+  ]
+}

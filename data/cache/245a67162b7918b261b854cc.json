@@ -1,0 +1,14 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving next steps, commitments, and proposal delivery for Acme deal.",
+  "seniority": "team",
+  "seniority_rationale": "No title given; behavior shows execution-level coordination (scheduling, docs, proposal) not final authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/proactive tone throughout, maintaining momentum with concrete commitments through early April.",
+  "evidence": [
+    "ev_001",
+    "ev_022",
+    "ev_023",
+    "ev_035"
+  ]
+}

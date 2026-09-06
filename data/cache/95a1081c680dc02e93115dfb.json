@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Sending a Slack message with preparation advice does not fulfill the promise to send a questionnaire"
+}

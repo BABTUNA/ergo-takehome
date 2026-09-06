@@ -1,0 +1,15 @@
+{
+  "role": "economic_buyer",
+  "role_rationale": "COO driving scaling need, budget/board visibility, and requesting exec-level commercial counterpart",
+  "seniority": "exec",
+  "seniority_rationale": "Title is COO and she frames deal as board-visible, signaling final authority",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistent buying signals escalating to strategic push for rollout, though risk on broken intro commitment",
+  "evidence": [
+    "ev_002",
+    "ev_004",
+    "ev_006",
+    "ev_018",
+    "ev_022"
+  ]
+}

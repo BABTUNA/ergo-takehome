@@ -1,0 +1,11 @@
+{
+  "role": "neutral",
+  "role_rationale": "Acting as scheduler/facilitator setting up intro call for Sarah Bloom, not driving evaluation or decision themselves",
+  "seniority": "team",
+  "seniority_rationale": "Handles logistics like sending invites rather than owning budget or decisions",
+  "sentiment": "wary",
+  "sentiment_rationale": "Initial neutral tone followed by broken commitments (missed intro call and invite) with no further contact in 46 days suggests disengagement",
+  "evidence": [
+    "ev_002"
+  ]
+}

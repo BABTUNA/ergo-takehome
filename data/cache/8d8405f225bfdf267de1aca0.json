@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Testing with historical data and schema validation is a related-but-lesser action than delivering the actual Sandbox environment itself"
+}

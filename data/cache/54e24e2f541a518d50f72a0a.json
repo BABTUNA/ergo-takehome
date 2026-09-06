@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Promise was for staging credentials after infrastructure rotation; later event was testing exception flow against historical data, which is unrelated work"
+}

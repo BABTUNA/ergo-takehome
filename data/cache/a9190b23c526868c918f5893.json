@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_ava",
+      "quote": "proposal by mid-April with both pricing paths"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_ava",
+      "quote": "Great exec sync with Marcus today"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_ava",
+      "to": "p_ava",
+      "what": "proposal with both pricing paths",
+      "due": "mid-April"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Marcus",
+      "by": "p_ava",
+      "context": "had an exec sync meeting with Marcus"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_ava",
+      "label": "positive"
+    }
+  ]
+}

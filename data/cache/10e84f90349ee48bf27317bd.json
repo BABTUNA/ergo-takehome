@@ -1,0 +1,22 @@
+{
+  "signals": [],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "Solutions team member added to Slack channel for sandbox work"
+    },
+    {
+      "name": "Omar",
+      "by": "p_jordan",
+      "context": "Welcomed to the Slack channel"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "welcoming"
+    }
+  ]
+}

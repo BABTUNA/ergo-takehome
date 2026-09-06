@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "presenting the case tuesday"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_sbloom",
+      "to": null,
+      "what": "presenting the case",
+      "due": "tuesday"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sbloom",
+      "label": "hopeful"
+    }
+  ]
+}

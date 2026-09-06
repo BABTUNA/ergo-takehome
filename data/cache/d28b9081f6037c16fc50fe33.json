@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_ifarah",
+      "quote": "Package looks complete"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_ifarah",
+      "quote": "We'll be ready when the proposal lands"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_ifarah",
+      "to": "p_jordan",
+      "what": "be ready to proceed",
+      "due": "when the proposal lands"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "legal",
+      "by": "p_ifarah",
+      "context": "legal team providing standard redlines on the MSA"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_ifarah",
+      "label": "positive"
+    }
+  ]
+}

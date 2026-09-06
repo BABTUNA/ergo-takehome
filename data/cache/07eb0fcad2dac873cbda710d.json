@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "We can do any day next week. Sam will run it."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "Anything specific her team will want beyond SSO?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "Will run the meeting next week"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

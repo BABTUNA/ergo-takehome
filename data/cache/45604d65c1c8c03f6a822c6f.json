@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Adding Leo Nakamura, our eng lead - anything ops adopts, he has to live with"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Monday the 16th, 10am central?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Leo Nakamura",
+      "by": "p_jordan",
+      "context": "Engineering lead being added to the conversation; has decision authority over ops adoption"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

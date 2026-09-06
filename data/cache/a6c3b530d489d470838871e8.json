@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "The promise was to send a questionnaire to the customer's email; the later message only confirms receipt of the questionnaire on the sender's side, not fulfillment of the sending action"
+}

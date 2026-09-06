@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Pushing for a decision and scheduling a technical review does not fulfill the promise to send specific documentation (SAML, OIDC guides, and SCIM provisioning doc)"
+}

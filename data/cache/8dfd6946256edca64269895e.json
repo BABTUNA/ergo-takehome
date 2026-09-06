@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Promised 'sandbox with real exports' but delivered 'sanitized exports' which are not real exports"
+}

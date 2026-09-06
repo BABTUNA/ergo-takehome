@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Running exception flow tests is a related-but-lesser action; it demonstrates value but does not fulfill the specific promise to walk Nina through build-vs-buy analysis"
+}

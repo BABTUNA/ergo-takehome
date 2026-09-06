@@ -1,0 +1,71 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "This is honestly better than what I sketched for the internal build."
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_odiaz",
+      "quote": "I want to move this forward."
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_odiaz",
+      "quote": "Budget isn't mine to sign off past fifty K, so finance will need to be in the loop at some point."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_odiaz",
+      "quote": "What does implementation look like?"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Send me something I can forward internally. I'll set up a proper demo with a couple more people."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Send a recap",
+      "due": "today"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Get the demo on the calendar",
+      "due": ""
+    },
+    {
+      "by": "p_odiaz",
+      "to": "p_jordan",
+      "what": "Set up a proper demo with a couple more people",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "finance",
+      "by": "p_odiaz",
+      "context": "Finance team will need to be in the loop for budget approval beyond 50K"
+    },
+    {
+      "name": "solutions engineers",
+      "by": "p_jordan",
+      "context": "One of their solutions engineers would be paired with the buyer's team during implementation"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    },
+    {
+      "who": "p_odiaz",
+      "label": "enthusiastic"
+    }
+  ]
+}

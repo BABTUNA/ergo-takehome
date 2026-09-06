@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "technical_context",
+      "who": "p_odiaz",
+      "quote": "maybe 8 in practice. the rest are from an old migration"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "globex",
+      "by": "p_odiaz",
+      "context": "company/organization reference"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "casual"
+    }
+  ]
+}

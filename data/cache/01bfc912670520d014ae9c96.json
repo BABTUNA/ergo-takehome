@@ -1,0 +1,50 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "sandbox verdict from Leo is a clear pass"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "Marcus wants the proposal by April 15 so we can approve before end of quarter"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_dwhitfield",
+      "quote": "Both pricing paths like Ava discussed, please"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "provide proposal with both pricing paths",
+      "due": "April 15"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Leo",
+      "by": "p_dwhitfield",
+      "context": "provided sandbox verdict that was a clear pass"
+    },
+    {
+      "name": "Marcus",
+      "by": "p_dwhitfield",
+      "context": "wants the proposal by April 15 for end of quarter approval"
+    },
+    {
+      "name": "Ava",
+      "by": "p_dwhitfield",
+      "context": "discussed both pricing paths"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_dwhitfield",
+      "label": "urgent"
+    }
+  ]
+}

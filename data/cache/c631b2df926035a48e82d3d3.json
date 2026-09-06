@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Promise was to 'take scheduling' but action taken was fixing a queue backup and flagging account for off-peak deploys, which is a related technical fix rather than fulfilling the scheduling commitment"
+}

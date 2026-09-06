@@ -1,0 +1,15 @@
+{
+  "role": "seller",
+  "role_rationale": "Jordan Lee is on the seller side, making commitments and coordinating pilot/rollout details for the customer.",
+  "seniority": "team",
+  "seniority_rationale": "Handles day-to-day coordination, scheduling, and follow-ups rather than strategic or budget decisions, suggesting a team-level role.",
+  "sentiment": "wary",
+  "sentiment_rationale": "Despite consistently positive/cooperative tone, a long pattern of broken commitments (pilot terms, intros, compliance docs) signals eroding follow-through and reliability concerns.",
+  "evidence": [
+    "ev_007",
+    "ev_009",
+    "ev_016",
+    "ev_023",
+    "ev_025"
+  ]
+}

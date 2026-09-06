@@ -1,0 +1,15 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side technical contact handling info requests, demos, and documentation for the buyer.",
+  "seniority": "team",
+  "seniority_rationale": "Handles hands-on technical tasks like schema exports, docs, and configs rather than budget or strategic decisions.",
+  "sentiment": "wary",
+  "sentiment_rationale": "Momentum was rising with positive engagement, but multiple broken commitments on both sides by ev_037 signal growing risk to deal follow-through.",
+  "evidence": [
+    "ev_014",
+    "ev_021",
+    "ev_028",
+    "ev_032",
+    "ev_037"
+  ]
+}

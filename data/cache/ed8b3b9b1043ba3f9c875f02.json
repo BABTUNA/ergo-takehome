@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "still zero lost referrals"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "my coordinators built a small shrine to the unified queue"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "coordinators",
+      "by": "p_tsingh",
+      "context": "built a small shrine to the unified queue, indicating team adoption and satisfaction with the solution"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_tsingh",
+      "label": "positive"
+    }
+  ]
+}

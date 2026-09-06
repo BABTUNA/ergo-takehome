@@ -1,0 +1,50 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "The routing rules are exactly right. Can each department keep their own view of the same workflow?"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "I love this. Honestly the best fit I've seen for how we actually operate."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "Send me pricing this week and give me a couple of weeks to build the internal case."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_sbloom",
+      "what": "Send pricing",
+      "due": "tomorrow morning"
+    },
+    {
+      "by": "p_sbloom",
+      "to": "p_jordan",
+      "what": "Take it up the chain and build the internal case",
+      "due": "a couple of weeks"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Gwen",
+      "by": "p_sbloom",
+      "context": "CFO who signs anything over fifty K but trusts p_sbloom's recommendation on tooling"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "collaborative"
+    },
+    {
+      "who": "p_sbloom",
+      "label": "enthusiastic"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Manages vendor vetting process (docs, MSA, review timeline) as Procurement Manager, not final decision-maker (Marcus directs her)",
+  "seniority": "team",
+  "seniority_rationale": "Title confirms Procurement Manager; takes direction from Marcus, executes vetting tasks",
+  "sentiment": "positive",
+  "sentiment_rationale": "Moved from direct/transactional info request to positive tone with buying signals like 'package looks complete' and readiness to proceed",
+  "evidence": [
+    "ev_021",
+    "ev_031"
+  ]
+}

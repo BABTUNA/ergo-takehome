@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "info_delivery",
+      "who": "p_lnakamura",
+      "quote": "exports from all three plants are in your secure upload"
+    },
+    {
+      "tag": "risk",
+      "who": "p_lnakamura",
+      "quote": "Toledo's is ugly, don't say I didn't warn you"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_lnakamura",
+      "label": "cautionary"
+    }
+  ]
+}

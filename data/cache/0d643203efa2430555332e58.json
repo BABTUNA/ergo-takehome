@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Providing database credentials and schema exports is a prerequisite/tool for building an ROI breakdown, not the actual ROI breakdown itself"
+}

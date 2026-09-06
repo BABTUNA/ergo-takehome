@@ -1,0 +1,637 @@
+{
+  "deal": {
+    "id": "opp_015",
+    "name": "Umbra Health - Multi-clinic Coordination",
+    "account": "Umbra Health",
+    "amount": 150000,
+    "stage": "Proposal",
+    "close_date": "2026-05-15",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-18"
+  },
+  "people": {
+    "p_evasquez": {
+      "role": "economic_buyer",
+      "role_rationale": "COO driving scaling need, budget/board visibility, and requesting exec-level commercial counterpart",
+      "seniority": "exec",
+      "seniority_rationale": "Title is COO and she frames deal as board-visible, signaling final authority",
+      "sentiment": "positive",
+      "sentiment_rationale": "Consistent buying signals escalating to strategic push for rollout, though risk on broken intro commitment",
+      "evidence": [
+        "ev_002",
+        "ev_004",
+        "ev_006",
+        "ev_018",
+        "ev_022"
+      ],
+      "stats": {
+        "events": 6,
+        "last_touch": "2026-04-02",
+        "quiet_days": 4,
+        "momentum": "rising"
+      }
+    },
+    "p_jordan": {
+      "role": "seller",
+      "role_rationale": "Seller-side rep managing account coordination, commitments, and scheduling for the deal",
+      "seniority": "team",
+      "seniority_rationale": "Handles day-to-day coordination and logistics rather than strategic sign-off, with multiple broken commitments suggesting operational not executive role",
+      "sentiment": "wary",
+      "sentiment_rationale": "Tone shifted from positive/confident early on to neutral by April, with several broken commitments (intro, viewer invites, architecture review follow-up) signaling strain",
+      "evidence": [
+        "ev_023",
+        "ev_025",
+        "ev_016"
+      ],
+      "stats": {
+        "events": 10,
+        "last_touch": "2026-04-03",
+        "quiet_days": 3,
+        "momentum": "flat"
+      }
+    },
+    "p_tsingh": {
+      "role": "champion",
+      "role_rationale": "Drives pilot, reports strong results internally, pushes for wider rollout and rallies coordinators.",
+      "seniority": "director",
+      "seniority_rationale": "Title is Operations Manager overseeing multiple clinics' coordinators, not final budget authority.",
+      "sentiment": "positive",
+      "sentiment_rationale": "Trend moves from pragmatic pain points to enthusiastic, sustained zero-loss results and organic demand for expansion.",
+      "evidence": [
+        "ev_004",
+        "ev_015",
+        "ev_018",
+        "ev_020",
+        "ev_026"
+      ],
+      "stats": {
+        "events": 7,
+        "last_touch": "2026-04-06",
+        "quiet_days": 0,
+        "momentum": "rising"
+      }
+    },
+    "p_mjones": {
+      "role": "evaluator",
+      "role_rationale": "Drives technical vetting (security, integration, compliance review) rather than budget approval or advocacy",
+      "seniority": "director",
+      "seniority_rationale": "Title is Director of Engineering, consistent with technical evaluation scope",
+      "sentiment": "positive",
+      "sentiment_rationale": "Started cautious but trend shows increasing confidence with buying signals and smooth answers to concerns",
+      "evidence": [
+        "ev_006",
+        "ev_010",
+        "ev_012",
+        "ev_017",
+        "ev_018",
+        "ev_021"
+      ],
+      "stats": {
+        "events": 7,
+        "last_touch": "2026-04-03",
+        "quiet_days": 3,
+        "momentum": "flat"
+      }
+    }
+  },
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_evasquez",
+      "quote": "We're scaling clinics fast and our referral coordination is cracking.",
+      "event_id": "ev_002"
+    },
+    {
+      "tag": "referral",
+      "who": "p_evasquez",
+      "quote": "Your platform came recommended by the ops lead at Lakeside Medical.",
+      "event_id": "ev_002"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "Do you have time next week?",
+      "event_id": "ev_002"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Tuesday the 24th, 10am pacific?",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Feel free to bring whoever owns day-to-day coordination",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_evasquez",
+      "quote": "We're scaling from four clinics to eleven this year. Our intake and referral coordination breaks a little more with each new site. I need it fixed before the fall openings.",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "Day to day, that's me. Every clinic has its own intake spreadsheet and referrals get lost between them weekly.",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "risk",
+      "who": "p_evasquez",
+      "quote": "What I care about is timeline and whether this survives contact with healthcare data rules.",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_tsingh",
+      "quote": "I'd want to pilot with our two busiest clinics first. If it works there it works anywhere.",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "Set up a full demo with Malik, our engineering director. If he's comfortable, we pilot.",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "how does patient data flow through your system? I need to know what's stored, where, and encrypted how.",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "EHR integration is the other big one - we're on Athena.",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "Can my coordinators see referral status across all clinics without switching views? That's the daily pain.",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_evasquez",
+      "quote": "I like what I'm seeing. What does the pilot look like commercially?",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "risk",
+      "who": "p_mjones",
+      "quote": "My comfort depends on the technical review.",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_mjones",
+      "quote": "nothing today scared me, which is rare.",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "Let's do the pilot. Tara owns rollout, Malik owns the technical gate.",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "pilot agreement attached: four weeks, your two busiest clinics, flat fee credited on rollout",
+      "event_id": "ev_007"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Tara cc'd for kickoff scheduling",
+      "event_id": "ev_007"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Signed and returned",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Tara will take scheduling from here",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "following up on the docs you promised at the demo",
+      "event_id": "ev_010"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "Is PHI ever processed outside your VPC?",
+      "event_id": "ev_010"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "What's your RTO if the sync service goes down mid-day?",
+      "event_id": "ev_010"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "Does the Athena integration poll or use their event API?",
+      "event_id": "ev_010"
+    },
+    {
+      "tag": "risk",
+      "who": "p_mjones",
+      "quote": "I don't have a contact on your side",
+      "event_id": "ev_010"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "On your questions: 1) No, PHI never leaves the VPC. 2) RTO is one hour, historically much faster. 3) Event API with polling fallback.",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "happy to set up a session with our SE Sam for anything deeper",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_mjones",
+      "quote": "Answers work for now.",
+      "event_id": "ev_012"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_mjones",
+      "quote": "I'll hold the deeper questions for the formal review.",
+      "event_id": "ev_012"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_tsingh",
+      "quote": "can we add our Riverside clinic coordinators as viewers this week?",
+      "event_id": "ev_013"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "They're curious",
+      "event_id": "ev_013"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Curiosity from non-pilot clinics is the best sign there is",
+      "event_id": "ev_014"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "week 1 numbers: 214 referrals routed, zero lost",
+      "event_id": "ev_015"
+    },
+    {
+      "tag": "risk",
+      "who": "p_tsingh",
+      "quote": "one hiccup - the friday batch from clinic 2 came in slow, took about 40 min to clear",
+      "event_id": "ev_015"
+    },
+    {
+      "tag": "risk_resolved",
+      "who": "p_jordan",
+      "quote": "that was a queue backup on our side during a deploy window. Fixed",
+      "event_id": "ev_016"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "I'll flag your account for the off-peak deploy group going forward",
+      "event_id": "ev_016"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_mjones",
+      "quote": "noted that you caught and explained that before I had to ask. good sign",
+      "event_id": "ev_017"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "Zero lost referrals across both pilot clinics. Normally we'd have dropped five or six by now. My coordinators are asking when the other clinics get it.",
+      "event_id": "ev_018"
+    },
+    {
+      "tag": "risk",
+      "who": "p_mjones",
+      "quote": "Before full rollout, this goes through our formal security review. It's a real process, three-ish weeks, and I can't shortcut it.",
+      "event_id": "ev_018"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "Assuming security clears, I want full rollout before the fall clinic openings. Jordan, get us a full proposal in parallel so the review isn't blocking paper.",
+      "event_id": "ev_018"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "coordinators from 3 non-pilot clinics have now asked me when they get access",
+      "event_id": "ev_020"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_tsingh",
+      "quote": "told them after security review",
+      "event_id": "ev_020"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_mjones",
+      "quote": "questionnaire goes out to jordan this week",
+      "event_id": "ev_021"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_evasquez",
+      "quote": "an eleven-clinic commitment at this number is board-visible for us",
+      "event_id": "ev_022"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "is there someone on your leadership side who'd be my counterpart for the commercial conversation?",
+      "event_id": "ev_022"
+    },
+    {
+      "tag": "risk",
+      "who": "p_evasquez",
+      "quote": "Better to have that relationship before we're negotiating redlines",
+      "event_id": "ev_022"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "I'll set up an intro this coming week",
+      "event_id": "ev_023"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "jordan",
+      "quote": "security questionnaire sent to your email just now. also need to schedule that live architecture review, my team wants 90 minutes with your data layer people",
+      "event_id": "ev_024"
+    },
+    {
+      "tag": "info_request",
+      "who": "jordan",
+      "quote": "who should I coordinate with?",
+      "event_id": "ev_024"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "For the architecture review let me coordinate on my side and come back with names and times - likely early next week.",
+      "event_id": "ev_025"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "still zero lost referrals",
+      "event_id": "ev_026"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "my coordinators built a small shrine to the unified queue",
+      "event_id": "ev_026"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_evasquez",
+      "what": "HIPAA-compliant with a signed BAA, and eleven sites is a six-week rollout. Both go in writing.",
+      "due": "six weeks",
+      "origin_event": "ev_004",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "get the full architecture doc",
+      "due": "",
+      "origin_event": "ev_006",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "include the Athena integration spec with the architecture doc",
+      "due": "",
+      "origin_event": "ev_006",
+      "status": "kept"
+    },
+    {
+      "by": "p_tsingh",
+      "to": "p_jordan",
+      "what": "take scheduling",
+      "due": "",
+      "origin_event": "ev_009",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "docs you promised at the demo",
+      "due": "",
+      "origin_event": "ev_010",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "set up a session with our SE Sam for anything deeper",
+      "due": "",
+      "origin_event": "ev_011",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "sending viewer invites",
+      "due": "today",
+      "origin_event": "ev_014",
+      "status": "broken"
+    },
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "flag your account for the off-peak deploy group going forward",
+      "due": "",
+      "origin_event": "ev_016",
+      "status": "open"
+    },
+    {
+      "by": "p_mjones",
+      "to": null,
+      "what": "adding it to my review notes",
+      "due": null,
+      "origin_event": "ev_017",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "Send compliance package and line up the right people for live architecture review with data layer team",
+      "due": "",
+      "origin_event": "ev_018",
+      "status": "open"
+    },
+    {
+      "by": "p_evasquez",
+      "to": "p_jordan",
+      "what": "Get us a full proposal in parallel",
+      "due": "before the fall clinic openings",
+      "origin_event": "ev_018",
+      "status": "open"
+    },
+    {
+      "by": "p_tsingh",
+      "to": null,
+      "what": "provide access to coordinators from 3 non-pilot clinics after security review",
+      "due": "after security review",
+      "origin_event": "ev_020",
+      "status": "open"
+    },
+    {
+      "by": "p_mjones",
+      "to": null,
+      "what": "questionnaire goes out to jordan",
+      "due": "this week",
+      "origin_event": "ev_021",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_evasquez",
+      "what": "set up an intro between VP of Sales Ava Chen and Elena Vasquez",
+      "due": "this coming week",
+      "origin_event": "ev_023",
+      "status": "broken"
+    },
+    {
+      "by": "jordan",
+      "to": "p_mjones",
+      "what": "security questionnaire sent to your email",
+      "due": "just now",
+      "origin_event": "ev_024",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "coordinate on my side and come back with names and times for the architecture review",
+      "due": "likely early next week",
+      "origin_event": "ev_025",
+      "status": "broken"
+    }
+  ],
+  "ghosts": [
+    {
+      "name": "Dr. Chen",
+      "label": "Dr. Chen",
+      "named": true,
+      "count": 2,
+      "events": [
+        "ev_002",
+        "ev_003"
+      ],
+      "contexts": [
+        "Referred Jordan's platform; ops lead at Lakeside Medical",
+        "Referred as someone at Lakeside who referred Elena to Jordan"
+      ]
+    },
+    {
+      "name": "engineer",
+      "label": "engineer",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_010"
+      ],
+      "contexts": [
+        "buyer notes these questions would normally go to an engineer but lacks engineering contact at seller's company"
+      ]
+    },
+    {
+      "name": "Riverside clinic coordinators",
+      "label": "Riverside clinic coordinators",
+      "named": true,
+      "count": 1,
+      "events": [
+        "ev_013"
+      ],
+      "contexts": [
+        "Request to add them as viewers to the pilot logistics channel this week"
+      ]
+    },
+    {
+      "name": "clinic 2",
+      "label": "clinic 2",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_015"
+      ],
+      "contexts": [
+        "source of delayed batch processing on friday"
+      ]
+    },
+    {
+      "name": "coordinators",
+      "label": "coordinators",
+      "named": false,
+      "count": 2,
+      "events": [
+        "ev_018",
+        "ev_026"
+      ],
+      "contexts": [
+        "Tara's coordinators asking when other clinics will get the system",
+        "built a small shrine to the unified queue, indicating team adoption and satisfaction with the solution"
+      ]
+    },
+    {
+      "name": "executive teams",
+      "label": "executive teams",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_022"
+      ],
+      "contexts": [
+        "buyer's executive team needs alignment with seller's leadership on commercial terms"
+      ]
+    },
+    {
+      "name": "data layer people",
+      "label": "data layer people",
+      "named": false,
+      "count": 1,
+      "events": [
+        "ev_024"
+      ],
+      "contexts": [
+        "team requesting 90 minutes for live architecture review"
+      ]
+    }
+  ]
+}

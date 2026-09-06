@@ -1,0 +1,15 @@
+{
+  "role": "champion",
+  "role_rationale": "Drives internal momentum, sets up demos, coordinates technical stakeholders, and pushes for proposal escalation",
+  "seniority": "director",
+  "seniority_rationale": "Title confirms Director of Operations, coordinates cross-functional resources like CTO and technical staff",
+  "sentiment": "positive",
+  "sentiment_rationale": "Tone progresses from pragmatic to collaborative to enthusiastic and urgent, with clear buying signals throughout",
+  "evidence": [
+    "ev_004",
+    "ev_010",
+    "ev_027",
+    "ev_033",
+    "ev_034"
+  ]
+}

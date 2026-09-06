@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "A Slack message about silent failures does not demonstrate that Sam set up a sandbox with real schemas"
+}

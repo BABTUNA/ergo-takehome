@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_tsingh",
+      "quote": "week 1 numbers: 214 referrals routed, zero lost"
+    },
+    {
+      "tag": "risk",
+      "who": "p_tsingh",
+      "quote": "one hiccup - the friday batch from clinic 2 came in slow, took about 40 min to clear"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "clinic 2",
+      "by": "p_tsingh",
+      "context": "source of delayed batch processing on friday"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_tsingh",
+      "label": "neutral"
+    }
+  ]
+}

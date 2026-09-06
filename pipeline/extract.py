@@ -47,11 +47,32 @@ def extract_event(event, people_by_id):
     return result
 
 
-def resolve_mentions(all_mentions, registry):
+PRONOUNS = {"she", "her", "he", "him", "they", "them", "my team", "our team"}
+
+
+def _company_words(deal):
+    return {w.lower() for w in deal.get("account", "").split()} | {"harborview"}
+
+
+def _seller_directory():
+    """Every seller-side person seen in any deal - your own org is always known."""
+    registry = Registry()
+    for path in PROCESSED.glob("*/people.json"):
+        for p in json.loads(path.read_text()):
+            if p["side"] == "seller" and p["email"] not in registry._by_email:
+                registry._by_email[p["email"]] = Person(**p)
+    return registry
+
+
+def resolve_mentions(all_mentions, registry, deal):
+    sellers = _seller_directory()
+    company_words = _company_words(deal)
     ghosts = {}
     for event_id, mention in all_mentions:
         name = (mention.get("name") or "").strip()
-        if name and registry.match_name(name):
+        if name.lower() in PRONOUNS or name.lower() in company_words:
+            continue
+        if name and (registry.match_name(name) or sellers.match_name(name)):
             continue
         key = name.lower() or mention.get("context", "")[:30].lower()
         ghost = ghosts.setdefault(key, {
@@ -63,16 +84,23 @@ def resolve_mentions(all_mentions, registry):
         if event_id not in ghost["events"]:
             ghost["events"].append(event_id)
         ghost["contexts"].append(mention.get("context", ""))
-    return list(ghosts.values())
+    confirmed = []
+    for ghost in ghosts.values():
+        verdict = llm.complete(llm.HAIKU, prompts.GHOST_PROMPT.format(
+            name=ghost["label"], contexts="; ".join(ghost["contexts"])[:400]))
+        if verdict.get("is_person_or_team"):
+            confirmed.append(ghost)
+    return confirmed
 
 
-def match_fulfillment(commitments, events):
+def match_fulfillment(commitments, events, people_by_id):
+    """Kept if any later same-side event fulfills it; else broken when past due, open when not."""
     events_by_id = {e["id"]: e for e in events}
     results = []
     for event_id, c in commitments:
         origin_ts = events_by_id[event_id]["ts"]
         later = [e for e in events
-                 if e["ts"] > origin_ts and c.get("by") in e.get("participants", [])[:1]]
+                 if e["ts"] > origin_ts and e["type"] != "stage_change"][:10]
         fulfilled = False
         for e in later:
             prompt = prompts.FULFILL_PROMPT.format(
@@ -82,15 +110,24 @@ def match_fulfillment(commitments, events):
             if verdict.get("fulfills"):
                 fulfilled = True
                 break
-        status = "kept" if fulfilled else "broken"
+        if fulfilled:
+            status = "kept"
+        elif not c.get("due"):
+            status = "open"
+        else:
+            due = llm.complete(llm.HAIKU, prompts.DUE_PROMPT.format(
+                origin_ts=origin_ts[:10], due=c["due"])).get("due_date")
+            status = "broken" if due and due < TODAY.date().isoformat() else "open"
         results.append({**c, "origin_event": event_id, "status": status})
     return results
 
 
 def engagement_stats(events):
+    """Only authored messages and attended meetings count; being emailed is not engagement."""
     by_person = defaultdict(list)
     for e in events:
-        for pid in e.get("participants", []):
+        active = e["participants"] if e["type"] == "meeting" else e["participants"][:1]
+        for pid in active:
             by_person[pid].append(datetime.fromisoformat(e["ts"].replace("Z", "")))
     stats = {}
     for pid, dates in by_person.items():
@@ -132,8 +169,8 @@ def extract_deal(slug):
 
     all_mentions = [(r["event_id"], m) for r in pass1 for m in r["mentions"]]
     all_commitments = [(r["event_id"], c) for r in pass1 for c in r["commitments"]]
-    ghosts = resolve_mentions(all_mentions, registry)
-    commitments = match_fulfillment(all_commitments, events)
+    ghosts = resolve_mentions(all_mentions, registry, deal)
+    commitments = match_fulfillment(all_commitments, events, people_by_id)
     stats = engagement_stats(conversation)
 
     signals = [{**s, "event_id": r["event_id"]} for r in pass1 for s in r["signals"]]

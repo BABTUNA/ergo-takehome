@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_jordan",
+      "quote": "wanted to make sure the pricing one-pager landed"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "as you head into renewal planning"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

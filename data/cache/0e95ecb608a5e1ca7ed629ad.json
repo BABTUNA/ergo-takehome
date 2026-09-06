@@ -1,0 +1,14 @@
+{
+  "role": "champion",
+  "role_rationale": "Drives internal process, coordinates technical team, and pushes deal forward with buying signals and urgency",
+  "seniority": "director",
+  "seniority_rationale": "Title states Director of Operations, consistent with coordinating role rather than final sign-off authority (which sits with CTO Marcus)",
+  "sentiment": "positive",
+  "sentiment_rationale": "Tone progresses from pragmatic to enthusiastic/positive with clear buying signals and urgency around quarter-end approval",
+  "evidence": [
+    "ev_004",
+    "ev_010",
+    "ev_033",
+    "ev_034"
+  ]
+}

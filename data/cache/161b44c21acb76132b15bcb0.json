@@ -1,0 +1,15 @@
+{
+  "role": "seller",
+  "role_rationale": "Jordan Lee is on the seller side, driving demos, pricing, and follow-ups for Globex.",
+  "seniority": "team",
+  "seniority_rationale": "Handles execution tasks (scheduling, ROI breakdowns, sandbox setup) rather than owning budget or strategic decisions, suggesting an individual-contributor/team-level role.",
+  "sentiment": "wary",
+  "sentiment_rationale": "Tone shifts from positive/collaborative early on to neutral, with a growing pile of broken commitments (ROI breakdowns, seasonality modeling, sandbox) signaling strain despite outward professionalism.",
+  "evidence": [
+    "ev_009",
+    "ev_020",
+    "ev_023",
+    "ev_033",
+    "ev_035"
+  ]
+}

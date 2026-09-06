@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Promise was for staging credentials after rotation; later message only mentions sandbox loading and flows, not delivery of the promised credentials"
+}

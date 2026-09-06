@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Running exception flow against historical data is a related-but-lesser action than having real flows running on live data as promised"
+}

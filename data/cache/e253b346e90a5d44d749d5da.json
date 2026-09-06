@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Sending schema export and staging credentials is preparation work, not actually setting up a sandbox with real schemas as promised"
+}

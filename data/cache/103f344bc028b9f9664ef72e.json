@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Figured this beats email for the sandbox work"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "Solutions team member added to Slack channel for sandbox work"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "welcoming"
+    }
+  ]
+}

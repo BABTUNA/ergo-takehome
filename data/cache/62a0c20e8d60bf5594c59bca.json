@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Marcus is in for Wednesday the 25th. Calendar invite sent."
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Marcus",
+      "by": "p_jordan",
+      "context": "Confirmed attendance for Wednesday the 25th meeting"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "neutral"
+    }
+  ]
+}

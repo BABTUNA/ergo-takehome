@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "technical_requirement",
+      "who": "p_sam",
+      "quote": "10k requests/min sustained, bursts to 50k"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "BOM structure let's do live on Thursday"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "BOM structure live discussion",
+      "due": "Thursday"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Toledo",
+      "by": "p_sam",
+      "context": "Toledo's bursts won't touch the 50k threshold"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "neutral"
+    }
+  ]
+}

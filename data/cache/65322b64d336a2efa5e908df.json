@@ -1,0 +1,32 @@
+{
+  "signals": [
+    {
+      "tag": "pricing_concern",
+      "who": "p_sbloom",
+      "quote": "Trying to get the number under a threshold I know will fly"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_sbloom",
+      "quote": "does the per-seat price drop at 300+ seats"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_sbloom",
+      "quote": "is the onboarding fee negotiable if we self-serve the training"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "as I build the case"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sbloom",
+      "label": "pragmatic"
+    }
+  ]
+}

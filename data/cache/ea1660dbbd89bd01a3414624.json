@@ -1,0 +1,55 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "Okay, that's genuinely what I've been looking for."
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "I've evaluated two other tools and both wanted us to rebuild everything their way."
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "Get me a proper demo and I'll take it from there."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "Realistically it starts and ends with me making the case internally."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_sbloom",
+      "what": "Schedule a demo",
+      "due": "early March"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_sbloom",
+      "what": "Send times for the demo",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "coordinator",
+      "by": "p_jordan",
+      "context": "Mentioned as having informed Jordan about ops workflow pain"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "helpful"
+    },
+    {
+      "who": "p_sbloom",
+      "label": "engaged"
+    }
+  ]
+}

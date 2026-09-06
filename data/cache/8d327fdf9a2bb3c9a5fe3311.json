@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Asking about enum values in a schema export does not fulfill the promise to create a breakdown model that accounts for seasonality"
+}

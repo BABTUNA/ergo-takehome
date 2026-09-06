@@ -1,0 +1,23 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "keeping our onboarding slot penciled in for you"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Sarah",
+      "by": "p_jordan",
+      "context": "recipient of the message, awaiting internal review results"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "casual"
+    }
+  ]
+}

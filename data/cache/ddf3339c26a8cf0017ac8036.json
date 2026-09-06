@@ -1,0 +1,61 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_mwebb",
+      "quote": "Three plants now, but if this works we'd add the two Canadian sites next year."
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_mwebb",
+      "quote": "I want pricing that doesn't punish us for growing."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mwebb",
+      "quote": "Toledo runs a night shift. If sync breaks at 2am, what happens?"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_mwebb",
+      "quote": "Get us a proposal by mid-April and I'll have procurement start their pass now so legal isn't the long pole."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_ava",
+      "to": "p_mwebb",
+      "what": "Structure pricing as a five-site ramp with the discount locked now",
+      "due": ""
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_mwebb",
+      "what": "Model both paths in the proposal",
+      "due": ""
+    },
+    {
+      "by": "p_ava",
+      "to": "p_mwebb",
+      "what": "Deliver proposal",
+      "due": "mid-April"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Leo",
+      "by": "p_mwebb",
+      "context": "Technical evaluation contact who reported progress to Marcus"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_ava",
+      "label": "collaborative"
+    },
+    {
+      "who": "p_mwebb",
+      "label": "pragmatic"
+    }
+  ]
+}

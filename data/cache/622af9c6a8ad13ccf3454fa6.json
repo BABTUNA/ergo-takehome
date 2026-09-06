@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "sandbox by the 23rd with real exports"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_sam",
+      "quote": "BOM flattening template works"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "sandbox with real exports",
+      "due": "the 23rd"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "positive"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "role": "champion",
+  "role_rationale": "Actively tested product against real data, drove internal validation, and delivered final eng sign-off ('ship it')",
+  "seniority": "team",
+  "seniority_rationale": "Title is Engineering Lead, hands-on technical work rather than budget authority",
+  "sentiment": "positive",
+  "sentiment_rationale": "Trend moves from analytical/cautionary early on to enthusiastic and fully positive by deal end",
+  "evidence": [
+    "ev_025",
+    "ev_024",
+    "ev_032"
+  ]
+}

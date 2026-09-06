@@ -1,0 +1,14 @@
+{
+  "role": "champion",
+  "role_rationale": "Driving internal case, presenting to stakeholders, and advocating for the deal internally",
+  "seniority": "director",
+  "seniority_rationale": "Title confirms Director of Operations, consistent with owning internal buy-in rather than final budget authority",
+  "sentiment": "wary",
+  "sentiment_rationale": "Early enthusiasm has cooled into missed commitments and silence since internal review began",
+  "evidence": [
+    "ev_006",
+    "ev_009",
+    "ev_017",
+    "ev_019"
+  ]
+}

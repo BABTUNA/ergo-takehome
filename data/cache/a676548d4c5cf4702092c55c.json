@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Running exception flow tests is a related-but-lesser action; finalizing the fuller model requires completing the actual model itself"
+}

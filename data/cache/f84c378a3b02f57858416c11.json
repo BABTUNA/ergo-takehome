@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_thale",
+      "quote": "Sarah Bloom asked me to set up an intro call re: your workflow platform"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_thale",
+      "quote": "She's free Friday 8am pacific. Sending an invite unless I hear otherwise."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_thale",
+      "to": "p_jordan",
+      "what": "Sending an invite",
+      "due": "Friday 8am pacific"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Sarah Bloom",
+      "by": "p_thale",
+      "context": "Requested intro call regarding workflow platform"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_thale",
+      "label": "neutral"
+    }
+  ]
+}

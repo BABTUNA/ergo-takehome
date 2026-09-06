@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_evasquez",
+      "quote": "Your platform came recommended by the ops lead at Lakeside Medical. We're scaling clinics fast and our referral coordination is cracking."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_evasquez",
+      "quote": "Do you have time next week?"
+    }
+  ],
+  "commitments": [],
+  "mentions": [
+    {
+      "name": "Dr. Chen",
+      "by": "p_evasquez",
+      "context": "Referred the platform; described as ops lead at Lakeside Medical"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_evasquez",
+      "label": "urgent"
+    }
+  ]
+}

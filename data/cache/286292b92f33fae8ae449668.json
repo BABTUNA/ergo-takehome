@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_sam",
+      "quote": "Sent - SAML + OIDC guides plus the SCIM provisioning doc."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "Sent SAML + OIDC guides plus the SCIM provisioning doc.",
+      "due": null
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "neutral"
+    }
+  ]
+}

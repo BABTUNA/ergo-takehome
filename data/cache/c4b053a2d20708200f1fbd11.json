@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Loading a sandbox and running flows is infrastructure setup, not delivery of a seasonality breakdown model"
+}

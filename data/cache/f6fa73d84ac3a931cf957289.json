@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Running a Postman collection against staging is testing/validation, not delivering the promised API docs and SAP connector spec"
+}

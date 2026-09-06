@@ -1,0 +1,22 @@
+{
+  "signals": [
+    {
+      "tag": "technical_objection",
+      "who": "p_lnakamura",
+      "quote": "Found two field types in our WMS payloads that won't map cleanly"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "details at the demo"
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_lnakamura",
+      "label": "neutral"
+    }
+  ]
+}

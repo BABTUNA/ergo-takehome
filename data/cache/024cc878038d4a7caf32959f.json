@@ -1,0 +1,13 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep managing account coordination, commitments, and scheduling for the deal",
+  "seniority": "team",
+  "seniority_rationale": "Handles day-to-day coordination and logistics rather than strategic sign-off, with multiple broken commitments suggesting operational not executive role",
+  "sentiment": "wary",
+  "sentiment_rationale": "Tone shifted from positive/confident early on to neutral by April, with several broken commitments (intro, viewer invites, architecture review follow-up) signaling strain",
+  "evidence": [
+    "ev_023",
+    "ev_025",
+    "ev_016"
+  ]
+}

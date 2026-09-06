@@ -1,0 +1,29 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_sbloom",
+      "quote": "Perfect, the pitch doc is a nice touch."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sbloom",
+      "quote": "Will report back once I've made the rounds."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_sbloom",
+      "to": "p_jordan",
+      "what": "report back once I've made the rounds",
+      "due": ""
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sbloom",
+      "label": "positive"
+    }
+  ]
+}

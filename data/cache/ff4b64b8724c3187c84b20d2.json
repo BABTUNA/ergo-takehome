@@ -1,0 +1,40 @@
+{
+  "signals": [
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "before anything gets signed, our security team has to review the vendor package"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "I'll send their questionnaire once the sandbox evaluation wraps"
+    },
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "Usually takes them two to three weeks, so let's not let it be the long pole"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_odiaz",
+      "to": "p_jordan",
+      "what": "send their questionnaire once the sandbox evaluation wraps",
+      "due": "after sandbox evaluation completes"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "security team",
+      "by": "p_odiaz",
+      "context": "internal team that must review the vendor package before signing"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "neutral"
+    }
+  ]
+}

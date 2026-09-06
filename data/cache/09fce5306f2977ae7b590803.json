@@ -1,0 +1,14 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side rep driving technical delivery and next steps on the deal.",
+  "seniority": "team",
+  "seniority_rationale": "Handles hands-on technical execution (sandbox, exports, BOM mapping) rather than final sign-off or budget authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently positive/confident tone with kept commitments and enthusiastic praise of results.",
+  "evidence": [
+    "ev_013",
+    "ev_016",
+    "ev_017",
+    "ev_026"
+  ]
+}

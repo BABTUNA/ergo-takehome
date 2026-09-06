@@ -1,0 +1,30 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Kickoff within a week of signature, first workflows live in two. Q2 timing works perfectly."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "Kickoff within a week of signature",
+      "due": "within a week of signature"
+    },
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "first workflows live",
+      "due": "two weeks"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}

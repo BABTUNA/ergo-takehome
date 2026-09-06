@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Provided schema export and credentials instead of setting up an actual sandbox environment with real schemas"
+}

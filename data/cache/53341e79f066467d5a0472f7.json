@@ -1,0 +1,14 @@
+{
+  "role": "champion",
+  "role_rationale": "Actively tested the product, delivered exports, rallied engineering approval, and pushed for next steps throughout.",
+  "seniority": "team",
+  "seniority_rationale": "Title is Engineering Lead and behavior shows hands-on technical validation rather than budget authority.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Trend moved from cautious technical scrutiny to enthusiastic, confident endorsement culminating in 'ship it'.",
+  "evidence": [
+    "ev_004",
+    "ev_025",
+    "ev_024",
+    "ev_032"
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "deal": {
+    "id": "opp_004",
+    "name": "Acme Industrial - Multi-plant Inventory Sync",
+    "account": "Acme Industrial",
+    "amount": 80000,
+    "stage": "Proposal",
+    "close_date": "2026-04-24",
+    "owner": "jordan@harborview.io",
+    "created": "2026-02-12"
+  },
+  "people": {
+    "p_jordan": {
+      "role": "seller",
+      "role_rationale": "Seller-side rep driving next steps, commitments, and proposal delivery for Acme deal.",
+      "seniority": "team",
+      "seniority_rationale": "No title given; behavior shows execution-level coordination (scheduling, docs, proposal) not final authority.",
+      "sentiment": "positive",
+      "sentiment_rationale": "Consistently positive/proactive tone throughout, maintaining momentum with concrete commitments through early April.",
+      "evidence": [
+        "ev_001",
+        "ev_022",
+        "ev_023",
+        "ev_035"
+      ],
+      "stats": {
+        "events": 8,
+        "last_touch": "2026-04-03",
+        "quiet_days": 3,
+        "momentum": "flat"
+      }
+    },
+    "p_dwhitfield": {
+      "role": "champion",
+      "role_rationale": "Drives internal process, coordinates technical team, and pushes deal forward with buying signals and urgency",
+      "seniority": "director",
+      "seniority_rationale": "Title states Director of Operations, consistent with coordinating role rather than final sign-off authority (which sits with CTO Marcus)",
+      "sentiment": "positive",
+      "sentiment_rationale": "Tone progresses from pragmatic to enthusiastic/positive with clear buying signals and urgency around quarter-end approval",
+      "evidence": [
+        "ev_004",
+        "ev_010",
+        "ev_033",
+        "ev_034"
+      ],
+      "stats": {
+        "events": 8,
+        "last_touch": "2026-04-03",
+        "quiet_days": 3,
+        "momentum": "rising"
+      }
+    },
+    "p_lnakamura": {
+      "role": "champion",
+      "role_rationale": "Actively tested product against real data, drove internal validation, and delivered final eng sign-off ('ship it')",
+      "seniority": "team",
+      "seniority_rationale": "Title is Engineering Lead, hands-on technical work rather than budget authority",
+      "sentiment": "positive",
+      "sentiment_rationale": "Trend moves from analytical/cautionary early on to enthusiastic and fully positive by deal end",
+      "evidence": [
+        "ev_025",
+        "ev_024",
+        "ev_032"
+      ],
+      "stats": {
+        "events": 11,
+        "last_touch": "2026-04-03",
+        "quiet_days": 3,
+        "momentum": "flat"
+      }
+    },
+    "p_mwebb": {
+      "role": "economic_buyer",
+      "role_rationale": "CTO directing next steps, pushing procurement/legal, and setting pricing structure expectations shows budget/decision control.",
+      "seniority": "exec",
+      "seniority_rationale": "CTO title, C-suite equals exec.",
+      "sentiment": "positive",
+      "sentiment_rationale": "Consistent buying signals, expansion talk, and proactive procurement push show rising, engaged interest despite pragmatic concerns.",
+      "evidence": [
+        "ev_009",
+        "ev_028"
+      ],
+      "stats": {
+        "events": 2,
+        "last_touch": "2026-03-27",
+        "quiet_days": 10,
+        "momentum": "rising"
+      }
+    },
+    "p_sam": {
+      "role": "seller",
+      "role_rationale": "Seller-side rep driving technical delivery and next steps on the deal.",
+      "seniority": "team",
+      "seniority_rationale": "Handles hands-on technical execution (sandbox, exports, BOM mapping) rather than final sign-off or budget authority.",
+      "sentiment": "positive",
+      "sentiment_rationale": "Consistently positive/confident tone with kept commitments and enthusiastic praise of results.",
+      "evidence": [
+        "ev_013",
+        "ev_016",
+        "ev_017",
+        "ev_026"
+      ],
+      "stats": {
+        "events": 6,
+        "last_touch": "2026-03-26",
+        "quiet_days": 11,
+        "momentum": "cooling"
+      }
+    },
+    "p_ifarah": {
+      "role": "evaluator",
+      "role_rationale": "Procurement Manager conducting vendor review process, gathering docs and setting timelines rather than making final call",
+      "seniority": "team",
+      "seniority_rationale": "Title indicates manager-level; references Marcus for direction, suggesting she is not the final decision-maker",
+      "sentiment": "positive",
+      "sentiment_rationale": "Moved from procedural request to affirming package looks complete and readiness to proceed",
+      "evidence": [
+        "ev_021",
+        "ev_031"
+      ],
+      "stats": {
+        "events": 2,
+        "last_touch": "2026-03-30",
+        "quiet_days": 7,
+        "momentum": "flat"
+      }
+    },
+    "p_ava": {
+      "role": "seller",
+      "role_rationale": "Seller-side participant making proposal commitments to the buyer.",
+      "seniority": "team",
+      "seniority_rationale": "No title given and no evidence of exec-level authority; handling proposal execution tasks suggests team-level role.",
+      "sentiment": "positive",
+      "sentiment_rationale": "Collaborative tone with clear next steps and committed deliverables shows positive momentum.",
+      "evidence": [
+        "ev_028",
+        "ev_029"
+      ],
+      "stats": {
+        "events": 2,
+        "last_touch": "2026-03-27",
+        "quiet_days": 10,
+        "momentum": "rising"
+      }
+    }
+  },
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "You described the Monday spreadsheet ritual",
+      "event_id": "ev_001"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "30 minutes this week to see if it's a fit?",
+      "event_id": "ev_001"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Adding Leo Nakamura, our eng lead - anything ops adopts, he has to live with",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Monday the 16th, 10am central?",
+      "event_id": "ev_003"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "If Monday normalization goes away, that's two heads worth of time back. I want to see this properly.",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_lnakamura",
+      "quote": "Can we get API docs before a demo? I'd rather come with real questions.",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "Let's do a full demo next week. I'll bring Marcus, our CTO. He'll want to see it before we go anywhere serious.",
+      "event_id": "ev_004"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "whenever Marcus has 40 minutes, we'll run the full demo",
+      "event_id": "ev_005"
+    },
+    {
+      "tag": "technical_objection",
+      "who": "p_lnakamura",
+      "quote": "Found two field types in our WMS payloads that won't map cleanly",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "details at the demo",
+      "event_id": "ev_006"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Marcus is in for Wednesday the 25th. Calendar invite sent.",
+      "event_id": "ev_007"
+    },
+    {
+      "tag": "objection",
+      "who": "p_mwebb",
+      "quote": "What's the story when a source schema changes without warning? Because that happens here monthly.",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "risk",
+      "who": "p_lnakamura",
+      "quote": "I tested the API docs against our WMS payloads last night. Two field types won't map cleanly, I'll send details.",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_mwebb",
+      "quote": "Alright. I'm interested.",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mwebb",
+      "quote": "What's a realistic rollout timeline for three plants? I don't want a six-month professional services engagement.",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_mwebb",
+      "quote": "Dana, take this to a technical evaluation and let's see real numbers when you have them.",
+      "event_id": "ev_009"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "As promised, one channel instead of forty email threads. Leo, Sam - it's all yours for the technical stuff.",
+      "event_id": "ev_010"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "want to start with those two field mapping issues before our deep dive next week?",
+      "event_id": "ev_011"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_lnakamura",
+      "quote": "what are the API rate limits?",
+      "event_id": "ev_012"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_lnakamura",
+      "quote": "yes - biggest one is our nested BOM structure",
+      "event_id": "ev_012"
+    },
+    {
+      "tag": "technical_concern",
+      "who": "p_lnakamura",
+      "quote": "toledo syncs in bursts",
+      "event_id": "ev_012"
+    },
+    {
+      "tag": "technical_capability",
+      "who": "p_sam",
+      "quote": "10k requests/min sustained, bursts to 50k. Toledo's bursts won't touch that.",
+      "event_id": "ev_013"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "BOM structure let's do live on Thursday.",
+      "event_id": "ev_013"
+    },
+    {
+      "tag": "testing_completed",
+      "who": "p_lnakamura",
+      "quote": "ran your postman collection against a staging copy. clean except the timestamp thing",
+      "event_id": "ev_015"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "curious what you'll say thursday",
+      "event_id": "ev_015"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_lnakamura",
+      "quote": "Let's do it. I can get you sanitized exports from all three plants by end of next week.",
+      "event_id": "ev_016"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "Then let's agree: sandbox loaded by the following Monday, and you try to break it for a week.",
+      "event_id": "ev_016"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_sam",
+      "quote": "sandbox by the 23rd with real exports",
+      "event_id": "ev_017"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_sam",
+      "quote": "BOM flattening template works",
+      "event_id": "ev_017"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "confirmed on all three. exports to you by end of next week",
+      "event_id": "ev_018"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_lnakamura",
+      "quote": "exports from all three plants are in your secure upload",
+      "event_id": "ev_019"
+    },
+    {
+      "tag": "risk",
+      "who": "p_lnakamura",
+      "quote": "Toledo's is ugly, don't say I didn't warn you",
+      "event_id": "ev_019"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "Sandbox on track for Monday",
+      "event_id": "ev_020"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_ifarah",
+      "quote": "Marcus asked me to start our vendor pass early",
+      "event_id": "ev_021"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_ifarah",
+      "quote": "Please send: W-9, insurance certs, your standard MSA, and SOC 2 report",
+      "event_id": "ev_021"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_ifarah",
+      "quote": "Standard review is two weeks",
+      "event_id": "ev_021"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Happy to connect our legal with yours directly if anything in the MSA needs discussion",
+      "event_id": "ev_022"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "Sandbox is live with all three plants loaded. Leo, go break it.",
+      "event_id": "ev_023"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_lnakamura",
+      "quote": "challenge accepted",
+      "event_id": "ev_024"
+    },
+    {
+      "tag": "product_validation",
+      "who": "p_lnakamura",
+      "quote": "threw our worst month at it (the feb inventory count disaster). it caught every mismatch and the drift quarantine did its job when i fed it a mangled schema on purpose",
+      "event_id": "ev_025"
+    },
+    {
+      "tag": "positive_sentiment",
+      "who": "p_sam",
+      "quote": "That february dataset is going in our internal hall of fame.",
+      "event_id": "ev_026"
+    },
+    {
+      "tag": "process_concern",
+      "who": "p_dwhitfield",
+      "quote": "watching this thread with joy. this is the monday ritual dying in real time",
+      "event_id": "ev_027"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_mwebb",
+      "quote": "Three plants now, but if this works we'd add the two Canadian sites next year.",
+      "event_id": "ev_028"
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_mwebb",
+      "quote": "I want pricing that doesn't punish us for growing.",
+      "event_id": "ev_028"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mwebb",
+      "quote": "Toledo runs a night shift. If sync breaks at 2am, what happens?",
+      "event_id": "ev_028"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_mwebb",
+      "quote": "Get us a proposal by mid-April and I'll have procurement start their pass now so legal isn't the long pole.",
+      "event_id": "ev_028"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_ava",
+      "quote": "proposal by mid-April with both pricing paths",
+      "event_id": "ev_029"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_ifarah",
+      "quote": "Package looks complete",
+      "event_id": "ev_031"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_ifarah",
+      "quote": "We'll be ready when the proposal lands",
+      "event_id": "ev_031"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_lnakamura",
+      "quote": "official verdict from eng: pass",
+      "event_id": "ev_032"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_lnakamura",
+      "quote": "ship it",
+      "event_id": "ev_032"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "proposal request just went to jordan by email",
+      "event_id": "ev_033"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "excited over here",
+      "event_id": "ev_033"
+    },
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "sandbox verdict from Leo is a clear pass",
+      "event_id": "ev_034"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "Marcus wants the proposal by April 15 so we can approve before end of quarter",
+      "event_id": "ev_034"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_dwhitfield",
+      "quote": "Both pricing paths like Ava discussed, please",
+      "event_id": "ev_034"
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "You'll have it by the 13th.",
+      "event_id": "ev_035"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_lnakamura",
+      "what": "Sending API docs and SAP connector spec",
+      "due": "today",
+      "origin_event": "ev_004",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "Coordinate demo times over email",
+      "due": "",
+      "origin_event": "ev_004",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_lnakamura",
+      "what": "API docs and SAP connector spec included",
+      "due": "",
+      "origin_event": "ev_005",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "run the full demo",
+      "due": "whenever Marcus has 40 minutes",
+      "origin_event": "ev_005",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_lnakamura",
+      "what": "Sam will scope the field type mapping issues in a technical session",
+      "due": "",
+      "origin_event": "ev_009",
+      "status": "kept"
+    },
+    {
+      "by": "p_dwhitfield",
+      "to": "p_mwebb",
+      "what": "Set up the technical session with Leo and Sam, and get a Slack channel going",
+      "due": "",
+      "origin_event": "ev_009",
+      "status": "kept"
+    },
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "BOM structure live discussion",
+      "due": "Thursday",
+      "origin_event": "ev_013",
+      "status": "kept"
+    },
+    {
+      "by": "p_lnakamura",
+      "to": "p_sam",
+      "what": "get sanitized exports from all three plants",
+      "due": "end of next week",
+      "origin_event": "ev_016",
+      "status": "kept"
+    },
+    {
+      "by": "p_sam",
+      "to": "p_lnakamura",
+      "what": "sandbox loaded",
+      "due": "the following Monday",
+      "origin_event": "ev_016",
+      "status": "kept"
+    },
+    {
+      "by": "p_sam",
+      "to": null,
+      "what": "sandbox with real exports",
+      "due": "the 23rd",
+      "origin_event": "ev_017",
+      "status": "kept"
+    },
+    {
+      "by": "p_lnakamura",
+      "to": null,
+      "what": "exports",
+      "due": "end of next week",
+      "origin_event": "ev_018",
+      "status": "kept"
+    },
+    {
+      "by": "p_lnakamura",
+      "to": "p_sam",
+      "what": "Sandbox delivery",
+      "due": "Monday",
+      "origin_event": "ev_020",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_ifarah",
+      "what": "send W-9, insurance certs, standard MSA, and SOC 2 report",
+      "due": "Standard review is two weeks",
+      "origin_event": "ev_021",
+      "status": "kept"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_ifarah, p_dwhitfield",
+      "what": "connect our legal with yours directly if anything in the MSA needs discussion",
+      "due": "",
+      "origin_event": "ev_022",
+      "status": "open"
+    },
+    {
+      "by": "p_ava",
+      "to": "p_mwebb",
+      "what": "Structure pricing as a five-site ramp with the discount locked now",
+      "due": "",
+      "origin_event": "ev_028",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_mwebb",
+      "what": "Model both paths in the proposal",
+      "due": "",
+      "origin_event": "ev_028",
+      "status": "kept"
+    },
+    {
+      "by": "p_ava",
+      "to": "p_mwebb",
+      "what": "Deliver proposal",
+      "due": "mid-April",
+      "origin_event": "ev_028",
+      "status": "open"
+    },
+    {
+      "by": "p_ava",
+      "to": "p_ava",
+      "what": "proposal with both pricing paths",
+      "due": "mid-April",
+      "origin_event": "ev_029",
+      "status": "open"
+    },
+    {
+      "by": "p_ifarah",
+      "to": "p_jordan",
+      "what": "be ready to proceed",
+      "due": "when the proposal lands",
+      "origin_event": "ev_031",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "provide proposal with both pricing paths",
+      "due": "April 15",
+      "origin_event": "ev_034",
+      "status": "open"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "Proposal delivery",
+      "due": "the 13th",
+      "origin_event": "ev_035",
+      "status": "open"
+    }
+  ],
+  "ghosts": [
+    {
+      "name": "legal",
+      "label": "legal",
+      "named": false,
+      "count": 2,
+      "events": [
+        "ev_022",
+        "ev_031"
+      ],
+      "contexts": [
+        "seller's legal team available to connect with buyer's legal team regarding MSA discussion",
+        "legal team providing standard redlines on the MSA"
+      ]
+    }
+  ]
+}

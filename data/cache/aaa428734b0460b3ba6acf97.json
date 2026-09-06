@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Sending a Slack message about onboarding does not fulfill the promise to kickoff within a week of signature"
+}

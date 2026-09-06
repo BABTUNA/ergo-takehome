@@ -1,0 +1,12 @@
+{
+  "role": "evaluator",
+  "role_rationale": "Asks technical/reporting questions about exports and formats, assessing fit rather than driving business decisions",
+  "seniority": "team",
+  "seniority_rationale": "Title of Business Analyst and focus on operational reporting details suggests non-senior, execution-level role",
+  "sentiment": "wary",
+  "sentiment_rationale": "Neutral tone but a commitment made to her (build-vs-buy walkthrough) was broken, signaling stalled trust",
+  "evidence": [
+    "ev_011",
+    "ev_037"
+  ]
+}

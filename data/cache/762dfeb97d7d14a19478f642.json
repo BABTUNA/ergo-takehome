@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Thursday works. Send an invite for 9am pacific."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Send an invite for 9am pacific",
+      "due": "Thursday"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Harborview",
+      "by": "p_jordan",
+      "context": "Subject line reference, likely company or account name"
+    },
+    {
+      "name": "Globex",
+      "by": "p_jordan",
+      "context": "Subject line reference, likely company or account name"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "positive"
+    }
+  ]
+}

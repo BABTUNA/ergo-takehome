@@ -1,0 +1,35 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "On your questions: 1) No, PHI never leaves the VPC. 2) RTO is one hour, historically much faster. 3) Event API with polling fallback."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_jordan",
+      "quote": "happy to set up a session with our SE Sam for anything deeper"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "set up a session with our SE Sam for anything deeper",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "Sales Engineer available for deeper technical discussion"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "helpful"
+    }
+  ]
+}

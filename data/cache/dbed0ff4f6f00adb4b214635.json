@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Creating a Slack channel is a related-but-lesser action; the promise was to set up a sandbox with real schemas, which requires actual technical implementation"
+}

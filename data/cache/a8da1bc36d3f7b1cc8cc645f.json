@@ -1,0 +1,14 @@
+{
+  "role": "seller",
+  "role_rationale": "Jordan Lee is on the seller side, managing demos, pricing, and follow-ups for Globex.",
+  "seniority": "team",
+  "seniority_rationale": "No title given; behavior shows execution-level work (scheduling, sending one-pagers, coordinating sandbox) rather than final authority.",
+  "sentiment": "neutral",
+  "sentiment_rationale": "Tone has drifted from consistently positive early on to neutral/professional recently, with several broken commitments signaling flat momentum.",
+  "evidence": [
+    "ev_009",
+    "ev_025",
+    "ev_033",
+    "ev_035"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "fulfills": false,
+  "why": "Email references the docs but doesn't confirm they were actually attached or delivered; it's a follow-up request, not fulfillment"
+}

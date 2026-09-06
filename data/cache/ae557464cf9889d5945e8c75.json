@@ -1,0 +1,50 @@
+{
+  "signals": [
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "following up on the docs you promised at the demo"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "Is PHI ever processed outside your VPC?"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "What's your RTO if the sync service goes down mid-day?"
+    },
+    {
+      "tag": "info_request",
+      "who": "p_mjones",
+      "quote": "Does the Athena integration poll or use their event API?"
+    },
+    {
+      "tag": "risk",
+      "who": "p_mjones",
+      "quote": "I don't have a contact on your side"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_mjones",
+      "what": "docs you promised at the demo",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "engineer",
+      "by": "p_mjones",
+      "context": "These would normally go to an engineer but I don't have a contact on your side"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_mjones",
+      "label": "direct"
+    }
+  ]
+}

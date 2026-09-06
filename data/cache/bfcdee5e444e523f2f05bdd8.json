@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "positive_feedback",
+      "who": "p_sam",
+      "quote": "That february dataset is going in our internal hall of fame."
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "enthusiastic"
+    }
+  ]
+}

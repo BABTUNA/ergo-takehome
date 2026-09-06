@@ -1,0 +1,14 @@
+{
+  "role": "champion",
+  "role_rationale": "Drives evaluation internally, rallies stakeholders, pushes for decision, and advocates the tool to his team.",
+  "seniority": "director",
+  "seniority_rationale": "Title is Director of IT, and he defers budget/sign-off decisions above 50K to finance and Rhea.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Consistently enthusiastic and urgent tone with growing internal buy-in and no unresolved negativity.",
+  "evidence": [
+    "ev_027",
+    "ev_034",
+    "ev_037",
+    "ev_007"
+  ]
+}

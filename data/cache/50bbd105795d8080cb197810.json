@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_mjones",
+      "quote": "noted that you caught and explained that before I had to ask. good sign"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_mjones",
+      "to": null,
+      "what": "adding it to my review notes",
+      "due": null
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_mjones",
+      "label": "positive"
+    }
+  ]
+}

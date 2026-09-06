@@ -10,24 +10,24 @@ are computed in plain code, not prompted.
 
 ## Call trace
 
-```
-main()                                                          [extract.py]
+<pre>
+<a href="../pipeline/extract.py#L204">main()</a>                                                          [extract.py]
 └─ for each slug in data/processed/*:
-   extract_deal(slug)                                           [extract.py]
+   <a href="../pipeline/extract.py#L160">extract_deal(slug)</a>                                           [extract.py]
    ├─ events, people = load processed files                     [extract.py]
-   ├─ registry = Registry rebuilt from people.json              [identity.py]
-   ├─ pass1: for each conversation event:                       [extract.py]
-   │   └─ extract_event(event)                                  [extract.py]
-   │       └─ complete(HAIKU, EVENT_PROMPT, schema)             [llm.py]      # disk-cached
-   ├─ ghosts = resolve_mentions(pass1 mentions)                 [extract.py]
-   │   └─ Registry.match_name() per mention                     [identity.py] # no match = ghost
-   ├─ commitments = match_fulfillment(pass1 commitments)        [extract.py]  # code, not LLM
-   ├─ stats = engagement_stats(events)                          [extract.py]  # momentum arithmetic
+   ├─ registry = <a href="../pipeline/extract.py#L22">Registry rebuilt from people.json</a>              [identity.py]
+   ├─ pass1: for each conversation event:
+   │   └─ <a href="../pipeline/extract.py#L39">extract_event(event)</a>                                  [extract.py]
+   │       └─ <a href="../pipeline/llm.py#L68">complete(HAIKU, EVENT_PROMPT, schema)</a>             [llm.py]      # disk-cached
+   ├─ ghosts = <a href="../pipeline/extract.py#L67">resolve_mentions(pass1 mentions)</a>                 [extract.py]
+   │   └─ <a href="../pipeline/identity.py#L60">Registry.match_name()</a> per mention                     [identity.py] # no match = ghost
+   ├─ commitments = <a href="../pipeline/extract.py#L96">match_fulfillment(pass1 commitments)</a>        [extract.py]  # code + HAIKU checks
+   ├─ stats = <a href="../pipeline/extract.py#L125">engagement_stats(events)</a>                         [extract.py]  # momentum arithmetic
    ├─ pass2: for each person with >= 1 event:
-   │   └─ rollup_person(person, their signals + stats)          [extract.py]
-   │       └─ complete(SONNET, PERSON_PROMPT, schema)           [llm.py]      # disk-cached
+   │   └─ <a href="../pipeline/extract.py#L148">rollup_person(person, their signals + stats)</a>          [extract.py]
+   │       └─ <a href="../pipeline/llm.py#L68">complete(SONNET, PERSON_PROMPT, schema)</a>           [llm.py]      # disk-cached
    └─ write insights.json                                       [extract.py]
-```
+</pre>
 
 ## Files
 

@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "next_step_set",
+      "who": "p_odiaz",
+      "quote": "Thursday works. Send an invite for 9am pacific."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "Send an invite for 9am pacific",
+      "due": "Thursday"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_odiaz",
+      "label": "neutral"
+    }
+  ]
+}

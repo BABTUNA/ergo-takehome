@@ -1,0 +1,15 @@
+{
+  "role": "seller",
+  "role_rationale": "Seller-side technical contact handling implementation details, docs, and commitments for Globex.",
+  "seniority": "team",
+  "seniority_rationale": "Handles technical execution and support tasks (schema exports, docs, questionnaires) rather than strategic sign-off.",
+  "sentiment": "positive",
+  "sentiment_rationale": "Engaged and encouraging tone throughout, with positive reinforcement on buyer's technical findings despite one broken commitment.",
+  "evidence": [
+    "ev_014",
+    "ev_021",
+    "ev_028",
+    "ev_032",
+    "ev_037"
+  ]
+}

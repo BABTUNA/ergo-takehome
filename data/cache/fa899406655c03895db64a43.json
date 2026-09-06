@@ -1,0 +1,90 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_rhea",
+      "quote": "Good, because that's the part I'm here for."
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_rhea",
+      "quote": "What does this look like at 500 seats? I need total cost, not list price. Implementation, support tier, the real number."
+    },
+    {
+      "tag": "timeline_constraint",
+      "who": "p_rhea",
+      "quote": "We start renewal planning for our other vendors in April and this either fits in that cycle or waits a year."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_npark",
+      "quote": "Does the audit trail export? We report on reconciliation exceptions quarterly."
+    },
+    {
+      "tag": "risk",
+      "who": "p_odiaz",
+      "quote": "Priya's team will want to see the SSO flow before we sign anything. She runs engineering and she's strict about auth."
+    },
+    {
+      "tag": "pricing_concern",
+      "who": "p_rhea",
+      "quote": "What's your pricing model when seats fluctuate? We're seasonal. I don't want to pay January rates for July headcount."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "put together a full ROI breakdown, real cost against the hours you're losing",
+      "due": "this week"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "run a session with Priya's team on the SSO flow",
+      "due": "whenever"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_rhea",
+      "what": "make sure the breakdown models your seasonality",
+      "due": ""
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_odiaz",
+      "what": "have Sam set up a sandbox with your real schemas",
+      "due": "this week"
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Priya",
+      "by": "p_odiaz",
+      "context": "runs engineering and is strict about auth; her team needs to see SSO flow before signing"
+    },
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "will set up sandbox with real schemas"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "collaborative"
+    },
+    {
+      "who": "p_rhea",
+      "label": "direct"
+    },
+    {
+      "who": "p_odiaz",
+      "label": "neutral"
+    },
+    {
+      "who": "p_npark",
+      "label": "neutral"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_sam",
+      "quote": "Love to hear it. Those 3 would've been silent failures in most setups."
+    }
+  ],
+  "commitments": [],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_sam",
+      "label": "positive"
+    }
+  ]
+}

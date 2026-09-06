@@ -1,0 +1,59 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_dwhitfield",
+      "quote": "If Monday normalization goes away, that's two heads worth of time back. I want to see this properly."
+    },
+    {
+      "tag": "info_request",
+      "who": "p_lnakamura",
+      "quote": "Can we get API docs before a demo? I'd rather come with real questions."
+    },
+    {
+      "tag": "next_step_set",
+      "who": "p_dwhitfield",
+      "quote": "Let's do a full demo next week. I'll bring Marcus, our CTO. He'll want to see it before we go anywhere serious."
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": "p_lnakamura",
+      "what": "Sending API docs and SAP connector spec",
+      "due": "today"
+    },
+    {
+      "by": "p_jordan",
+      "to": "p_dwhitfield",
+      "what": "Coordinate demo times over email",
+      "due": ""
+    }
+  ],
+  "mentions": [
+    {
+      "name": "Sam",
+      "by": "p_jordan",
+      "context": "SE who would scope REST ingestion API integration with buyer's team"
+    },
+    {
+      "name": "Marcus",
+      "by": "p_dwhitfield",
+      "context": "CTO who will attend the demo next week"
+    }
+  ],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "helpful"
+    },
+    {
+      "who": "p_dwhitfield",
+      "label": "pragmatic"
+    },
+    {
+      "who": "p_lnakamura",
+      "label": "analytical"
+    }
+  ]
+}

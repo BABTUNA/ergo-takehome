@@ -1,0 +1,24 @@
+{
+  "signals": [
+    {
+      "tag": "buying_signal",
+      "who": "p_jordan",
+      "quote": "Curiosity from non-pilot clinics is the best sign there is"
+    }
+  ],
+  "commitments": [
+    {
+      "by": "p_jordan",
+      "to": null,
+      "what": "sending viewer invites",
+      "due": "today"
+    }
+  ],
+  "mentions": [],
+  "tone": [
+    {
+      "who": "p_jordan",
+      "label": "positive"
+    }
+  ]
+}
