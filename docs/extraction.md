@@ -33,15 +33,18 @@ are computed in plain code, not prompted.
 
 ### `complete(HAIKU, EVENT_PROMPT, schema)` - pass 1, one call per event
 
-In (the rendered prompt, abridged):
+In - one Event record from `events.json`:
 
+```json
+{"id": "ev_012", "channel": "gmail", "type": "message", "ts": "2026-03-20T14:02:00Z",
+ "participants": ["p_rhea", "p_jordan", "p_odiaz"], "direction": "inbound",
+ "thread_key": "th_4471",
+ "content": {"subject": "ROI breakdown", "from": "p_rhea",
+             "body": "Following up from the demo. I still need the ROI breakdown... this week?"}}
 ```
-Participants: p_rhea = Rhea Kim (buyer), p_jordan = Jordan Lee (seller), ...
-Channel: gmail
-Content:
-Subject: ROI breakdown
-Following up from the demo. I still need the ROI breakdown... this week?
-```
+
+`extract_event` renders it into `EVENT_PROMPT` as plain text, with a roster line per
+participant ("p_rhea = Rhea Kim (buyer)") so the model answers in person ids.
 
 Out:
 
@@ -58,18 +61,24 @@ A routine scheduling email correctly returns all four arrays empty.
 
 ### `complete(SONNET, PERSON_PROMPT, schema)` - pass 2, one call per person
 
-In (the rendered prompt, abridged):
+In - one person's slice of everything extracted so far:
 
+```json
+{"person": {"id": "p_rhea", "name": "Rhea Kim", "side": "buyer",
+            "title": "", "in_crm": false},
+ "deal": {"name": "Globex", "amount": 120000, "stage": "Negotiation"},
+ "stats": {"events": 6, "last_touch": "2026-03-26", "quiet_days": 12,
+           "momentum": "cooling"},
+ "history": [
+   {"event_id": "ev_007", "ts": "2026-03-12", "tag": "pricing_concern",
+    "quote": "I need total cost, not list price"},
+   {"event_id": "ev_007", "ts": "2026-03-12", "tone": "wary"},
+   {"event_id": "ev_012", "ts": "2026-03-20", "tag": "info_request",
+    "quote": "I still need the ROI breakdown"},
+   {"commitment": "send ROI breakdown", "role": "recipient", "status": "broken"}]}
 ```
-Person: p_rhea (Rhea Kim), buyer side, title: unknown, NOT in CRM
-Deal: Globex, $120000, stage Negotiation
-Computed stats: {"events": 6, "last_touch": "2026-03-26", "quiet_days": 12, "momentum": "cooling"}
-History, oldest first:
-2026-03-12 ev_007: signal pricing_concern ("I need total cost, not list price")
-2026-03-12 ev_007: tone wary
-2026-03-20 ev_012: signal info_request ("I still need the ROI breakdown")
-received commitment: "send ROI breakdown" (status: broken)
-```
+
+`rollup_person` renders this into `PERSON_PROMPT` as a chronological text block.
 
 Out:
 
